@@ -7,8 +7,11 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 height: 10vh;
-gap: 1rem;
+// border-bottom: 1px solid #d3d3d3;
+
 h2 {
+    font-size: ${props => props.theme.fsmedium};
+
     span {
         color: ${props => props.theme.primaryColor};
         font-weight: 800;
@@ -24,19 +27,21 @@ img {
 export const LinksRIght = styled.div `
 margin-left: auto;
 display: flex;
-gap: 1rem;
+gap: 2rem;
 
 a {
 color: ${props => props.theme.primaryColor};
+font-size: ${props => props.theme.fssmall};
+
 position: relative;
    &:after {
         content: '';
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
         left: 0;
         right: 0;
         width: 100%;
-        height: 3px;
+        height: 2px;
         transform: scaleX(0);
         background-color:${props => props.theme.primaryColor};
         transition: transform 0.3s;
