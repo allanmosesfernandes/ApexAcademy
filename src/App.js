@@ -5,8 +5,8 @@ import FirstFold from "./components/FirstFold/FirstFold";
 function App() {
 
   const theme = {
-    primaryColor: "#f70",
-    fsxl: "6.5rem",
+    primaryColor: "#FF7700",
+    fsxl: "7.5rem",
     fslarge: "5rem",
     fsmedium: "3rem",
     fssmall: "2rem"

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const StyledHeader = styled.header `
 
 nav {
@@ -7,12 +6,12 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 height: 10vh;
-// border-bottom: 1px solid #d3d3d3;
 
 h2 {
     font-size: ${props => props.theme.fsmedium};
 
     span {
+        position: relative;
         color: ${props => props.theme.primaryColor};
         font-weight: 800;
     }
