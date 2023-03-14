@@ -12,8 +12,8 @@ const Header = () => {
             <Link to="/"><span>Apex </span> Academy</Link>
         </h2>
         <LinksRIght>
-        <Link to="/">About</Link>
-
+            <Link to="/">About</Link>
+            <Link to="/">Pricing</Link>
         </LinksRIght>
         </nav>
     </Container>
