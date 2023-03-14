@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyleSheet = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
 *,
 *::before,
 *::after {
@@ -19,8 +19,16 @@ figure,
 blockquote,
 dl,
 dd {
-  font-family: 'DM Sans', sans-serif;
-  margin: 0;
+font-family: 'Space Grotesk', sans-serif;  
+margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 300;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
