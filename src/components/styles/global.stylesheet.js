@@ -111,27 +111,7 @@ button:active {
     transform: scale(0.99);
 }
 
-body {
-    background:
-        linear-gradient(-90deg, rgba(0,0,0,.05) 1px, transparent 1px),
-        linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px), 
-        linear-gradient(-90deg, rgba(0, 0, 0, .04) 1px, transparent 1px),
-        linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px),
-        linear-gradient(transparent 3px, #fff 3px, #fff 78px, transparent 78px),
-        linear-gradient(-90deg, #aaa 1px, transparent 1px),
-        linear-gradient(-90deg, transparent 3px, #fff 3px, #fff 78px, transparent 78px),
-        linear-gradient(#aaa 1px, transparent 1px),
-        #fff;
-    background-size:
-        4px 4px,
-        4px 4px,
-        80px 80px,
-        80px 80px,
-        80px 80px,
-        80px 80px,
-        80px 80px,
-        80px 80px;
-}
+
 `
 
 export default GlobalStyleSheet

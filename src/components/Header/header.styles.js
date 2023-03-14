@@ -15,6 +15,10 @@ h2 {
         color: ${props => props.theme.primaryColor};
         font-weight: 800;
     }
+
+@media only screen and (max-width: 600px) {
+  font-size: ${props => props.theme.fssmall};
+}
 }
 img {
     width: 100px;

@@ -6,6 +6,9 @@ import CircleSVG from "../../assets/images/circle.svg"
 export const FirstFoldContainer = styled.section`
 display: flex;
 margin: 5rem 0 0 0;
+@media only screen and (max-width: 600px) {
+  flex-direction: column;
+}
 h2 {
     font-size: ${props => props.theme.fsxl};
     line-height: 1.2;
@@ -15,6 +18,9 @@ h2 {
         color: ${props => props.theme.primaryColor};
         position: relative;
     }
+@media only screen and (max-width: 600px) {
+  font-size: ${props => props.theme.fsmedium};
+}
 }
 
 `

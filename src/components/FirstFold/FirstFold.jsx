@@ -5,6 +5,9 @@ import Rocket from "../../assets/images/rocket.png"
 import CircleSVG from "../../assets/images/circle.svg"
 import { RocketImg } from './FirstFold.styles'
 import  Grads  from "../../assets/images/hero.png";
+import Lottie from "lottie-react";
+import groovy from "../../assets/images/animation.json"
+
 const FirstFold = () => {
   return (
     <Container>
@@ -18,7 +21,8 @@ const FirstFold = () => {
           
           </FirstFoldLeftDiv>
           <div className="first-fold-right">
-            <img src={Grads} alt=""/>
+            {/* <img src={Grads} alt=""/> */}
+            <Lottie animationData={groovy} loop={true} />
           </div>
         </FirstFoldContainer>
     </Container>
