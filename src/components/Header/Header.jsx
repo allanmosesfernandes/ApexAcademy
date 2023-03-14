@@ -9,7 +9,7 @@ const Header = () => {
     <StyledHeader>
     <nav>
     <Container>
-    <h2>Apex Academy</h2>
+    <h2><span>Apex</span> Academy</h2>
     </Container>
     </nav>
     </StyledHeader>
