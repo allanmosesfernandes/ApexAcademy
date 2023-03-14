@@ -4,7 +4,7 @@ import { FirstFoldContainer, FirstFoldLeftDiv, RocketGIF, YellowCircleImage } fr
 import Rocket from "../../assets/images/rocket.png"
 import CircleSVG from "../../assets/images/circle.svg"
 import { RocketImg } from './FirstFold.styles'
-import  Grads  from "../../assets/images/grads.png";
+import  Grads  from "../../assets/images/hero.png";
 const FirstFold = () => {
   return (
     <Container>

@@ -25,18 +25,14 @@ div {
 }
 `
 
-export const RocketGIF = styled.img`
-    width: 200px;
-    heght: 200px;
-`
 export const RocketImg = styled.img `
     width: 90px;
 
 `
 export const YellowCircleImage = styled.img`
     position: absolute;
-    left: -20px;
-    top: 8px;
-    width: 90%;
+    left: -3px;
+    top: 20px;
+    width: 95%;
 `
 
