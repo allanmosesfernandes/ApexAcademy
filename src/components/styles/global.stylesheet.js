@@ -68,7 +68,11 @@ textarea,
 select {
   font: inherit;
 }
-
+a {
+  color: inherit;
+  text-decoration: none;
+  
+}
 `
 
 export default GlobalStyleSheet

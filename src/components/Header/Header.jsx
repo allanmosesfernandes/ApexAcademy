@@ -1,17 +1,23 @@
 import React from 'react'
-import { StyledHeader } from './header.styles'
+import { StyledHeader, LinksRIght } from './header.styles'
 import { Container } from '../styles/container.stylesheet'
 import GraduationCap from "../../assets/images/Grad.png";
-import ApexLogo from "../../assets/images/apex_logo.png";
-
+import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <StyledHeader>
-    <nav>
     <Container>
-    <h2><span>Apex</span> Academy</h2>
+        <nav>
+        <h2>
+            <Link to="/"><span>Apex </span> Academy</Link>
+        </h2>
+        <LinksRIght>
+        <Link to="/">About</Link>
+
+        </LinksRIght>
+        </nav>
     </Container>
-    </nav>
+
     </StyledHeader>
   )
 }
