@@ -1,7 +1,21 @@
 import { createGlobalStyle } from "styled-components";
+import NeueBold from "../../assets/fonts/NM-Regular.otf";
+import NeueExtraBold from "../../assets/fonts/NM-Ultra.otf";
 
 const GlobalStyleSheet = createGlobalStyle`
-
+  @font-face {
+    font-family: "Neue Bold";
+    src: url(${NeueBold}) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Neue ExtraBold";
+    src: url(${NeueExtraBold}) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
 *,
 *::before,
 *::after {

@@ -1,8 +1,7 @@
 import React from "react";
 // 1. Importing framer-motion
 import { motion } from "framer-motion";
-
-import "./Marquee.css";
+import { MarqueeStyled, Track, MarqueeText } from "./marquee.styles";
 
 // 2. Defining Variants
 const marqueeVariants = {
@@ -11,7 +10,7 @@ const marqueeVariants = {
     transition: {
       x: {
         repeat: Infinity,
-        duration: 50,
+        duration: 500,
         ease: "linear",
         repeatType: "loop",
       },
@@ -24,16 +23,15 @@ const marqueeVariants = {
 const Marquee = () => {
   return (
     <div>
-      <div className="marquee">
+      <MarqueeStyled>
                 {/* 3. Using framer motion */}
-        <motion.div
+        <Track
           className="track"
           variants={marqueeVariants}
-          animate="animate"
-        >
-          <h1>Our Values.Our Values.Our Values.Our Values.Our Values.Our Values.Our Values.Our Values.Our Values.Our Values.Our Values.Our Values.Our Values.Our Values.Our Values.</h1>
-        </motion.div>
-      </div>
+          animate="animate">
+          <MarqueeText>Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. </MarqueeText>
+        </Track>
+      </MarqueeStyled>
     </div>
   );
 };
