@@ -27,7 +27,6 @@ export const MarqueeStyled = styled.div`
 
 export const Track = styled(motion.div)`
   position: relative; /* set position to relative */
-
   
 `;
 
@@ -37,9 +36,8 @@ export const MarqueeText = styled.h1`
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #FFE900;
-  text-transform: uppercase;
+  text-transform: none;
   font-family: "Neue Bold";
-  font-style: italic;
   white-space: nowrap; /* remove white-space property */
   @media only screen and (max-width: 600px) {
     //code goes here
