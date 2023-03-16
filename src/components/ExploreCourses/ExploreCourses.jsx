@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Container from '../styles/container.stylesheet'
-import { ButtonContainer , DisplayCourse, ExploreCoursesSection} from './explorecourses.styles'
+import { ButtonContainer , DisplayCourse, ExploreCoursesSection,CourseBtn,CourseCardsContainer,CourseCard} from './explorecourses.styles'
 
 const ExploreCourses = () => {
 const [activeButton, setActiveButton] = useState(0);
@@ -10,34 +10,27 @@ const handleButtonClick = (index) => {
 };
   return (
 <Container>
-    <ExploreCoursesSection>
+<ExploreCoursesSection>
 <h2>Explore our courses</h2>
     <ButtonContainer>
-      <button onClick={() => handleButtonClick(0)} className={activeButton === 0 ? "active" : ""}>
-
-      </button>
-      <button onClick={() => handleButtonClick(1)} className={activeButton === 1 ? "active" : ""}>2</button>
-      <button onClick={() => handleButtonClick(2)} className={activeButton === 2 ? "active" : ""}>3</button>
+      <CourseBtn onClick={() => handleButtonClick(0)} className={activeButton === 0 ? "active" : ""}> FYJC & SYJC </CourseBtn>
+      <CourseBtn onClick={() => handleButtonClick(1)} className={activeButton === 1 ? "active" : ""}>BCOM</CourseBtn>
+      <CourseBtn onClick={() => handleButtonClick(2)} className={activeButton === 2 ? "active" : ""}>BAF</CourseBtn>
     </ButtonContainer>
     <DisplayCourse>
-      <div style={{ display: activeButton === 0 ? 'block' : 'none' }}>
-        <h2>this is what shows on button 1</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, voluptatum.
-        </p>
-      </div>
-      <div style={{ display: activeButton === 1 ? 'block' : 'none' }}>
-        <h2>this is what shows on button 2</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, voluptatum.
-        </p>
-      </div>
-      <div style={{ display: activeButton === 2 ? 'block' : 'none' }}>
-        <h2>this is what shows on button 3</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, voluptatum.
-        </p>
-      </div>
+
+      <CourseCardsContainer>
+        <CourseCard className={activeButton === 0 ? 'active' : '' }>
+            <h3>FYJC & SYJC</h3>
+        </CourseCard>
+        <CourseCard className={activeButton === 1 ? 'active' : '' }>
+            <h3>BCOM</h3>
+        </CourseCard>
+        <CourseCard className={activeButton === 2 ? 'active' : '' }>
+            <h3>BAF</h3>
+        </CourseCard>
+      </CourseCardsContainer>
+
     </DisplayCourse>
     </ExploreCoursesSection>
     
