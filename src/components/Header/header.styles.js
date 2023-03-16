@@ -55,7 +55,10 @@ position: relative;
             transform: scaleX(1);    
         }
     }
+@media only screen and (max-width: 600px) {
+  font-size: ${props => props.theme.fsxsmall};
 
+}
 }
 
 `

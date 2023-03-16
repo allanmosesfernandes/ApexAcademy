@@ -7,8 +7,10 @@ export const MarqueeStyled = styled.div`
   max-width: 100%;
   height: 206px;
   overflow-x: hidden;
+  
 @media only screen and (max-width: 600px) {
-  //code goes here
+    height: 100px;
+
 }
 `
 
@@ -20,12 +22,17 @@ export const Track = styled(motion.div)`
 export const MarqueeText = styled.h1`
   margin: 20px 0;
   font-size: 8rem;
-  font-family: Antonio;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #FFE900;
   text-transform: uppercase;
   font-family: "Neue Bold";
+
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    margin: 10px 0;
+    font-size: 6rem;
+  }
 `;
 
 

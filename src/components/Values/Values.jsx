@@ -20,7 +20,6 @@ const Values = () => {
     <>
     <Marquee />
         <Container>
-        <div>Values</div>
         <ValuesContainer>
         <ValueCard >
             <div className="values-inital">

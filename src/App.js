@@ -13,7 +13,8 @@ function App() {
     fsxl: "7.5rem",
     fslarge: "5rem",
     fsmedium: "3rem",
-    fssmall: "2rem"
+    fssmall: "2rem",
+    fsxsmall: "1.3rem"
   }
 
 
