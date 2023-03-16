@@ -3,10 +3,13 @@ import styled from "styled-components";
 export const ValuesContainer = styled.div `
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    gap: 2rem;
+    gap: 3rem;
+    margin-bottom: 3rem;
 
     @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;
+    margin-bottom: 1.5rem;
+    gap: 3rem
 }
 `
 
@@ -16,13 +19,13 @@ export const ValueCard = styled.div `
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
     h2 {
       font-size: ${(props) => props.theme.fsmedium};  
     }
     p {
         font-size: ${(props) => props.theme.fssmall};
     }
+
 }
 
 span {
@@ -43,12 +46,21 @@ transition: opacity .5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 img {
     margin: auto;
+
+    @media only screen and (max-width: 600px) {
+      //code goes here
+      width: 50px;
+    }
 }
 display: flex;
 flex-direction: column;
 aspect-ratio: 1;
+@media only screen and (max-width: 600px) {
+  aspect-ratio: inherit;
+}
 align-items: center;
 text-align: center;
+cursor: pointer;
 justify-content: center;
 background-color: #FFE900;
 margin: auto;
@@ -66,11 +78,14 @@ span {
 }
 
 @media only screen and (min-width: 600px) {
+
+
   &:hover {
 transform: translateY(-5%);
 
 .values-inital {
     opacity: 0;
+    
 } 
 span {
 opacity: 1;
