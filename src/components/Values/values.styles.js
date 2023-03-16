@@ -4,6 +4,10 @@ export const ValuesContainer = styled.div `
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+
+    @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+}
 `
 
 export const ValueCard = styled.div `
@@ -30,6 +34,8 @@ justify-content: center;
 background-color: #FFE900;
 margin: auto;
 padding: 3rem;
+width: 100%;
+height: 100%;
 gap: 2rem;
 position: relative;
 transition: all .5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
