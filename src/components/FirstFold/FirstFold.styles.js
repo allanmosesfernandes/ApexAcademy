@@ -4,10 +4,14 @@ import { Keyframes } from "styled-components";
 import CircleSVG from "../../assets/images/circle.svg"
 
 export const FirstFoldContainer = styled.section`
-display: flex;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 3rem;
 margin: 5rem 0 0 0;
 @media only screen and (max-width: 600px) {
-  flex-direction: column;
+  font-size: ${props => props.theme.fsmedium};
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 h2 {
     font-size: ${props => props.theme.fsxl};
@@ -19,9 +23,7 @@ h2 {
         color: #fff;
         position: relative;
     }
-@media only screen and (max-width: 600px) {
-  font-size: ${props => props.theme.fsmedium};
-}
+
 }
 
 `
@@ -39,19 +41,28 @@ export const RocketImg = styled.img `
     }
 
 `
-export const YellowCircleImage = styled.img`
+export const YellowCircleImage = styled.h2`
+&:after {
+    content: "";
+    background-image: url(${CircleSVG});
+    left: -35px;
+    top: 3%;
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 80%;
+    background-size: contain;
     position: absolute;
-    left: -5%;
-    top: 10%;
-    width: 95%;
-    @media only screen and (max-width: 600px) {
-      width: 200px;
-    }
+}
 `
 
 export const FirstFoldRight = styled.div`
 display: flex;
 margin: auto;
-
-
 ` 
+
+export const BodyCopy = styled.p`
+color: #fff;
+line-height: 1.5;
+margin: 2rem 0;
+font-size: ${(props) => props.theme.fssmall}
+`
