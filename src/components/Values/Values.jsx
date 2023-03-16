@@ -6,6 +6,7 @@ import { ValuesContainer, ValueCard, PurpleToggle } from './values.styles';
 import PurplePlus from "../../assets/images/principles/purpleplus.svg";
 import Evolve from "../../assets/images/principles/evolving.svg";
 import Getter from "../../assets/images/principles/go-getter.svg";
+import Marquee from '../Marquee/Marquee'
 
 const Values = () => {
 
@@ -16,7 +17,9 @@ const Values = () => {
     };
 
   return (
-    <Container>
+    <>
+    <Marquee />
+        <Container>
         <div>Values</div>
         <ValuesContainer>
         <ValueCard >
@@ -54,6 +57,8 @@ const Values = () => {
         </ValueCard>
         </ValuesContainer>
     </Container>
+
+    </>
 
   )
 }

@@ -7,7 +7,6 @@ import { RocketImg } from './FirstFold.styles'
 import  Grads  from "../../assets/images/hero.png";
 import Lottie from "lottie-react";
 import groovy from "../../assets/images/animation.json"
-
 const FirstFold = () => {
   return (
     <Container>
