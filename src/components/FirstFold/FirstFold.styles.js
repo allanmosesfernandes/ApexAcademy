@@ -12,7 +12,7 @@ margin: 5rem 0 0 0;
   font-size: ${props => props.theme.fsmedium};
   grid-template-columns: 1fr;
   gap: 1rem;
-  margin: 2rem 0 0 0;
+  margin: 1rem 0 0 0;
 }
 h2 {
     font-size: ${props => props.theme.fsxl};
@@ -68,6 +68,14 @@ export const YellowCircleImage = styled.h2`
 export const FirstFoldRight = styled.div`
 display: flex;
 margin: auto;
+
+@media only screen and (max-width: 600px) {
+  //code goes here
+  .lottie1 {
+    margin: -5rem 0;
+}
+}
+
 ` 
 
 export const BodyCopy = styled.p`
@@ -79,7 +87,7 @@ export const BodyCopy = styled.p`
   /* Regular styles */
 
   @media screen and (max-width: 600px) {
-    font-size: 1rem;
+    font-size: ${(props) => props.theme.fsxsmall};
     /* Styles for screens smaller than 600px */
   }
 `

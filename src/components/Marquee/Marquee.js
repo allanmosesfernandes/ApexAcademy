@@ -1,7 +1,7 @@
 import React from "react";
 // 1. Importing framer-motion
 import { motion } from "framer-motion";
-import { MarqueeStyled, Track, MarqueeText } from "./marquee.styles";
+import { MarqueeStyled,MarqueeContainer, Track, MarqueeText } from "./marquee.styles";
 
 // 2. Defining Variants
 const marqueeVariants = {
@@ -10,7 +10,7 @@ const marqueeVariants = {
     transition: {
       x: {
         repeat: Infinity,
-        duration: 500,
+        duration: 20,
         ease: "linear",
         repeatType: "loop",
       },
@@ -22,17 +22,17 @@ const marqueeVariants = {
 
 const Marquee = () => {
   return (
-    <div>
+    <MarqueeContainer>
       <MarqueeStyled>
                 {/* 3. Using framer motion */}
         <Track
           className="track"
           variants={marqueeVariants}
           animate="animate">
-          <MarqueeText>Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. Our Values. </MarqueeText>
+          <MarqueeText>Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. Apex Values. </MarqueeText>
         </Track>
       </MarqueeStyled>
-    </div>
+    </MarqueeContainer>
   );
 };
 

@@ -23,7 +23,7 @@ const FirstFold = () => {
           </div>
           </FirstFoldLeftDiv>
           <FirstFoldRight>
-            <Lottie animationData={groovy} loop={true} />
+            <Lottie animationData={groovy} loop={true} className="lottie1"/>
           </FirstFoldRight>
         </FirstFoldContainer>
     </Container>
