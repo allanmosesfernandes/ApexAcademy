@@ -34,12 +34,24 @@ div {
 
 export const RocketImg = styled.img `
     width: 90px;
+    @media only screen and (max-width: 600px) {
+      width: 50px;
+    }
 
 `
 export const YellowCircleImage = styled.img`
     position: absolute;
-    left: -3px;
-    top: 20px;
+    left: -5%;
+    top: 10%;
     width: 95%;
+    @media only screen and (max-width: 600px) {
+      width: 200px;
+    }
 `
 
+export const FirstFoldRight = styled.div`
+display: flex;
+margin: auto;
+
+
+` 

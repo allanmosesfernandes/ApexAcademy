@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from '../styles/container.stylesheet'
-import { FirstFoldContainer, FirstFoldLeftDiv, RocketGIF, YellowCircleImage } from './FirstFold.styles'
+import { FirstFoldContainer, FirstFoldLeftDiv, FirstFoldRight, YellowCircleImage } from './FirstFold.styles'
 import Rocket from "../../assets/images/rocket.png"
 import CircleSVG from "../../assets/images/circle.svg"
 import { RocketImg } from './FirstFold.styles'
@@ -20,10 +20,9 @@ const FirstFold = () => {
           </div>
           
           </FirstFoldLeftDiv>
-          <div className="first-fold-right">
-            {/* <img src={Grads} alt=""/> */}
+          <FirstFoldRight>
             <Lottie animationData={groovy} loop={true} />
-          </div>
+          </FirstFoldRight>
         </FirstFoldContainer>
     </Container>
   )
