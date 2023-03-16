@@ -17,6 +17,8 @@ const marqueeVariants = {
       delay: 1, // add a delay of 1 second between loops
     },
   },
+
+  
 };
 
 

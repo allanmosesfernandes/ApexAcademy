@@ -27,6 +27,8 @@ export const MarqueeStyled = styled.div`
 
 export const Track = styled(motion.div)`
   position: relative; /* set position to relative */
+
+  
 `;
 
 export const MarqueeText = styled.h1`
