@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyledHeader, LinksRIght } from './header.styles'
-import { Container } from '../styles/container.stylesheet'
+import  Container  from '../styles/container.stylesheet'
 import GraduationCap from "../../assets/images/Grad.png";
 import { Link } from 'react-router-dom';
 const Header = () => {

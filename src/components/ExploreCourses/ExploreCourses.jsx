@@ -1,8 +1,10 @@
 import React from 'react'
-
+import Container from '../styles/container.stylesheet'
 const ExploreCourses = () => {
   return (
-    <div>ExploreCourses</div>
+    <Container>
+        <h2>Explore</h2>
+    </Container>
   )
 }
 

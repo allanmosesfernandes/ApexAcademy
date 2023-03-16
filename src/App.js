@@ -3,7 +3,7 @@ import Header from "./components/Header/Header";
 import { ThemeProvider } from "styled-components";
 import FirstFold from "./components/FirstFold/FirstFold";
 import Values from "./components/Values/Values"
-
+import ExploreCourses from "./components/ExploreCourses/ExploreCourses";
 
 function App() {
 
@@ -26,8 +26,8 @@ function App() {
     <div className="App">
       <Header />
       <FirstFold />
-    <Values />
-
+      <Values />
+      <ExploreCourses />
     </div>
     </ThemeProvider>
     </>

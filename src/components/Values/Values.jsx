@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { Container } from '../styles/container.stylesheet'
+import  Container  from '../styles/container.stylesheet'
 import Collab from "../../assets/images/collaborative.svg";
 import { ValuesContainer, ValueCard, PurpleToggle } from './values.styles';
 import PurplePlus from "../../assets/images/principles/purpleplus.svg";
