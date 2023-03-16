@@ -9,6 +9,11 @@ export const MarqueeContainer = styled.div`
   width: 100%; /* set a fixed width */
   position: relative;
   margin: 5rem 0;
+
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    height: 120px;
+  }
 `;
 
 export const MarqueeStyled = styled.div`

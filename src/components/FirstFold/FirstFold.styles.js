@@ -8,12 +8,16 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 3rem;
 margin: 5rem 0 0 0;
+height: 90vh;
+
 @media only screen and (max-width: 600px) {
   font-size: ${props => props.theme.fsmedium};
   grid-template-columns: 1fr;
   gap: 1rem;
   margin: 1rem 0 0 0;
+  height: auto;
 }
+
 h2 {
     font-size: ${props => props.theme.fsxl};
     line-height: 1.2;
@@ -25,7 +29,7 @@ h2 {
         position: relative;
     }
     @media only screen and (max-width: 600px) {
-        font-size: ${props => props.theme.fslarge};
+        font-size: 4rem;
     }
 }
 
@@ -73,6 +77,7 @@ margin: auto;
   //code goes here
   .lottie1 {
     margin: -5rem 0;
+    max-width: 300px;
 }
 }
 
