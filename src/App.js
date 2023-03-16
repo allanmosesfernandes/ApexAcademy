@@ -26,8 +26,8 @@ function App() {
     <div className="App">
       <Header />
       <FirstFold />
-      <Values />
       <ExploreCourses />
+      <Values />
     </div>
     </ThemeProvider>
     </>

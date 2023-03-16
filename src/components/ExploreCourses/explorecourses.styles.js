@@ -2,12 +2,14 @@ import styled from "styled-components";
 
 
 export const ExploreCoursesSection = styled.section`
+margin: 4rem 0 0 0;
 h2 {
     font-size: ${(props) => props.theme.fsxl};
     font-family: "Neue Bold";
     color: #fff;
 }
 @media only screen and (max-width: 600px) {
+    margin: 5rem 0 0 0;
   h2 {
     font-size: 4rem;
   }
@@ -26,6 +28,10 @@ color: #000;
 font-size: 2rem;
 transition: all 0.3s ease;
 
+@media only screen and (max-width: 600px) {
+    font-size: 1.2rem;
+    padding: 1rem;
+}
 &:hover, 
 &:active,
 &:focus {
@@ -50,7 +56,7 @@ p {
 
 export const CourseCardsContainer = styled.div`
 position: relative;
-
+min-height: 200px;
 `
 
 export const CourseCard = styled.div`
@@ -62,7 +68,7 @@ transition: all .5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 
 &.active {
     opacity: 1;
-    
+
 }
 `
 
