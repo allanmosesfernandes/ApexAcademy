@@ -111,7 +111,9 @@ button:active {
     transform: scale(0.99);
 }
 
-
+body {
+  background-color: ${(props) => props.theme.themeColor}
+}
 `
 
 export default GlobalStyleSheet

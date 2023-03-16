@@ -12,10 +12,11 @@ margin: 5rem 0 0 0;
 h2 {
     font-size: ${props => props.theme.fsxl};
     line-height: 1.2;
+    color: #fff;
     display: flex;
     gap: 2rem;
     span {
-        color: ${props => props.theme.primaryColor};
+        color: #fff;
         position: relative;
     }
 @media only screen and (max-width: 600px) {

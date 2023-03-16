@@ -12,7 +12,7 @@ h2 {
 
     span {
         position: relative;
-        color: ${props => props.theme.primaryColor};
+        color: #fff;
         font-weight: 800;
     }
 
@@ -33,7 +33,7 @@ display: flex;
 gap: 2rem;
 
 a {
-color: ${props => props.theme.primaryColor};
+color: #fff;
 font-size: ${props => props.theme.fssmall};
 
 position: relative;

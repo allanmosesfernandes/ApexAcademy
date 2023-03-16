@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const ValuesContainer = styled.div `
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 2rem;
 
     @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;
@@ -12,6 +12,24 @@ export const ValuesContainer = styled.div `
 
 export const ValueCard = styled.div `
 
+.values-inital {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    h2 {
+      font-size: ${(props) => props.theme.fsmedium};  
+    }
+    p {
+        font-size: ${(props) => props.theme.fssmall};
+    }
+}
+
+span {
+    font-size: ${(props) => props.theme.fssmall};
+        padding: 3rem;
+
+}
 &.active {
 .values-inital {
     transition: opacity .5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
@@ -28,6 +46,7 @@ img {
 }
 display: flex;
 flex-direction: column;
+aspect-ratio: 1;
 align-items: center;
 text-align: center;
 justify-content: center;

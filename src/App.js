@@ -9,6 +9,7 @@ function App() {
 
   const theme = {
     primaryColor: "#FF7700",
+    themeColor: "#FF0042",
     fsxl: "7.5rem",
     fslarge: "5rem",
     fsmedium: "3rem",
@@ -22,10 +23,10 @@ function App() {
     <ThemeProvider theme={theme}>
     <GlobalStyleSheet />
     <div className="App">
-      {/* <Header />
-      <FirstFold /> */}
+      <Header />
+      <FirstFold />
     <Values />
-      
+
     </div>
     </ThemeProvider>
     </>
