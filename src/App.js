@@ -2,6 +2,9 @@ import GlobalStyleSheet from "./components/styles/global.stylesheet";
 import Header from "./components/Header/Header";
 import { ThemeProvider } from "styled-components";
 import FirstFold from "./components/FirstFold/FirstFold";
+import Values from "./components/Values/Values"
+
+
 function App() {
 
   const theme = {
@@ -19,8 +22,10 @@ function App() {
     <ThemeProvider theme={theme}>
     <GlobalStyleSheet />
     <div className="App">
-      <Header />
-      <FirstFold />
+      {/* <Header />
+      <FirstFold /> */}
+    <Values />
+      
     </div>
     </ThemeProvider>
     </>
