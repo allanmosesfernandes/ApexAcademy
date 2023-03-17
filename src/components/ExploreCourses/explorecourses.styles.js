@@ -18,6 +18,9 @@ margin: 5rem 0 0 0;
 export const ButtonContainer = styled.div `
 display: flex;
 gap: 1rem;
+flex-wrap: wrap;
+margin: 2rem 0;
+
 `
 
 export const CourseBtn = styled.button `
@@ -29,7 +32,7 @@ transition: all 0.3s ease;
 
 @media only screen and (max-width: 600px) {
     font-size: 1.2rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 &:hover, 
 &:active,
@@ -55,7 +58,11 @@ p {
 
 export const CourseCardsContainer = styled.div `
 position: relative;
-min-height: 200px;
+min-height: 300px;
+
+@media only screen and (max-width: 600px) {
+  min-height: 600px;
+}
 `
 
 export const CourseCard = styled.div `
@@ -76,7 +83,6 @@ export const CourseCardFlexContainer = styled.div `
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  justify-content: space-evenly;
 `;
 
 export const CourseCardDetails = styled.div `
@@ -90,12 +96,22 @@ export const CourseCardDetails = styled.div `
   width: 200px;
   border-radius: 5px;
 color: white;
-border: 1px solid white;
+    border: 1px solid white;
   img {
     width: 50px;
     height: 50px;
     object-fit: cover;
     margin-bottom: 1rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 150px;
+    padding: 1.5rem;
+    justify-content: space-evenly;
+    img {
+    width: 30px;
+    height: 30px;
+    }
   }
 
   p {

@@ -20,7 +20,7 @@ const [activeButton, setActiveButton] = useState(0);
                     image: Stats
                 },
                 {
-                    name: "S.P",
+                    name: "Secretarial Practice",
                     image: Retail
                 },
                 {
@@ -32,7 +32,7 @@ const [activeButton, setActiveButton] = useState(0);
                     image: Coins
                 },
                 {
-                    name: "Book-Keeping and Accountancy",
+                    name: "Book-Keeping & Accountancy",
                     image: Ruppee
                 },
             ]
@@ -114,8 +114,8 @@ const handleButtonClick = (index) => {
         <CourseCardFlexContainer>
             {
                 courseDetails.filter((course) => course.courseTitle === "FYJC")
-                .map((course) => course.subjects.map((subject) => (
-                    <CourseCardDetails>
+                .map((course) => course.subjects.map((subject, index) => (
+                    <CourseCardDetails key={index}>
                         <img src={subject.image} alt={subject.name} />
                         <p>{subject.name}</p>
                     </CourseCardDetails>)))
@@ -126,8 +126,8 @@ const handleButtonClick = (index) => {
         <CourseCardFlexContainer>
             {
                 courseDetails.filter((course) => course.courseTitle === "SYJC")
-                .map((course) => course.subjects.map((subject) => (
-                    <CourseCardDetails>
+                .map((course) => course.subjects.map((subject, index) => (
+                    <CourseCardDetails key={index}>
                         <img src={subject.image} alt={subject.name} />
                         <p>{subject.name}</p>
                     </CourseCardDetails>)))
@@ -138,8 +138,8 @@ const handleButtonClick = (index) => {
         <CourseCardFlexContainer>
             {
                 courseDetails.filter((course) => course.courseTitle === "FYJC")
-                .map((course) => course.subjects.map((subject) => (
-                    <CourseCardDetails>
+                .map((course) => course.subjects.map((subject, index) => (
+                    <CourseCardDetails key={index}>
                         <img src={subject.image} alt={subject.name} />
                         <p>{subject.name}</p>
                     </CourseCardDetails>)))
