@@ -1,6 +1,9 @@
 import React from 'react'
 import Container from '../styles/container.stylesheet'
 import { TestimonialDiv } from './testimonials.styles'
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Testimonials = () => {
   return (
