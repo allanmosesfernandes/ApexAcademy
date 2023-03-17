@@ -3,17 +3,6 @@ import styled from "styled-components";
 
 export const ExploreCoursesSection = styled.section `
 margin: 4rem 0 0 0;
-h2 {
-    font-size: ${(props) => props.theme.fsxl};
-    font-family: "Neue Bold";
-    color: #fff;
-}
-@media only screen and (max-width: 600px) {
-margin: 5rem 0 0 0;
-  h2 {
-    font-size: 4rem;
-  }
-}
 `
 export const ButtonContainer = styled.div `
 display: flex;
@@ -95,7 +84,7 @@ export const CourseCardDetails = styled.div `
   padding: 2.5rem;
   width: 200px;
   border-radius: 20px;
-color: #000;
+  color: #000;
   background-color:#A9A9A9;
 
  &:hover {

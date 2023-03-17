@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components";
 import FirstFold from "./components/FirstFold/FirstFold";
 import Values from "./components/Values/Values"
 import ExploreCourses from "./components/ExploreCourses/ExploreCourses";
+import Testimonials from "./components/Testimonials/Testimonials";
 
 function App() {
   const theme = {
@@ -26,6 +27,7 @@ function App() {
       <FirstFold />
       <ExploreCourses />
       <Values />
+      <Testimonials />
     </div>
     </ThemeProvider>
     </>
