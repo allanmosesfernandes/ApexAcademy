@@ -41,7 +41,7 @@ const [activeButton, setActiveButton] = useState(0);
             courseTitle: "SYJC",
             subjects: [
                 {
-                    name: "Mathematics and Statistics",
+                    name: "Statistics",
                     image: Stats
                 },
                 {
@@ -66,7 +66,7 @@ const [activeButton, setActiveButton] = useState(0);
             courseTitle: "FYBCOM",
             subjects: [
                 {
-                    name: "Mathematics and Statistics",
+                    name: "Mathematics",
                     image: Stats
                 },
                 {
@@ -102,10 +102,10 @@ const handleButtonClick = (index) => {
       <CourseBtn onClick={() => handleButtonClick(0)} className={activeButton === 0 ? "active" : ""}> FYJC </CourseBtn>
       <CourseBtn onClick={() => handleButtonClick(1)} className={activeButton === 1 ? "active" : ""}>SYJC</CourseBtn>
       <CourseBtn onClick={() => handleButtonClick(2)} className={activeButton === 2 ? "active" : ""}>FYBCOM</CourseBtn>
-      <CourseBtn onClick={() => handleButtonClick(2)} className={activeButton === 2 ? "active" : ""}>SYBCOM</CourseBtn>
-      <CourseBtn onClick={() => handleButtonClick(2)} className={activeButton === 2 ? "active" : ""}>TYBCOM</CourseBtn>
-      <CourseBtn onClick={() => handleButtonClick(2)} className={activeButton === 2 ? "active" : ""}>FYBCOM</CourseBtn>
-      <CourseBtn onClick={() => handleButtonClick(2)} className={activeButton === 2 ? "active" : ""}>FYBCOM</CourseBtn>
+      <CourseBtn onClick={() => handleButtonClick(3)} className={activeButton === 3 ? "active" : ""}>SYBCOM</CourseBtn>
+      <CourseBtn onClick={() => handleButtonClick(4)} className={activeButton === 2 ? "active" : ""}>TYBCOM</CourseBtn>
+      <CourseBtn onClick={() => handleButtonClick(5)} className={activeButton === 2 ? "active" : ""}>FYBCOM</CourseBtn>
+      <CourseBtn onClick={() => handleButtonClick(6)} className={activeButton === 2 ? "active" : ""}>FYBCOM</CourseBtn>
     </ButtonContainer>
     <DisplayCourse>
 
@@ -135,6 +135,18 @@ const handleButtonClick = (index) => {
         </CourseCardFlexContainer>
         </CourseCard>
         <CourseCard className={activeButton === 2 ? 'active' : '' }>
+        <CourseCardFlexContainer>
+            {
+                courseDetails.filter((course) => course.courseTitle === "FYBCOM")
+                .map((course) => course.subjects.map((subject, index) => (
+                    <CourseCardDetails key={index}>
+                        <img src={subject.image} alt={subject.name} />
+                        <p>{subject.name}</p>
+                    </CourseCardDetails>)))
+            }
+        </CourseCardFlexContainer>
+        </CourseCard>
+        <CourseCard className={activeButton === 3 ? 'active' : '' }>
         <CourseCardFlexContainer>
             {
                 courseDetails.filter((course) => course.courseTitle === "FYJC")
