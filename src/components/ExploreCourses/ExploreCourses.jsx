@@ -13,21 +13,36 @@ const handleButtonClick = (index) => {
 <ExploreCoursesSection>
 <h2>Explore our courses</h2>
     <ButtonContainer>
-      <CourseBtn onClick={() => handleButtonClick(0)} className={activeButton === 0 ? "active" : ""}> FYJC & SYJC </CourseBtn>
-      <CourseBtn onClick={() => handleButtonClick(1)} className={activeButton === 1 ? "active" : ""}>BCOM</CourseBtn>
+      <CourseBtn onClick={() => handleButtonClick(0)} className={activeButton === 0 ? "active" : ""}> FYJC </CourseBtn>
+      <CourseBtn onClick={() => handleButtonClick(1)} className={activeButton === 1 ? "active" : ""}>SYJC</CourseBtn>
       <CourseBtn onClick={() => handleButtonClick(2)} className={activeButton === 2 ? "active" : ""}>BAF</CourseBtn>
     </ButtonContainer>
     <DisplayCourse>
 
       <CourseCardsContainer>
         <CourseCard className={activeButton === 0 ? 'active' : '' }>
-            <h3>FYJC & SYJC</h3>
+            <div className="course-card-flex-container">
+                <div className="course-card-pill">
+                    <img src="" alt="" />
+                    <h4>Book-Keeping and Accountancy</h4>
+                </div>
+            </div>
         </CourseCard>
         <CourseCard className={activeButton === 1 ? 'active' : '' }>
-            <h3>BCOM</h3>
+            <div className="course-card-flex-container">
+                <div className="course-card-pill">
+                    <img src="" alt="" />
+                    <h4>Book-Keeping and Accountancy</h4>
+                </div>
+            </div>
         </CourseCard>
         <CourseCard className={activeButton === 2 ? 'active' : '' }>
-            <h3>BAF</h3>
+            <div className="course-card-flex-container">
+                <div className="course-card-pill">
+                    <img src="" alt="" />
+                    <h4>Book-Keeping and Accountancy</h4>
+                </div>
+            </div>
         </CourseCard>
       </CourseCardsContainer>
 

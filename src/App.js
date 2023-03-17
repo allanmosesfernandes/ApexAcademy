@@ -6,7 +6,6 @@ import Values from "./components/Values/Values"
 import ExploreCourses from "./components/ExploreCourses/ExploreCourses";
 
 function App() {
-
   const theme = {
     primaryColor: "#FF7700",
     themeColor: "#FF0042",
@@ -16,7 +15,6 @@ function App() {
     fssmall: "2rem",
     fsxsmall: "1.3rem"
   }
-
 
   return (
 
