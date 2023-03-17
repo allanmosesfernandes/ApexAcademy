@@ -94,9 +94,16 @@ export const CourseCardDetails = styled.div `
   gap: 1rem;
   padding: 2.5rem;
   width: 200px;
-  border-radius: 5px;
-color: white;
-    border: 1px solid white;
+  border-radius: 20px;
+color: #000;
+  background-color:#A9A9A9;
+
+ &:hover {
+    .CourseCardDetails {
+      transform: scale(1.02);
+    }
+  }
+
   img {
     width: 50px;
     height: 50px;
