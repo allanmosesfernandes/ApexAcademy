@@ -98,6 +98,9 @@ const handleButtonClick = (index) => {
 <Container>
 <ExploreCoursesSection>
 <h2>Explore our courses</h2>
+<p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum et quae, modi corrupti animi obcaecati est aliquam accusamus expedita voluptate.
+</p>
     <ButtonContainer>
       <CourseBtn onClick={() => handleButtonClick(0)} className={activeButton === 0 ? "active" : ""}> FYJC </CourseBtn>
       <CourseBtn onClick={() => handleButtonClick(1)} className={activeButton === 1 ? "active" : ""}>SYJC</CourseBtn>

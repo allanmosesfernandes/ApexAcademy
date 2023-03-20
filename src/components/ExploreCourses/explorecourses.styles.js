@@ -1,8 +1,21 @@
 import styled from "styled-components";
 
-
 export const ExploreCoursesSection = styled.section `
 margin: 4rem 0 0 0;
+h2 {
+  color: ${(props) => props.theme.primaryColor};
+}
+
+p {
+  font-size: ${(props) => props.theme.fssmall};
+  width: 75%;
+}
+@media only screen and (max-width: 600px) {
+  p {
+  font-size: ${(props) => props.theme.fsxsmall};
+  width: 100%;
+}
+}
 `
 export const ButtonContainer = styled.div `
 display: flex;
@@ -13,9 +26,9 @@ margin: 2rem 0;
 `
 
 export const CourseBtn = styled.button `
-border-radius: 20px;
-background-color: #FFE900;
-color: #000;
+border-radius: 10px;
+background-color: ${(props) => props.theme.primaryColor};
+color: #fff;
 font-size: 2rem;
 transition: all 0.3s ease;
 
@@ -26,7 +39,7 @@ transition: all 0.3s ease;
 &:hover, 
 &:active,
 &:focus {
-    background-color: #FFC233;
+    background-color: #616fff;
 }
 `
 export const DisplayCourse = styled.div `
@@ -85,7 +98,7 @@ export const CourseCardDetails = styled.div `
   width: 200px;
   border-radius: 20px;
   color: #000;
-  background-color:#A9A9A9;
+  background-color: ${(props) => props.theme.secondaryColor};
 
  &:hover {
     .CourseCardDetails {
