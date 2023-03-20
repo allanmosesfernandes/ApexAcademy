@@ -15,9 +15,16 @@ var settings = {
   return (
     <Slider {...settings}>
       <SliderDiv>
-        <p>
-            Lorem
+        <div className="review-content">
+                  <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia nam tempora debitis assumenda eius voluptates ut aspernatur alias, veritatis, temporibus aut similique perferendis modi dolorum corporis doloribus repellat tempore.
         </p>
+        <span>Stars * 5</span>
+        <img></img>
+        <p>Sarah Taylore</p>
+        <p>FYJC BCOM</p>
+        </div>
+
       </SliderDiv>
       <SliderDiv>
         <h3>2</h3>

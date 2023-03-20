@@ -7,8 +7,9 @@ import SliderReviews from '../SliderReviews/SliderReviews'
 const Testimonials = () => {
   return (
     <Container>
-      <h2>Testimonials </h2>
+      
       <TestimonialDiv>
+        <h2>Testimonials </h2>
         <p>See what our students say</p>
         <SliderReviews />
       </TestimonialDiv>
