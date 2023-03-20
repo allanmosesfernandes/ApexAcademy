@@ -129,10 +129,3 @@ export const CourseCardDetails = styled.div `
     margin: 0;
   }
 `;
-
-
-export const ReviewContent = styled.div`
-padding: 2rem;
-
-
-`

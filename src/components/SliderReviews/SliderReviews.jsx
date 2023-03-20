@@ -3,6 +3,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { StyledSlider, SliderDiv } from './slider.styles';
+import { ReviewContent } from '../Testimonials/testimonials.styles';
+
 
 const SliderReviews = () => {
 var settings = {
@@ -15,7 +17,7 @@ var settings = {
   return (
     <Slider {...settings}>
       <SliderDiv>
-        <div className="review-content">
+        <ReviewContent>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia nam tempora debitis assumenda eius voluptates ut aspernatur alias, veritatis, temporibus aut similique perferendis modi dolorum corporis doloribus repellat tempore.
         </p>
@@ -23,7 +25,7 @@ var settings = {
         <img></img>
         <p>Sarah Taylore</p>
         <p>FYJC BCOM</p>
-        </div>
+        </ReviewContent>
 
       </SliderDiv>
       <SliderDiv>

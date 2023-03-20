@@ -10,3 +10,16 @@ p {
     color: #000;
 }
 `
+export const ReviewContent = styled.div`
+padding: 2rem;
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+p {
+    font-size: ${(props) => props.theme.fssmall}
+}
+
+span {
+    font-size: ${(props) => props.theme.fsmedium}
+}
+`
