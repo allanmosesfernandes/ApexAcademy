@@ -2,6 +2,8 @@ import React from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { StyledSlider, SliderDiv } from './slider.styles';
+
 const SliderReviews = () => {
 var settings = {
     dots: true,
@@ -12,24 +14,26 @@ var settings = {
   };
   return (
     <Slider {...settings}>
-      <div>
-        <h3>1</h3>
-      </div>
-      <div>
+      <SliderDiv>
+        <p>
+            Lorem
+        </p>
+      </SliderDiv>
+      <SliderDiv>
         <h3>2</h3>
-      </div>
-      <div>
+      </SliderDiv>
+      <SliderDiv>
         <h3>3</h3>
-      </div>
-      <div>
+      </SliderDiv>
+      <SliderDiv>
         <h3>4</h3>
-      </div>
-      <div>
+      </SliderDiv>
+      <SliderDiv>
         <h3>5</h3>
-      </div>
-      <div>
+      </SliderDiv>
+      <SliderDiv>
         <h3>6</h3>
-      </div>
+      </SliderDiv>
     </Slider>
   )
 }

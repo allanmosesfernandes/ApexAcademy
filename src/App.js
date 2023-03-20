@@ -8,8 +8,9 @@ import Testimonials from "./components/Testimonials/Testimonials";
 
 function App() {
   const theme = {
-    primaryColor: "#FF7700",
-    themeColor: "#FF0042",
+    primaryColor: "#4353FF",
+    secondaryColor: "#F3F3F3",
+    themeColor: "#FFFFFF",
     fsxl: "7.5rem",
     fslarge: "5rem",
     fsmedium: "3rem",

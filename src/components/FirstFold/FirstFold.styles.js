@@ -21,7 +21,7 @@ height: 90vh;
 h2 {
     font-size: ${props => props.theme.fsxl};
     line-height: 1.2;
-    color: #fff;
+    color: ${(props) => props.theme.primaryColor};
     display: flex;
     gap: 2rem;
     span {
@@ -53,10 +53,10 @@ export const YellowCircleImage = styled.h2`
     content: "";
     background-image: url(${CircleSVG});
     left: -35px;
-    top: 3%;
+    top: 25px;
     height: 100%;
     background-repeat: no-repeat;
-    width: 80%;
+    width: 350px;
     background-size: contain;
     position: absolute;
 }
@@ -84,7 +84,7 @@ margin: auto;
 ` 
 
 export const BodyCopy = styled.p`
-  color: #fff;
+  color: #000;
   line-height: 1.5;
   margin: 2rem 0;
   font-size: ${(props) => props.theme.fssmall};
