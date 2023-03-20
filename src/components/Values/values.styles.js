@@ -1,11 +1,14 @@
 import styled from "styled-components";
 
 export const ValuesContainer = styled.div `
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    display: flex;
+    flex-direction: column;
     gap: 3rem;
     margin-bottom: 3rem;
-
+   h2 {
+    color: ${(props) => props.theme.primaryColor};
+    text-align: center;
+   }
     @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;
     margin-bottom: 1.5rem;
