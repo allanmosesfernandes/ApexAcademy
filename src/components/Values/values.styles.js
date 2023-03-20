@@ -110,3 +110,26 @@ transition: all 0.3s ease;
 
 
 `
+
+export const Approach__container = styled.div`
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2rem;
+margin: 2rem 0;
+img {
+  width: 80%;
+  margin: auto;
+}
+span {
+    font-size: ${(props) => props.theme.fsxsmall};
+}
+
+h4 {
+    font-size: ${(props) => props.theme.fslarge};
+}
+
+p{
+    font-size: ${(props) => props.theme.fssmall};
+
+}
+`

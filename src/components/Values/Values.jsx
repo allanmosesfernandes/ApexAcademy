@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import  Container  from '../styles/container.stylesheet'
 import Collab from "../../assets/images/collaborative.svg";
-import { ValuesContainer, ValueCard, PurpleToggle } from './values.styles';
+import { ValuesContainer, ValueCard, PurpleToggle, Approach__container } from './values.styles';
 import PurplePlus from "../../assets/images/principles/purpleplus.svg";
 import Evolve from "../../assets/images/principles/evolving.svg";
 import Getter from "../../assets/images/principles/go-getter.svg";
@@ -24,13 +24,49 @@ const Values = () => {
         <Container>
         <ValuesContainer>
             <h2>This is how we approach learning together</h2>
-            <div className="approach__container">
+            <Approach__container>
                 <div className="approach_div_left">
                     <div className="approach__img">
                         <img src={Reason1} alt="Reason one"/>
                     </div>
                 </div>
-            </div>
+                <div className="approach_div_right">
+                   <span className="number-small">01 - Strategy</span>
+                   <h4>think big thanks to an in-depth analysis.</h4>
+                   <p className="body-copy">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum nesciunt assumenda rerum nulla ullam, sit quia beatae velit molestiae saepe.
+                   </p>
+                </div>
+            </Approach__container>
+            <Approach__container>
+                <div className="approach_div_right">
+                   <span className="number-small">02 - Strategy</span>
+                   <h4>think big thanks to an in-depth analysis.</h4>
+                   <p className="body-copy">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum nesciunt assumenda rerum nulla ullam, sit quia beatae velit molestiae saepe.
+                   </p>
+                </div>
+                <div className="approach_div_left">
+                    <div className="approach__img">
+                        <img src={Reason2} alt="Reason one"/>
+                    </div>
+                </div>
+
+            </Approach__container>
+            <Approach__container>
+                <div className="approach_div_left">
+                    <div className="approach__img">
+                        <img src={Reason3} alt="Reason one"/>
+                    </div>
+                </div>
+                <div className="approach_div_right">
+                   <span className="number-small">03 - Strategy</span>
+                   <h4>think big thanks to an in-depth analysis.</h4>
+                   <p className="body-copy">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum nesciunt assumenda rerum nulla ullam, sit quia beatae velit molestiae saepe.
+                   </p>
+                </div>
+            </Approach__container>
         {/* <ValueCard >
             <div className="values-inital">
                 <img src={ Collab } alt="collaboration" />
