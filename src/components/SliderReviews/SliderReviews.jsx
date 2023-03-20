@@ -16,10 +16,10 @@ var settings = {
     <Slider {...settings}>
       <SliderDiv>
         <div className="review-content">
-                  <p>
+        <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia nam tempora debitis assumenda eius voluptates ut aspernatur alias, veritatis, temporibus aut similique perferendis modi dolorum corporis doloribus repellat tempore.
         </p>
-        <span>Stars * 5</span>
+        <span>⭐⭐⭐⭐⭐</span>
         <img></img>
         <p>Sarah Taylore</p>
         <p>FYJC BCOM</p>
