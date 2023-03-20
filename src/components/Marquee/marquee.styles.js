@@ -1,15 +1,13 @@
 import styled from "styled-components";
 import { motion } from 'framer-motion';
 
-
 export const MarqueeContainer = styled.div`
-  border-top: 5px solid #fff;
-  border-bottom: 5px solid #fff;
+
   height: 150px; /* set a fixed height */
   width: 100%; /* set a fixed width */
   position: relative;
   margin: 5rem 0;
-
+  background: ${(props) => props.theme.primaryColor};
   @media only screen and (max-width: 600px) {
     //code goes here
     height: 120px;
@@ -35,9 +33,13 @@ export const MarqueeText = styled.h1`
   font-size: 8rem;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #FFE900;
+  -webkit-text-stroke-color: #fff;
   text-transform: none;
   font-family: "Neue Bold";
+
+  img {
+    display: inline;
+  }
   white-space: nowrap; /* remove white-space property */
   @media only screen and (max-width: 600px) {
     //code goes here
