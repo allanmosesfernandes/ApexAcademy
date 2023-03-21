@@ -22,4 +22,9 @@ p {
 span {
     font-size: ${(props) => props.theme.fsmedium}
 }
+
+img {
+    width: 50px;
+    margin: auto;
+}
 `
