@@ -11,6 +11,7 @@ p {
 }
 `
 export const ReviewContent = styled.div`
+background-color: #F0F417;
 padding: 2rem;
 display: flex;
 flex-direction: column;

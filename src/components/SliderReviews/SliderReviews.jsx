@@ -21,7 +21,16 @@ var settings = {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToScroll: 3,
+        responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   return (
     <Slider {...settings}>
@@ -43,8 +52,8 @@ var settings = {
         </p>
         <span>⭐⭐⭐⭐⭐</span>
         <img src={Review1}></img>
-        <p>Sarah Taylore</p>
-        <p>FYJC BCOM</p>
+        <p className='student__name'>Sarah Taylore</p>
+        <p className='student__class'>FYJC BCOM</p>
         </ReviewContent>
       </SliderDiv>
       <SliderDiv>

@@ -116,6 +116,7 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 2rem;
 margin: 2rem 0;
+
 img {
   width: 80%;
   margin: auto;
@@ -131,5 +132,17 @@ h4 {
 p{
     font-size: ${(props) => props.theme.fssmall};
 
+}
+@media only screen and (max-width: 600px) {
+  //code goes here
+  grid-template-columns: 1fr;
+
+  h4 {
+        font-size: ${(props) => props.theme.fsmedium};
+  }
+  p {
+        font-size: ${(props) => props.theme.fssmall};
+
+  }
 }
 `
