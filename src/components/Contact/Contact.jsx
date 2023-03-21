@@ -7,13 +7,16 @@ import ThumbSVG from "../../assets/images/Contact/thumbs.svg";
 import Whatsapp from "../../assets/images/Contact/whatsapp.svg";
 import Instagram from "../../assets/images/Contact/instagram.svg";
 import { Link } from 'react-router-dom';
-import PhoneCircle from "../../assets/images/Contact/phone-circle.svg"
+import PhoneCircle from "../../assets/images/Contact/phone-circle.svg";
+import HeroImg from "../../assets/images/hero.png";
+
 const Contact = () => {
   return (
     <Container>
         <ContactSection>
             <Contact__Left>
                 <h2>Get in touch</h2>
+                <img src={HeroImg} alt="Contact"/>
             </Contact__Left>
             <Contact__Right>
                 <div className="contact__block">
