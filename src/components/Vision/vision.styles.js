@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const Vision_Block = styled.div`
-background-color: #29524A;
+export const Vision_Block = styled.div `
+background-color: ${(props) => props.theme.themeGreen};
 padding: 8rem 0;
 color: #fff;
 display: flex;
@@ -10,11 +10,16 @@ margin: auto;
 width: 100%;
 justify-content: center;
 align-items: center;
+
 h4 {
     font-size: 12rem;
     width: min-content;
-    border-top: 3px solid pink;
+    border-top: 3px solid white;
     position: relative;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+
     &:after {
         content: "how students study and make quality education affordable.";
         position: absolute;
@@ -22,7 +27,16 @@ h4 {
         width: 50%;
         bottom: -50px;
         right: 0;
+        -webkit-text-stroke-width: 0;
+        -webkit-text-fill-color: white;
+    }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 5rem;
+      &:after {
+        font-size: 1.3rem;
+         bottom: -70px
+      }
     }
 }
-
 `

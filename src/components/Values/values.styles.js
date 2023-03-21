@@ -33,7 +33,7 @@ export const ValueCard = styled.div `
 
 span {
     font-size: ${(props) => props.theme.fssmall};
-        padding: 3rem;
+    padding: 3rem;
 
 }
 &.active {
@@ -123,6 +123,7 @@ img {
 }
 span {
     font-size: ${(props) => props.theme.fsxsmall};
+    color: ${(props) => props.theme.themeGreen};
 }
 
 h4 {

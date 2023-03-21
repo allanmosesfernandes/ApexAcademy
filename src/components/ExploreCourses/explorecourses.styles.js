@@ -27,7 +27,7 @@ margin: 2rem 0;
 
 export const CourseBtn = styled.button `
 border-radius: 10px;
-background-color: ${(props) => props.theme.primaryColor};
+background-color: ${(props) => props.theme.themeGreen};
 color: #fff;
 font-size: 2rem;
 transition: all 0.3s ease;
@@ -39,7 +39,7 @@ transition: all 0.3s ease;
 &:hover, 
 &:active,
 &:focus {
-    background-color: #616fff;
+    background-color: rgb(59 124 111);
 }
 `
 export const DisplayCourse = styled.div `

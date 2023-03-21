@@ -10,7 +10,9 @@ const Testimonials = () => {
       
       <TestimonialDiv>
         <h2>Testimonials </h2>
-        <p>Our students are at the heart of everything we do, and their success is our top priority. We are committed to providing them with an exceptional learning experience that prepares them for a bright future. But don't just take our word for it.</p>
+        <p>
+        Our students are at the heart of everything we do, and their success is our top priority. We are committed to providing them with an exceptional learning experience that prepares them for a bright future. But don't just take our word for it.
+        </p>
         <SliderReviews />
       </TestimonialDiv>
     </Container>

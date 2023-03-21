@@ -12,6 +12,8 @@ function App() {
   const theme = {
     primaryColor: "#4353FF",
     secondaryColor: "#F3F3F3",
+    themePink: "#D782BA",
+    themeGreen: "#29524A",
     themeColor: "#FFFFFF",
     fsxl: "7.5rem",
     fslarge: "5rem",

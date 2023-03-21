@@ -12,7 +12,7 @@ p {
 }
 `
 export const ReviewContent = styled.div`
-background-color: #D782BA;
+background-color: ${(props) => props.theme.themeGreen};
 border-radius: 10px;
 padding: 2rem;
 display: flex;
@@ -20,7 +20,8 @@ flex-direction: column;
 justify-content: center;
 gap: 1.5rem;
 p {
-    font-size: ${(props) => props.theme.fssmall}
+    font-size: ${(props) => props.theme.fssmall};
+    color: white;
 }
 
 span {
