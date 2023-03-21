@@ -14,9 +14,6 @@ const Contact = () => {
         <ContactSection>
             <Contact__Left>
                 <h2>Get in touch</h2>
-                <div className="pattern-bg">
-                    
-                </div>
             </Contact__Left>
             <Contact__Right>
                 <div className="contact__block">

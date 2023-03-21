@@ -7,8 +7,7 @@ const Vision = () => {
     <>
         <MarqueeVision />
             <Vision_Block>
-                <h4>Revolutionize</h4>
-                {/* <p></p> */}
+                <h4>Revolutionize.</h4>
             </Vision_Block>
     </>
   )

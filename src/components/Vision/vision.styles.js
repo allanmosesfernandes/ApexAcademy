@@ -16,7 +16,7 @@ h4 {
     border-top: 3px solid pink;
     position: relative;
     &:after {
-        content: "how students study and make quality education affordable";
+        content: "how students study and make quality education affordable.";
         position: absolute;
         font-size: ${(props) => props.theme.fssmall};
         width: 50%;

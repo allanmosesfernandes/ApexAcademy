@@ -14,6 +14,11 @@ export const MarqueeContainer = styled.div`
   }
 `;
 
+export const MarqueeVisionContainer = styled(MarqueeContainer)`
+margin: 8rem 0 0 0;
+
+
+`
 export const MarqueeStyled = styled.div`
   position: absolute;
   top: 0;
@@ -48,7 +53,4 @@ export const MarqueeText = styled.h1`
   }
 `;
 
-export const MarqueeVisionContainer = styled(MarqueeContainer)`
-margin: 8rem 0 0 0;
-display:
-`
+
