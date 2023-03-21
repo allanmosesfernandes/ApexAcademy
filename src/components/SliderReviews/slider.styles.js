@@ -8,8 +8,8 @@ grid-template-columns: 1fr 1fr 1fr;
 
 export const SliderDiv = styled.div`
 width: 90% !important;
-background: orange;
 color: #fff;
 text-align: center;
-
+display: flex !important;
+margin: auto;
 `

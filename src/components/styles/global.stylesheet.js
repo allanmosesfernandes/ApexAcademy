@@ -128,6 +128,10 @@ button:active {
 body {
   background-color: ${(props) => props.theme.themeColor}
 }
+
+.slick-prev:before, .slick-next:before {
+    color: #4353FF;
+}
 `
 
 export default GlobalStyleSheet

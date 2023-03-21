@@ -11,10 +11,12 @@ p {
 }
 `
 export const ReviewContent = styled.div`
-background-color: #F0F417;
+background-color: #D782BA;
+border-radius: 10px;
 padding: 2rem;
 display: flex;
 flex-direction: column;
+justify-content: center;
 gap: 1.5rem;
 p {
     font-size: ${(props) => props.theme.fssmall}

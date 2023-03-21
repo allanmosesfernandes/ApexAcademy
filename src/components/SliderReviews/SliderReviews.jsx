@@ -51,7 +51,7 @@ var settings = {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia nam tempora debitis assumenda eius voluptates ut aspernatur alias, veritatis, temporibus aut similique perferendis modi dolorum corporis doloribus repellat tempore.
         </p>
         <span>⭐⭐⭐⭐⭐</span>
-        <img src={Review1}></img>
+        <img src={Review2}></img>
         <p className='student__name'>Sarah Taylore</p>
         <p className='student__class'>FYJC BCOM</p>
         </ReviewContent>
@@ -62,7 +62,7 @@ var settings = {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia nam tempora debitis assumenda eius voluptates ut aspernatur alias, veritatis, temporibus aut similique perferendis modi dolorum corporis doloribus repellat tempore.
         </p>
         <span>⭐⭐⭐⭐⭐</span>
-        <img src={Review1}></img>
+        <img src={Review3}></img>
         <p>Sarah Taylore</p>
         <p>FYJC BCOM</p>
         </ReviewContent>
@@ -73,7 +73,7 @@ var settings = {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia nam tempora debitis assumenda eius voluptates ut aspernatur alias, veritatis, temporibus aut similique perferendis modi dolorum corporis doloribus repellat tempore.
         </p>
         <span>⭐⭐⭐⭐⭐</span>
-        <img src={Review1}></img>
+        <img src={Review4}></img>
         <p>Sarah Taylore</p>
         <p>FYJC BCOM</p>
         </ReviewContent>
@@ -84,7 +84,7 @@ var settings = {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia nam tempora debitis assumenda eius voluptates ut aspernatur alias, veritatis, temporibus aut similique perferendis modi dolorum corporis doloribus repellat tempore.
         </p>
         <span>⭐⭐⭐⭐⭐</span>
-        <img src={Review1}></img>
+        <img src={Review5}></img>
         <p>Sarah Taylore</p>
         <p>FYJC BCOM</p>
         </ReviewContent>
@@ -95,7 +95,7 @@ var settings = {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia nam tempora debitis assumenda eius voluptates ut aspernatur alias, veritatis, temporibus aut similique perferendis modi dolorum corporis doloribus repellat tempore.
         </p>
         <span>⭐⭐⭐⭐⭐</span>
-        <img src={Review1}></img>
+        <img src={Review6}></img>
         <p>Sarah Taylore</p>
         <p>FYJC BCOM</p>
         </ReviewContent>
@@ -106,7 +106,7 @@ var settings = {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia nam tempora debitis assumenda eius voluptates ut aspernatur alias, veritatis, temporibus aut similique perferendis modi dolorum corporis doloribus repellat tempore.
         </p>
         <span>⭐⭐⭐⭐⭐</span>
-        <img src={Review1}></img>
+        <img src={Review7}></img>
         <p>Sarah Taylore</p>
         <p>FYJC BCOM</p>
         </ReviewContent>
@@ -117,7 +117,7 @@ var settings = {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia nam tempora debitis assumenda eius voluptates ut aspernatur alias, veritatis, temporibus aut similique perferendis modi dolorum corporis doloribus repellat tempore.
         </p>
         <span>⭐⭐⭐⭐⭐</span>
-        <img src={Review1}></img>
+        <img src={Review8}></img>
         <p>Sarah Taylore</p>
         <p>FYJC BCOM</p>
         </ReviewContent>
@@ -128,7 +128,7 @@ var settings = {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia nam tempora debitis assumenda eius voluptates ut aspernatur alias, veritatis, temporibus aut similique perferendis modi dolorum corporis doloribus repellat tempore.
         </p>
         <span>⭐⭐⭐⭐⭐</span>
-        <img src={Review1}></img>
+        <img src={Review9}></img>
         <p>Sarah Taylore</p>
         <p>FYJC BCOM</p>
         </ReviewContent>
