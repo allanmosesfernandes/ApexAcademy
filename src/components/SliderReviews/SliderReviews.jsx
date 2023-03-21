@@ -41,8 +41,8 @@ var settings = {
         </p>
         <span>⭐⭐⭐⭐⭐</span>
         <img src={Review1}></img>
-        <p>Sarah Taylore</p>
-        <p>FYJC BCOM</p>
+        <p>Aarav Sharma - FYJC Bcom</p>
+        
         </ReviewContent>
       </SliderDiv>
       <SliderDiv>
@@ -52,8 +52,7 @@ var settings = {
         </p>
         <span>⭐⭐⭐⭐⭐</span>
         <img src={Review2}></img>
-        <p className='student__name'>Sarah Taylore</p>
-        <p className='student__class'>FYJC BCOM</p>
+        <p className='student__name'>Priya Patel - SYJC BCOM</p>
         </ReviewContent>
       </SliderDiv>
       <SliderDiv>
@@ -64,7 +63,7 @@ var settings = {
         <span>⭐⭐⭐⭐⭐</span>
         <img src={Review3}></img>
         <p>Sarah Taylore</p>
-        <p>FYJC BCOM</p>
+        
         </ReviewContent>
       </SliderDiv>
       <SliderDiv>
@@ -74,8 +73,8 @@ var settings = {
         </p>
         <span>⭐⭐⭐⭐⭐</span>
         <img src={Review4}></img>
-        <p>Sarah Taylore</p>
-        <p>FYJC BCOM</p>
+        <p>Rohit Nair</p>
+        
         </ReviewContent>
       </SliderDiv>
       <SliderDiv>
@@ -85,8 +84,8 @@ var settings = {
         </p>
         <span>⭐⭐⭐⭐⭐</span>
         <img src={Review5}></img>
-        <p>Sarah Taylore</p>
-        <p>FYJC BCOM</p>
+        <p>Anjali Desai</p>
+        
         </ReviewContent>
       </SliderDiv>
       <SliderDiv>
@@ -96,8 +95,8 @@ var settings = {
         </p>
         <span>⭐⭐⭐⭐⭐</span>
         <img src={Review6}></img>
-        <p>Sarah Taylore</p>
-        <p>FYJC BCOM</p>
+        <p>Suresh Kumar</p>
+        
         </ReviewContent>
       </SliderDiv>
       <SliderDiv>
@@ -107,8 +106,8 @@ var settings = {
         </p>
         <span>⭐⭐⭐⭐⭐</span>
         <img src={Review7}></img>
-        <p>Sarah Taylore</p>
-        <p>FYJC BCOM</p>
+        <p>Ritu Malhotra</p>
+        
         </ReviewContent>
       </SliderDiv>
       <SliderDiv>
@@ -118,8 +117,8 @@ var settings = {
         </p>
         <span>⭐⭐⭐⭐⭐</span>
         <img src={Review8}></img>
-        <p>Sarah Taylore</p>
-        <p>FYJC BCOM</p>
+        <p>Nikhil Reddy</p>
+        
         </ReviewContent>
       </SliderDiv>
       <SliderDiv>
@@ -129,8 +128,8 @@ var settings = {
         </p>
         <span>⭐⭐⭐⭐⭐</span>
         <img src={Review9}></img>
-        <p>Sarah Taylore</p>
-        <p>FYJC BCOM</p>
+        <p>Arjun Singh</p>
+        
         </ReviewContent>
       </SliderDiv>
 
