@@ -5,6 +5,7 @@ import FirstFold from "./components/FirstFold/FirstFold";
 import Values from "./components/Values/Values"
 import ExploreCourses from "./components/ExploreCourses/ExploreCourses";
 import Testimonials from "./components/Testimonials/Testimonials";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const theme = {
@@ -29,6 +30,7 @@ function App() {
       <ExploreCourses />
       <Values />
       <Testimonials />
+      <Contact />
     </div>
     </ThemeProvider>
     </>
