@@ -4,13 +4,19 @@ import { FirstFoldContainer, FirstFoldLeftDiv, FirstFoldRight, YellowCircleImage
 import Rocket from "../../assets/images/rocket.png"
 import CircleSVG from "../../assets/images/circle.svg"
 import { RocketImg } from './FirstFold.styles'
-import  Grads  from "../../assets/images/hero.png";
 import Lottie from "lottie-react";
 import groovy from "../../assets/images/animation.json";
-import Buttons from '../Buttons/Buttons'
+import Buttons from '../Buttons/Buttons';
+import ExploreCourses from '../ExploreCourses/ExploreCourses';
+import Testimonials from '../Testimonials/Testimonials';
+import Contact from '../Contact/Contact';
+import Vision from '../Vision/Vision';
+import Footer from '../Footer/Footer';
+import Values from '../Values/Values';
 
 const FirstFold = () => {
   return (
+    <>
     <Container>
         <FirstFoldContainer>
           <FirstFoldLeftDiv>
@@ -30,6 +36,14 @@ const FirstFold = () => {
           </FirstFoldRight>
         </FirstFoldContainer>
     </Container>
+      <ExploreCourses />
+      <Values />
+      <Testimonials />
+      <Vision />
+      <Contact />
+      <Footer /> 
+    </>
+
   )
 }
 
