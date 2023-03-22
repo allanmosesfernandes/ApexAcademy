@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
-background-color: #2E2E2E;
+background-color: #333333;
+padding: 3rem 0;
 min-height: 200px;
 text-align: center;
 border-top: 2px solid #fff;
@@ -14,13 +15,18 @@ img {
 
 export const StyledFooterLinks = styled.div`
 display: flex;
-gap: 1rem;
+gap: 3rem;
 color: white;
 justify-content: center;
 margin: 2rem 0;
 
 a {
     font-size: ${props => props.theme.fsxsmall};
-    
+
+}
+
+img {
+    width: 30px;
+    height: 30px;
 }
 `

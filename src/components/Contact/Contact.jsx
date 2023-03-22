@@ -2,8 +2,6 @@ import React from 'react'
 import Container from '../styles/container.stylesheet'
 import { ContactSection, Contact__Left, Contact__Right } from './contact.styles';
 import AddressSVG from "../../assets/images/Contact/location_pin.svg";
-import CallSVG from "../../assets/images/Contact/call.svg";
-import ThumbSVG from "../../assets/images/Contact/thumbs.svg";
 import Whatsapp from "../../assets/images/Contact/whatsapp.svg";
 import Instagram from "../../assets/images/Contact/instagram.svg";
 import { Link } from 'react-router-dom';
