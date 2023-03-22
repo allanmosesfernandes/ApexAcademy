@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { keyframes } from "styled-components";
 
 export const StyledFooter = styled.footer`
 background-color: #333333;
@@ -28,5 +29,25 @@ a {
 img {
     width: 30px;
     height: 30px;
+}
+`
+const spin = keyframes`
+  100% {
+    transform: rotate(360deg);
+  }
+`;
+
+export const Initials = styled.img`
+  animation: ${spin} 35s linear infinite;
+`;
+
+export const CreatedBy = styled.div`
+color: #fff;
+display: flex;
+align-items: center;
+flex-direction: column;
+
+img {
+    width: 100px;
 }
 `

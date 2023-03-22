@@ -1,12 +1,15 @@
 import React from 'react'
-import { StyledFooter,StyledFooterLinks } from './footer-styles';
+import { StyledFooter,StyledFooterLinks, Initials, CreatedBy } from './footer-styles';
 import Container from '../styles/container.stylesheet';
 import { Link } from 'react-router-dom';
 import WhatsApp from "../../assets/images/Footer/whatsapp.svg";
 import Call from "../../assets/images/Footer/phone-circle.svg";
 import Insta from "../../assets/images/Footer/instagram.svg";
+import AF from "../../assets/images/aF.png";
 
 const Footer = () => {
+    let currentYear = new Date().getFullYear();
+
   return (
     <StyledFooter>
         <Container>
@@ -25,10 +28,20 @@ const Footer = () => {
                         <img src={Insta} alt="Instagram Logo"/>
                 </Link>
                 <Link to="tel:+918591829604">
-                    <img src={Call} alt="Contact Pin"/>
+                    <img src={Call} alt="Contact"/>
                 </Link>
-
             </StyledFooterLinks>
+            <CreatedBy>
+                <p> Created with ❤️ by  </p>
+                <p>
+                <Link to="https://allanfernandes.dev/">
+                    <Initials src={AF} alt="Allan Moses Fernandes Logo" />
+                </Link>
+                </p>
+                <p>
+                    {currentYear}  © All rights reserved.
+                </p>
+            </CreatedBy>
         </Container>
     </StyledFooter>
   )
