@@ -23,14 +23,14 @@ p {
 }
 `
 
-export const Contact__Left  = styled.div`
+export const ContactLeft  = styled.div`
 img {
   width: 90%;
   margin: 2rem auto;
 }
 `
 
-export const Contact__Right  = styled.div`
+export const ContactRight  = styled.div`
 .contact__block {
 display: flex;
 gap: 3rem;

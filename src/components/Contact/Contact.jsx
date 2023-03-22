@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from '../styles/container.stylesheet'
-import { ContactSection, Contact__Left, Contact__Right } from './contact.styles';
+import { ContactSection, ContactLeft, ContactRight } from './contact.styles';
 import AddressSVG from "../../assets/images/Contact/location_pin.svg";
 import Whatsapp from "../../assets/images/Contact/whatsapp.svg";
 import Instagram from "../../assets/images/Contact/instagram.svg";
@@ -12,11 +12,11 @@ const Contact = () => {
   return (
     <Container>
         <ContactSection>
-            <Contact__Left>
+            <ContactLeft>
                 <h2>Get in touch</h2>
                 <img src={HeroImg} alt="Contact"/>
-            </Contact__Left>
-            <Contact__Right>
+            </ContactLeft>
+            <ContactRight>
                 <div className="contact__block">
                     <Link to="https://goo.gl/maps/kSWe1kddnV7F5es27">
                         <img src={AddressSVG} alt="Address Pin"/>
@@ -68,7 +68,7 @@ const Contact = () => {
                         </p>
                     </div>
                 </div>
-            </Contact__Right>
+            </ContactRight>
         </ContactSection>
 
     </Container>
