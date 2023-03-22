@@ -6,7 +6,8 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 height: 10vh;
-
+border-bottom: 2px solid #dcdcdc;
+padding: 1rem;
 h2 {
     font-size: ${props => props.theme.fsmedium};
 

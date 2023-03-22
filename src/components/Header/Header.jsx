@@ -5,20 +5,22 @@ import GraduationCap from "../../assets/images/Grad.png";
 import { Link } from 'react-router-dom';
 const Header = () => {
   return (
+        <Container>
+
     <StyledHeader>
-    <Container>
         <nav>
         <h2>
-            <Link to="/"><span>Apex </span> Academy</Link>
+            <Link to="/"><span>Apex Academy</span> </Link>
         </h2>
         <LinksRIght>
             <Link to="/">About</Link>
             <Link to="/">Pricing</Link>
         </LinksRIght>
         </nav>
-    </Container>
 
     </StyledHeader>
+        </Container>
+
   )
 }
 

@@ -70,9 +70,11 @@ export const YellowCircleImage = styled.h2`
 `
 
 export const FirstFoldRight = styled.div`
-display: flex;
-margin: auto;
 
+    display: flex;
+    margin: 2rem auto;
+    align-items: flex-start;
+    height: 100%;
 @media only screen and (max-width: 600px) {
   //code goes here
   .lottie1 {
