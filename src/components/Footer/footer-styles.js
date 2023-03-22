@@ -31,6 +31,11 @@ img {
     height: 30px;
 }
 `
+
+export const StyledFooterLinksBordered = styled(StyledFooterLinks)`
+border-top: 1px solid gray;
+border-bottom: 1px solid gray;
+`
 const spin = keyframes`
   100% {
     transform: rotate(360deg);
@@ -49,5 +54,21 @@ flex-direction: column;
 
 img {
     width: 100px;
+}
+`
+
+export const FooterLine = styled.div`
+color: white;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+h3 {
+    font-size: ${props => props.theme.fsmedium}
+}
+
+@media only screen and (max-width: 600px) {
+  //code goes here
+  flex-direction: column;
 }
 `

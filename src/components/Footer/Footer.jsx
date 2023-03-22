@@ -1,26 +1,29 @@
 import React from 'react'
-import { StyledFooter,StyledFooterLinks, Initials, CreatedBy } from './footer-styles';
+import { StyledFooter,StyledFooterLinks, Initials, CreatedBy, FooterLine, StyledFooterLinksBordered } from './footer-styles';
 import Container from '../styles/container.stylesheet';
 import { Link } from 'react-router-dom';
 import WhatsApp from "../../assets/images/Footer/whatsapp.svg";
 import Call from "../../assets/images/Footer/phone-circle.svg";
 import Insta from "../../assets/images/Footer/instagram.svg";
 import AF from "../../assets/images/aF.png";
-
+import Star from "../../assets/images/Footer/star.svg"
 const Footer = () => {
     let currentYear = new Date().getFullYear();
 
   return (
     <StyledFooter>
         <Container>
-            <h2>Apex Academy</h2>
+            <FooterLine>
+            <h3>Apex Academy</h3>
             <StyledFooterLinks>
                 <Link to="/">Home</Link>
                 <Link to="/">About</Link>
                 <Link to="/">Contact</Link>
                 <Link to="/">Courses</Link>
             </StyledFooterLinks>
-            <StyledFooterLinks>
+            </FooterLine>
+
+            <StyledFooterLinksBordered>
                 <Link to="https://wa.me/919619303386">
                     <img src={WhatsApp} alt="Whatsapp Logo"/>
                 </Link>
@@ -30,7 +33,7 @@ const Footer = () => {
                 <Link to="tel:+918591829604">
                     <img src={Call} alt="Contact"/>
                 </Link>
-            </StyledFooterLinks>
+            </StyledFooterLinksBordered>
             <CreatedBy>
                 <p> Created with ❤️ by  </p>
                 <p>
