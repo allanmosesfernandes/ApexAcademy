@@ -41,7 +41,6 @@ const FirstFold = () => {
       <Testimonials />
       <Vision />
       <Contact />
-      <Footer /> 
     </>
 
   )
