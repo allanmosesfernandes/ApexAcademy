@@ -5,8 +5,7 @@ import GraduationCap from "../../assets/images/Grad.png";
 import { Link } from 'react-router-dom';
 const Header = () => {
   return (
-        <Container>
-
+    <Container>
     <StyledHeader>
         <nav>
         <h2>
@@ -19,7 +18,7 @@ const Header = () => {
         </nav>
 
     </StyledHeader>
-        </Container>
+    </Container>
 
   )
 }
