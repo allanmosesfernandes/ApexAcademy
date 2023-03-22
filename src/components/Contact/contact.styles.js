@@ -25,7 +25,7 @@ p {
 
 export const Contact__Left  = styled.div`
 img {
-  width: 80%;
+  width: 90%;
   margin: 2rem auto;
 }
 `

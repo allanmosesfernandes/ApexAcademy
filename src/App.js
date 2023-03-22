@@ -7,6 +7,7 @@ import ExploreCourses from "./components/ExploreCourses/ExploreCourses";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/Contact/Contact";
 import Vision from "./components/Vision/Vision";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const theme = {
@@ -35,6 +36,7 @@ function App() {
       <Testimonials />
       <Vision />
       <Contact />
+      <Footer />
     </div>
     </ThemeProvider>
     </>
