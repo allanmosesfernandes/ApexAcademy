@@ -16,6 +16,7 @@ export const MarqueeContainer = styled.div`
 
 export const MarqueeVisionContainer = styled(MarqueeContainer)`
 margin: 8rem 0 0 0;
+  background: ${(props) => props.theme.themeGreen};
 
 
 `

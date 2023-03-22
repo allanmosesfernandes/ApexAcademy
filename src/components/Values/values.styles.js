@@ -124,10 +124,14 @@ img {
 span {
     font-size: ${(props) => props.theme.fsxsmall};
     color: ${(props) => props.theme.themeGreen};
+    font-family: "Neue ExtraBold";
+
 }
 
 h4 {
     font-size: ${(props) => props.theme.fslarge};
+        font-family: "Neue Bold";
+
 }
 
 p{

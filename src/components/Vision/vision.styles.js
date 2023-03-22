@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const Vision_Block = styled.div `
-background-color: ${(props) => props.theme.themeGreen};
+export const VisionBlock = styled.div `
+background-color: ${(props) => props.theme.primaryColor};
 padding: 8rem 0;
 color: #fff;
 display: flex;

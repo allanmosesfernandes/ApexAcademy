@@ -11,7 +11,6 @@ import ExploreCourses from '../ExploreCourses/ExploreCourses';
 import Testimonials from '../Testimonials/Testimonials';
 import Contact from '../Contact/Contact';
 import Vision from '../Vision/Vision';
-import Footer from '../Footer/Footer';
 import Values from '../Values/Values';
 
 const FirstFold = () => {
