@@ -8,6 +8,7 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/Contact/Contact";
 import Vision from "./components/Vision/Vision";
 import Footer from "./components/Footer/Footer";
+import About from "./components/About/About";
 
 function App() {
   const theme = {
@@ -30,13 +31,14 @@ function App() {
     <GlobalStyleSheet />
     <div className="App">
       <Header />
-      <FirstFold />
+      <About />
+      {/* <FirstFold />
       <ExploreCourses />
       <Values />
       <Testimonials />
       <Vision />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </div>
     </ThemeProvider>
     </>
