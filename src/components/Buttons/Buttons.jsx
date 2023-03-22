@@ -3,7 +3,9 @@ import StyledButton from './buttons.styles'
 const Buttons = (props) => {
 const { text, type } = props;
   return (
-    <StyledButton></StyledButton>
+    <StyledButton className='offset'>
+      Whatsapp Now
+    </StyledButton>
   )
 }
 

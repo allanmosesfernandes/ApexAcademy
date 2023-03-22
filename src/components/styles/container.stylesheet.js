@@ -11,7 +11,6 @@ h2 {
     color: #fff;
 }
 @media only screen and (max-width: 600px) {
-margin: 5rem 0 0 0;
   h2 {
     font-size: 4rem;
   }

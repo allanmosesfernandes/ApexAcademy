@@ -43,6 +43,8 @@ margin: 0;
 
 h1,h2,h3,h4,h5,h6 {
   font-weight: 500;
+  font-family: "Neue ExtraBold";
+
 }
 
 p {
@@ -111,19 +113,19 @@ button {
     -moz-appearance: none;
 }
 
-button:hover,
-button:focus {
-    background: #0053ba;
-}
+// button:hover,
+// button:focus {
+//     background: #0053ba;
+// }
 
-button:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
-}
+// button:focus {
+//     outline: 1px solid #fff;
+//     outline-offset: -4px;
+// }
 
-button:active {
-    transform: scale(0.99);
-}
+// button:active {
+//     transform: scale(0.99);
+// }
 
 body {
   background-color: ${(props) => props.theme.themeColor}

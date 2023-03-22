@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import  Container  from '../styles/container.stylesheet'
 import Collab from "../../assets/images/collaborative.svg";
-import { ValuesContainer, ValueCard, PurpleToggle, Approach__container } from './values.styles';
+import { ValuesContainer, ValueCard, PurpleToggle, Approach__container, Approach_Div_Right } from './values.styles';
 import PurplePlus from "../../assets/images/principles/purpleplus.svg";
 import Evolve from "../../assets/images/principles/evolving.svg";
 import Getter from "../../assets/images/principles/go-getter.svg";
@@ -53,13 +53,13 @@ const Values = () => {
                 </div>
 
             </Approach__container>
-            <Approach__container>
+            <Approach__container className='reverse'>
                 <div className="approach_div_left">
                     <div className="approach__img">
                         <img src={Reason3} alt="Reason one"/>
                     </div>
                 </div>
-                <div className="approach_div_right">
+                <div>
                    <span className="number-small">03 - Strategy</span>
                    <h4>think big thanks to an in-depth analysis.</h4>
                    <p className="body-copy">

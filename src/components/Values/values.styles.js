@@ -146,4 +146,17 @@ p{
 
   }
 }
+
+&.reverse {
+  @media only screen and (max-width: 600px) {
+  //code goes here
+  display:flex;
+  flex-direction: column-reverse
+}
+}
+`
+
+export const Approach_Div_Right = styled.div`
+
+
 `

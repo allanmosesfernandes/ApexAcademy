@@ -63,7 +63,7 @@ position: relative;
 min-height: 300px;
 
 @media only screen and (max-width: 600px) {
-  min-height: 600px;
+  min-height: 400px;
 }
 `
 
