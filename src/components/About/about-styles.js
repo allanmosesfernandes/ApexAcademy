@@ -12,7 +12,16 @@ border-bottom: 1px solid black;
 padding: 2rem 0;
 font-size: ${props => props.theme.fsmedium}; 
 }
+@media only screen and (max-width: 600px) {
+  //code goes here
+  h2 {
+    font-size: ${props => props.theme.fsmedium}
 
+  }
+  p {
+    font-size: ${props => props.theme.fssmall}
+  }
+}
 `
 
 export const AboutImageText = styled.div`
