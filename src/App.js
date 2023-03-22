@@ -1,5 +1,7 @@
 import GlobalStyleSheet from "./components/styles/global.stylesheet";
 import Header from "./components/Header/Header";
+import { Routes,Route } from 'react-router-dom';
+
 import { ThemeProvider } from "styled-components";
 import FirstFold from "./components/FirstFold/FirstFold";
 import Values from "./components/Values/Values"
@@ -9,6 +11,7 @@ import Contact from "./components/Contact/Contact";
 import Vision from "./components/Vision/Vision";
 import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
+import PageNotFound from "./components/404/PageNotFound";
 
 function App() {
   const theme = {
@@ -27,21 +30,18 @@ function App() {
   return (
 
     <>
-    <ThemeProvider theme={theme}>
-    <GlobalStyleSheet />
-    <div className="App">
-      <Header />
-      <About />
-      {/* <FirstFold />
-      <ExploreCourses />
-      <Values />
-      <Testimonials />
-      <Vision />
-      <Contact />
-      <Footer /> */}
-    </div>
-    </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <GlobalStyleSheet />
+          <Header />
+          <Routes>
+            <Route index path="/" element={<FirstFold />} />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+          <Footer />
+      </ThemeProvider>
     </>
+
 
   );
 }

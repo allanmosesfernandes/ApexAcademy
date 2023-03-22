@@ -2,9 +2,11 @@ import React from 'react'
 import { StyledHeader, LinksRIght } from './header.styles'
 import  Container  from '../styles/container.stylesheet'
 import GraduationCap from "../../assets/images/Grad.png";
+import { Outlet } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 const Header = () => {
   return (
+    <>
     <Container>
     <StyledHeader>
         <nav>
@@ -12,13 +14,15 @@ const Header = () => {
             <Link to="/"><span>Apex Academy</span> </Link>
         </h2>
         <LinksRIght>
-            <Link to="/">About</Link>
+            <Link to="about">About</Link>
             <Link to="/">Pricing</Link>
         </LinksRIght>
         </nav>
-
     </StyledHeader>
     </Container>
+    <Outlet />
+    </>
+
 
   )
 }
