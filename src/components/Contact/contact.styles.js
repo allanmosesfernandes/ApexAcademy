@@ -7,6 +7,8 @@ gap: 2rem;
 margin: 5rem 0 3rem 0;
 h2 {
     color:  ${(props) => props.theme.primaryColor};
+        font-family: "Neue ExtraBold";
+
 }
 p {
     font-size: ${(props) => props.theme.fssmall};

@@ -21,6 +21,7 @@ height: 90vh;
 h2 {
     font-size: ${props => props.theme.fsxl};
     line-height: 1.2;
+    font-family: "Neue ExtraBold";
     color: ${(props) => props.theme.primaryColor};
     display: flex;
     gap: 2rem;

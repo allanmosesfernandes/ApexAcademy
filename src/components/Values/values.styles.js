@@ -8,6 +8,8 @@ export const ValuesContainer = styled.div `
    h2 {
     color: ${(props) => props.theme.primaryColor};
     text-align: center;
+        font-family: "Neue ExtraBold";
+
    }
     @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;

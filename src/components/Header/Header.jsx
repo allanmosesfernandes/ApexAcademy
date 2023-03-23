@@ -4,13 +4,43 @@ import  Container  from '../styles/container.stylesheet'
 import GraduationCap from "../../assets/images/Grad.png";
 import { Outlet } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+
+
 const Header = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+  const [navbarChange, setNavbarChange] = useState(false);
+
+  const changeColor = () => {
+    if(window.scrollY >= 90) {
+      setNavbarChange(true);
+    }
+    else {
+      setNavbarChange(false)
+    }
+  }
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    window.addEventListener("scroll", changeColor);
+    return () => {
+      window.removeEventListener("scroll", changeColor);
+    };
+  }, []);
+
+window.addEventListener("scroll", changeColor);
   return (
     <>
     <Container>
     <StyledHeader>
-        <nav>
-        <h2>
+        <nav className={navbarChange ? "header-bg" : ""}>
+        <h2 onClick={scrollToTop}>
             <Link to="/"><span>Apex Academy</span> </Link>
         </h2>
         <LinksRIght>
