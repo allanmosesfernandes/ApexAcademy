@@ -1,7 +1,6 @@
 import React from 'react'
 import Container from '../styles/container.stylesheet'
 import { AboutWrapper, AboutImageText,AboutStoryContainer,Story,TextPiece,SentiImage } from './about-styles'
-
 import Pexel from "../../assets/images/pexel.jpg";
 import Senti from "../../assets/images/senti.jpg";
 const About = () => {
