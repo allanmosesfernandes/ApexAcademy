@@ -140,9 +140,11 @@ body {
   //code goes here
   .slick-next {
     right: -10px;
+    opacity: 0;
 }
   .slick-previous {
     left: -10px;
+    opacity: 0;
 }
 }
 `
