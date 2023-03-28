@@ -34,6 +34,23 @@
     <title>Apex Academy</title>
   </head>
   <body>
+    <!-- A little help for the Netlify post-processing bots -->
+    <form name="enquiries" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="firstName" />
+      <input type="text" name="lastName" />
+      <input type="email" name="email" />
+      <input type="number" name="contactNumber" />
+      <select name="courseSelection">
+        <option value="">Select a course</option>
+        <option value="FYJC">FYJC</option>
+        <option value="SYJC">SYJC</option>
+        <option value="FYBCOM">FYBCOM</option>
+        <option value="SYBCOM">SYBCOM</option>
+        <option value="TYBCOM">TYBCOM</option>
+        <option value="BMS">BMS</option>
+      </select>
+    </form>
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -46,5 +63,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    
   </body>
 </html>
