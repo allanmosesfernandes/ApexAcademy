@@ -56,7 +56,7 @@ const handleSubmit = (event) => {
                 name="enquries"   
                 method="POST"
                 data-netlify="true"
-                action='/'
+                action='/about'
                 id="enquries" >
 
                   <input type="hidden" name="enquries" value="enquries" />
