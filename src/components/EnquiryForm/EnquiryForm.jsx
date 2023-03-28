@@ -61,9 +61,7 @@ const handleSubmit = async (e) => {
             <EnquiresFormStyled  
                 data-netlify="true" 
                 name="enquries"   
-                data-netlify-recaptcha="true"
                 method="POST"
-                onSubmit="submit"
             >
 
                   <input type="hidden" name="enquries" value="enquries" />
