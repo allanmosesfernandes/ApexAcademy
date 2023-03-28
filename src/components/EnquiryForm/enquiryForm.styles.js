@@ -1,31 +1,43 @@
 import styled from "styled-components";
-
 export const FormDivWrapper = styled.div`
 display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 2rem;
+
 @media only screen and (max-width: 600px) {
   grid-template-columns: 1fr;
-
 }
+
 h2{
     color:black;
+    font-family: "Neue ExtraBold";
+
 }
+
 p {
-padding: 2rem 0;
-font-size: ${props => props.theme.fsmedium}; 
-
+  padding: 2rem 0;
+  font-size: ${props => props.theme.fsmedium}; 
+  @media only screen and (max-width: 600px) {
+    font-size: ${props => props.theme.fssmall}; 
+  }
 }
-
 `
 
 export const EnquiresFormStyled = styled.form`
+button {
+  width: 200px;
+  font-family: "Neue ExtraBold";
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
 width: 80%;
 div {
     display: flex;
     flex-direction: column;
 }
-
+@media only screen and (max-width: 600px) {
+  width: 100%;
+}
 input, select {
     width: 100%;
     display: block;
@@ -54,7 +66,7 @@ select {
 export const PhoneInputWrapper = styled.div`
 position: relative;
 display: inline-block;
-
+margin: -1rem 0 1rem 0;
 input[type="number"] {
   padding-left: 55px;
 }

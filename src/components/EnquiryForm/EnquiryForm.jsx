@@ -42,7 +42,6 @@ const handleSubmit = (event) => {
 };
 
 
-
   return (
     <Container>
         <FormDivWrapper>
@@ -61,58 +60,23 @@ const handleSubmit = (event) => {
 
                   <input type="hidden" name="enquries" value="enquries" />
 
-                    <input
-                        type="text"
-                        name="firstName"
-                        placeholder='First Name'
-                        value={firstName}
-                        pattern="^[a-zA-Z\s-]+$"
-                        title="Name cannot contain special characters"
-                        required
-                        onChange={handleFormValueChange}
-                    />
-                    <input
-                        type="text"
-                        name="lastName"
-                        placeholder='Last Name'
-                        pattern="^[a-zA-Z\s-]+$"
-                        title="Name cannot contain special characters"
-                        value={lastName}
-                        required
-                        onChange={handleFormValueChange}
-                    />
+                    <input type="text" name="firstName" placeholder='First Name' pattern="^[a-zA-Z\s-]+$" title="Name cannot contain special characters" required />
 
-                <input 
-                    type="email"
-                    name="email"
-                    placeholder='Email address' 
-                    value={email}
-                    onChange={handleFormValueChange} 
-                />
+                    <input type="text" name="lastName" placeholder='Last Name' pattern="^[a-zA-Z\s-]+$" title="Name cannot contain special characters" required />
 
+                    <input  type="email" name="email" placeholder='Email address' />
 
-                <select 
-                    name="courseSelection"
-                    value={courseSelection}
-                    onChange={handleFormValueChange}>
-                    <option value="">Select a course</option>
-                    {
-                        courses.map((course) => {
-                            return <option key={course} value={course}>{course}</option>
-                        })
-                    }
-                </select>
+                    <select name="courseSelection">
+                        <option value="FYJC">FYJC</option>
+                        <option value="SYJC">SYJC</option>
+                        <option value="FYBCOM">FYBCOM</option>
+                        <option value="SYBCOM">SYBCOM</option>
+                        <option value="TYBCOM">TYBCOM</option>
+                        <option value="BMS">BMS</option>
+                    </select>
+
                 <PhoneInputWrapper>
-                    <input
-                        type="number"
-                        placeholder='Mobile Number'
-                        name="contactNumber"
-                        value={contactNumber}
-                        required
-                        pattern="^[789]\d{9}$"
-                        title="Enter a valid mobile number"
-                        onChange={handleFormValueChange}
-                    />
+                <input type="number" placeholder='Mobile Number' name="contactNumber" required pattern="^[789]\d{9}$" title="Enter a valid mobile number"/>
                 </PhoneInputWrapper>
             <button type="submit">Submit</button>
             </EnquiresFormStyled> 
