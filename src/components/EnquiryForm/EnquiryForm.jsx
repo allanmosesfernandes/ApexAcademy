@@ -24,7 +24,6 @@ const EnquiryForm = () => {
 
 const handleSubmit = async (e) => {
   e.preventDefault();
-
   const formData = new FormData();
   Object.entries(formFields).forEach(([key, value]) => {
     formData.append(key, value);
@@ -59,8 +58,14 @@ const handleSubmit = async (e) => {
             <p>
                 Fill out the form below and we'll get in touch shortly
             </p>
-            <EnquiresFormStyled onSubmit={handleSubmit} data-netlify="true">
-                  <input type="hidden" name="form-name" value="enquiryForm" />
+            <EnquiresFormStyled 
+                onSubmit="submit" 
+                data-netlify="true" 
+                name="enquries"   
+                data-netlify-recaptcha="true"
+            >
+
+                  <input type="hidden" name="enquries" value="enquries" />
 
                     <input
                         type="text"
