@@ -46,7 +46,7 @@ window.addEventListener("scroll", changeColor);
         <LinksRIght>
             <Link to="about">About</Link>
             <Link to="/">Pricing</Link>
-            <Link to="enquries">Enquries</Link>
+            <Link to="enquries">Enquiries</Link>
         </LinksRIght>
         </nav>
     </StyledHeader>
