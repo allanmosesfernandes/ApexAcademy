@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../styles/container.stylesheet'
 import { useState } from 'react'
-import { FormDivWrapper, EnquiresFormStyled } from './enquiryForm.styles'
+import { FormDivWrapper, EnquiresFormStyled, PhoneInputWrapper } from './enquiryForm.styles'
 
 const EnquiryForm = () => {
     const defaultFormFields = {
@@ -22,7 +22,6 @@ const EnquiryForm = () => {
     }
 
     const handleSubmit = (e) => {
-
         e.preventDefault();
         
     }
@@ -65,16 +64,6 @@ const EnquiryForm = () => {
                     onChange={handleFormValueChange} 
                 />
 
-                <input 
-                    type="number" 
-                    placeholder='Mobile Number' 
-                    name="contactNumber"
-                    value={contactNumber} 
-                    required
-                    pattern="^[789]\d{9}$"
-                    title="Enter a valid mobile number"
-                    onChange={handleFormValueChange}
-                />
 
                 <select 
                     name="courseSelection"
@@ -87,7 +76,18 @@ const EnquiryForm = () => {
                         })
                     }
                 </select>
-            
+                <PhoneInputWrapper>
+                    <input
+                        type="number"
+                        placeholder='Mobile Number'
+                        name="contactNumber"
+                        value={contactNumber}
+                        required
+                        pattern="^[789]\d{9}$"
+                        title="Enter a valid mobile number"
+                        onChange={handleFormValueChange}
+                    />
+                </PhoneInputWrapper>
             <button type="submit">Submit</button>
             </EnquiresFormStyled>
             </div>

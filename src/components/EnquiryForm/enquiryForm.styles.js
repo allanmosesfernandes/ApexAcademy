@@ -43,3 +43,29 @@ input, select {
 }
 
 `
+
+export const PhoneInputWrapper = styled.div`
+position: relative;
+display: inline-block;
+
+input[type="number"] {
+  padding-left: 55px;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+&:before {
+  content: "+91";
+  position: absolute;
+  left: 5px;
+  color: grey;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: ${props => props.theme.fssmall};
+}
+`
