@@ -6,22 +6,21 @@ grid-template-columns: 1fr 1fr;
 gap: 2rem;
 @media only screen and (max-width: 600px) {
   grid-template-columns: 1fr;
-  
+
 }
 h2{
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;  
     color:black;
 }
 p {
 padding: 2rem 0;
 font-size: ${props => props.theme.fsmedium}; 
+
 }
 
 `
 
 export const EnquiresFormStyled = styled.form`
-
+width: 80%;
 div {
     display: flex;
     flex-direction: column;
@@ -41,12 +40,15 @@ input, select {
     color:  ${props => props.theme.primaryColor} !important;
     border-color: ${props => props.theme.primaryColor} !important;
     margin: 30px 0;
-
+    outline: ${props => props.theme.primaryColor};
     &:focus-visible: {
         border-color: ${props => props.theme.primaryColor} !important;
     }
 }
 
+select {
+  color: gray !important;
+}
 `
 
 export const PhoneInputWrapper = styled.div`
