@@ -2,6 +2,7 @@ import React from 'react'
 import Container from '../styles/container.stylesheet'
 import { useState } from 'react'
 import { FormDivWrapper, EnquiresFormStyled, PhoneInputWrapper } from './enquiryForm.styles'
+import axios from 'axios';
 
 const EnquiryForm = () => {
     const defaultFormFields = {
@@ -21,10 +22,34 @@ const EnquiryForm = () => {
         setFormFields({...formFields, [name]:value})
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData();
+  Object.entries(formFields).forEach(([key, value]) => {
+    formData.append(key, value);
+  });
+
+  try {
+    const response = await axios.post('/', formData, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+    });
+
+    if (response.status === 200) {
+      console.log('Form submitted successfully');
+      // Redirect to a success page or show a success message
+      // You can also reset the form fields if you want
+      setFormFields(defaultFormFields);
+    } else {
+      console.log('Form submission failed');
+      // Show an error message to the user
     }
+  } catch (error) {
+    console.log('Form submission error', error);
+    // Show an error message to the user
+  }
+};
+
 
   return (
     <Container>
@@ -34,7 +59,9 @@ const EnquiryForm = () => {
             <p>
                 Fill out the form below and we'll get in touch shortly
             </p>
-            <EnquiresFormStyled onSubmit={handleSubmit}>
+            <EnquiresFormStyled onSubmit={handleSubmit} data-netlify="true">
+                  <input type="hidden" name="form-name" value="enquiryForm" />
+
                     <input
                         type="text"
                         name="firstName"

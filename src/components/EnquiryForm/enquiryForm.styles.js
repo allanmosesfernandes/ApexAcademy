@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const FormDivWrapper = styled.div`
 display: grid;
 grid-template-columns: 1fr 2fr;
+@media only screen and (max-width: 600px) {
+  grid-template-columns: 1fr;
+
+}
 h2{
     border-top: 1px solid black;
     border-bottom: 1px solid black;  
