@@ -62,6 +62,7 @@ const handleSubmit = async (e) => {
                 data-netlify="true" 
                 name="enquries"   
                 method="POST"
+                action="/enquries"
             >
 
                   <input type="hidden" name="enquries" value="enquries" />
