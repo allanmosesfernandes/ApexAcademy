@@ -58,11 +58,12 @@ const handleSubmit = async (e) => {
             <p>
                 Fill out the form below and we'll get in touch shortly
             </p>
-            <EnquiresFormStyled 
-                onSubmit="submit" 
+            <EnquiresFormStyled  
                 data-netlify="true" 
                 name="enquries"   
                 data-netlify-recaptcha="true"
+                method="POST"
+                onSubmit="submit"
             >
 
                   <input type="hidden" name="enquries" value="enquries" />
