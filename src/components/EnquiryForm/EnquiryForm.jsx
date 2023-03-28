@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { FormDivWrapper, EnquiresFormStyled, PhoneInputWrapper } from './enquiryForm.styles'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-
+import GoogleMap from '../GoogleMaps/GoogleMap';
 
 const EnquiryForm = () => {
     const navigate = useNavigate();
@@ -117,7 +117,7 @@ const handleSubmit = (event) => {
             <button type="submit">Submit</button>
             </EnquiresFormStyled> 
             </div>
-
+            <GoogleMap />
 
         </FormDivWrapper>
     </Container>
