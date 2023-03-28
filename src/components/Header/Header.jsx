@@ -1,7 +1,6 @@
 import React from 'react'
 import { StyledHeader, LinksRIght } from './header.styles'
 import  Container  from '../styles/container.stylesheet'
-import GraduationCap from "../../assets/images/Grad.png";
 import { Outlet } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -15,6 +14,7 @@ const Header = () => {
       behavior: "smooth",
     });
   };
+  
   const [navbarChange, setNavbarChange] = useState(false);
 
   const changeColor = () => {
@@ -46,6 +46,7 @@ window.addEventListener("scroll", changeColor);
         <LinksRIght>
             <Link to="about">About</Link>
             <Link to="/">Pricing</Link>
+            <Link to="enquries">Enquries</Link>
         </LinksRIght>
         </nav>
     </StyledHeader>

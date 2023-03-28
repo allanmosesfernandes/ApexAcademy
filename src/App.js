@@ -12,6 +12,7 @@ import Vision from "./components/Vision/Vision";
 import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
 import PageNotFound from "./components/404/PageNotFound";
+import EnquiryForm from "./components/EnquiryForm/EnquiryForm";
 
 function App() {
   const theme = {
@@ -35,7 +36,8 @@ function App() {
           <Header />
           <Routes>
             <Route index path="/" element={<FirstFold />} />
-            <Route path="/about" element={<About />} />
+            <Route path="about" element={<About />} />
+            <Route path="enquries" element={<EnquiryForm />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
           <Footer />

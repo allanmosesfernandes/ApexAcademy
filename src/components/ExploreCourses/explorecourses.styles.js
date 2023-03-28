@@ -5,7 +5,6 @@ margin: 4rem 0 0 0;
 h2 {
   color: ${(props) => props.theme.primaryColor};
   font-family: "Neue ExtraBold";
-
 }
 
 p {
