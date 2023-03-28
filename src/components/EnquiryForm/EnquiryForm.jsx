@@ -60,12 +60,11 @@ const handleSubmit = async (e) => {
             </p>
 
 
- <EnquiresFormStyled  
-                data-netlify="true" 
+              <EnquiresFormStyled  
                 name="enquries"   
                 method="POST"
-                action="/enquries"
-            >
+                data-netlify="true" 
+                action="/">
 
                   <input type="hidden" name="enquries" value="enquries" />
 
