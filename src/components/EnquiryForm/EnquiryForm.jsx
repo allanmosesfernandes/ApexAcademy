@@ -55,8 +55,8 @@ const handleSubmit = (event) => {
               <EnquiresFormStyled  
                 name="enquries"   
                 method="POST"
-                data-netlify="true" 
-                action="/">
+                data-netlify="true"
+                action='/'>
 
                   <input type="hidden" name="enquries" value="enquries" />
 
