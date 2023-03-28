@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FormDivWrapper = styled.div`
 display: grid;
-grid-template-columns: 2fr 1fr;
+grid-template-columns: 1fr 2fr;
 h2{
     border-top: 1px solid black;
     border-bottom: 1px solid black;  
@@ -22,7 +22,8 @@ div {
     flex-direction: column;
 }
 
-input {
+input, select {
+    width: 100%;
     display: block;
     font-family: "Neue Bold";
     background: transparent;
@@ -34,7 +35,7 @@ input {
     border-width: 2px;
     color:  ${props => props.theme.primaryColor} !important;
     border-color: ${props => props.theme.primaryColor} !important;
-    margin: 20px 20px 20px 0;
+    margin: 30px 0;
 
     &:focus-visible: {
         border-color: ${props => props.theme.primaryColor} !important;

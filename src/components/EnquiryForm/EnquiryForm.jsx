@@ -10,20 +10,23 @@ const EnquiryForm = () => {
         email: "",
         contactNumber: "",
         courseSelection: "",
-        challengingSubjects: ""
     }
 
     const [ formFields, setFormFields ] = useState(defaultFormFields);
-    const { firstName, lastName, email, contactNumber } = formFields;
+    const { firstName, lastName, email, contactNumber, courseSelection } = formFields;
+    const courses = ['FYJC', 'SYJC', 'FYBCOM', 'SYBCOM', 'TYBCOM', 'BMS']; // Replace with your course options
 
     const handleFormValueChange = (event) => {
         const { name, value } = event.target;
         setFormFields({...formFields, [name]:value})
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+
+        e.preventDefault();
         
     }
+
   return (
     <Container>
         <FormDivWrapper>
@@ -38,6 +41,8 @@ const EnquiryForm = () => {
                         name="firstName"
                         placeholder='First Name'
                         value={firstName}
+                        pattern="^[a-zA-Z\s-]+$"
+                        title="Name cannot contain special characters"
                         required
                         onChange={handleFormValueChange}
                     />
@@ -45,6 +50,8 @@ const EnquiryForm = () => {
                         type="text"
                         name="lastName"
                         placeholder='Last Name'
+                        pattern="^[a-zA-Z\s-]+$"
+                        title="Name cannot contain special characters"
                         value={lastName}
                         required
                         onChange={handleFormValueChange}
@@ -68,6 +75,18 @@ const EnquiryForm = () => {
                     title="Enter a valid mobile number"
                     onChange={handleFormValueChange}
                 />
+
+                <select 
+                    name="courseSelection"
+                    value={courseSelection}
+                    onChange={handleFormValueChange}>
+                    <option value="">Select a course</option>
+                    {
+                        courses.map((course) => {
+                            return <option key={course} value={course}>{course}</option>
+                        })
+                    }
+                </select>
             
             <button type="submit">Submit</button>
             </EnquiresFormStyled>
