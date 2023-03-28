@@ -5,6 +5,7 @@ import { FormDivWrapper, EnquiresFormStyled, PhoneInputWrapper } from './enquiry
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
+
 const EnquiryForm = () => {
     const navigate = useNavigate();
 
@@ -50,7 +51,6 @@ const handleSubmit = (event) => {
             <p>
                 Fill out the form below and we'll get in touch shortly
             </p>
-
 
               <EnquiresFormStyled  
                 name="enquries"   
