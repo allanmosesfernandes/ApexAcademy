@@ -37,98 +37,98 @@ var settings = {
       <SliderDiv>
         <ReviewContent>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia nam tempora debitis assumenda eius voluptates ut aspernatur alias, veritatis, temporibus aut similique perferendis modi dolorum corporis doloribus repellat tempore.
+          Best academy for commerce. The faculty here helps me understand each and every concept in a better way . Personal attention to each student is given by the teachers . The teaching techniques are amazing. The teachers are very helpful and are always available for any kind of doubt solving .
         </p>
         <span>⭐⭐⭐⭐⭐</span>
         <img src={Review1}></img>
-        <p>Aarav Sharma - FYJC Bcom</p>
+        <p>Vidhi Kokate</p>
         
         </ReviewContent>
       </SliderDiv>
       <SliderDiv>
         <ReviewContent>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia nam tempora debitis assumenda eius voluptates ut aspernatur alias, veritatis, temporibus aut similique perferendis modi dolorum corporis doloribus repellat tempore.
+          Faculty is very good here. The way they teach their students is very unique. They explain each and every point. My experience has been very good while studying here. I am happy to be the part of this centre.
         </p>
         <span>⭐⭐⭐⭐⭐</span>
         <img src={Review2}></img>
-        <p className='student__name'>Priya Patel - SYJC BCOM</p>
+        <p className='student__name'>Gurucharan Gupta</p>
         </ReviewContent>
       </SliderDiv>
       <SliderDiv>
         <ReviewContent>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia nam tempora debitis assumenda eius voluptates ut aspernatur alias, veritatis, temporibus aut similique perferendis modi dolorum corporis doloribus repellat tempore.
+         One of the best classes for Accounting and Finance. Here the student get to learn more about the topics, tips and tricks to solve the sums. Each and every doubt is cleared by the professors with utmost patience. Thanks for helping me in overcoming my fear in accounting :)
         </p>
         <span>⭐⭐⭐⭐⭐</span>
         <img src={Review3}></img>
-        <p>Sarah Taylore</p>
+        <p>Sushmita Maji</p>
         
         </ReviewContent>
       </SliderDiv>
       <SliderDiv>
         <ReviewContent>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia nam tempora debitis assumenda eius voluptates ut aspernatur alias, veritatis, temporibus aut similique perferendis modi dolorum corporis doloribus repellat tempore.
+          Can't express in words the way of teaching is perfect the faculty is awesome in depth conceptual really excellent place to learn about accounting and finance.
         </p>
         <span>⭐⭐⭐⭐⭐</span>
         <img src={Review4}></img>
-        <p>Rohit Nair</p>
+        <p>siddhant jadhav</p>
         
         </ReviewContent>
       </SliderDiv>
       <SliderDiv>
         <ReviewContent>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia nam tempora debitis assumenda eius voluptates ut aspernatur alias, veritatis, temporibus aut similique perferendis modi dolorum corporis doloribus repellat tempore.
+          This is the first time I have attended a class in this format and wondered how effective it would be. It was very effective. The instructor was very knowlegeable and provided a wealth of information about the current version, especially since the last version I used was several releases ago.
         </p>
         <span>⭐⭐⭐⭐⭐</span>
         <img src={Review5}></img>
-        <p>Anjali Desai</p>
+        <p>Ashish Rawat</p>
         
         </ReviewContent>
       </SliderDiv>
       <SliderDiv>
         <ReviewContent>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia nam tempora debitis assumenda eius voluptates ut aspernatur alias, veritatis, temporibus aut similique perferendis modi dolorum corporis doloribus repellat tempore.
+          It's an ideal place for nurturing our knowledge about accounting & finance - but it's not the only thing, their exceptional faculty makes the experience more than better. Conceptual teaching is the key factor of this academy. Conclusively, Apex Academy is one of the best classes you can enroll into!🌻
         </p>
         <span>⭐⭐⭐⭐⭐</span>
         <img src={Review6}></img>
-        <p>Suresh Kumar</p>
+        <p>Aditi Adulkar</p>
         
         </ReviewContent>
       </SliderDiv>
       <SliderDiv>
         <ReviewContent>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia nam tempora debitis assumenda eius voluptates ut aspernatur alias, veritatis, temporibus aut similique perferendis modi dolorum corporis doloribus repellat tempore.
+          This is my personal experience the creative teaching techniques of the faculty is quite impressive must say like no one other. And mainly for accounting subjects in commerce stream is up to the mark.
         </p>
         <span>⭐⭐⭐⭐⭐</span>
         <img src={Review7}></img>
-        <p>Ritu Malhotra</p>
+        <p>Simran Gomes</p>
         
         </ReviewContent>
       </SliderDiv>
       <SliderDiv>
         <ReviewContent>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia nam tempora debitis assumenda eius voluptates ut aspernatur alias, veritatis, temporibus aut similique perferendis modi dolorum corporis doloribus repellat tempore.
+          One of the reasons I’m attracted to this institution is because of your obvious willingness and creativity. This shows a true respect for your students, and I find that admirable.❤️
         </p>
         <span>⭐⭐⭐⭐⭐</span>
         <img src={Review8}></img>
-        <p>Nikhil Reddy</p>
+        <p>Kamal Mondal</p>
         
         </ReviewContent>
       </SliderDiv>
       <SliderDiv>
         <ReviewContent>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia nam tempora debitis assumenda eius voluptates ut aspernatur alias, veritatis, temporibus aut similique perferendis modi dolorum corporis doloribus repellat tempore.
+          A great academy for finance and accounting , top learning with great faculty
         </p>
         <span>⭐⭐⭐⭐⭐</span>
         <img src={Review9}></img>
-        <p>Arjun Singh</p>
+        <p>Rohit Maji</p>
         
         </ReviewContent>
       </SliderDiv>
