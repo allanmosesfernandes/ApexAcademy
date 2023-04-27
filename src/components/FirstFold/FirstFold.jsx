@@ -12,14 +12,14 @@ import Testimonials from '../Testimonials/Testimonials';
 import Contact from '../Contact/Contact';
 import Vision from '../Vision/Vision';
 import Values from '../Values/Values';
-
+import { ArrowButton } from '../Buttons/buttons.styles'
 const FirstFold = () => {
   return (
     <>
     <Container>
         <FirstFoldContainer>
           <FirstFoldLeftDiv>
-          <h2>Launch your, academic <br /></h2>
+          <h2>Launch your academic <br /></h2>
           <div>
             <YellowCircleImage>success  <RocketImg src={Rocket} /></YellowCircleImage>
           </div>
@@ -27,13 +27,16 @@ const FirstFold = () => {
             <BodyCopy>
               Join Apex Academy for the best commerce education at an affordable cost. Our experienced instructors and innovative learning approach will equip you with the skills and knowledge to succeed in your career.
             </BodyCopy>
-            <Buttons></Buttons>
+            {/* <Buttons></Buttons> */}
+            <ArrowButton>Unlock Your Potential</ArrowButton>
           </div>
           </FirstFoldLeftDiv>
           <FirstFoldRight>
             <Lottie animationData={groovy} loop={true} className="lottie1"/>
           </FirstFoldRight>
+
         </FirstFoldContainer>
+   
     </Container>
       <ExploreCourses />
       <Values />
