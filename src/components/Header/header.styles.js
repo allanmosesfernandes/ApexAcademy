@@ -47,7 +47,7 @@ export const LinksRIght = styled.div `
 margin-left: auto;
 display: flex;
 gap: 2rem;
-
+align-items: center;
 a {
   color: ${(props) => props.theme.primaryColor};
 font-size: ${props => props.theme.fssmall};

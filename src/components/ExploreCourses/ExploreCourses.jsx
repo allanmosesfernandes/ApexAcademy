@@ -99,7 +99,7 @@ const handleButtonClick = (index) => {
 <ExploreCoursesSection>
 <h2>Explore our courses</h2>
 <p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum et quae, modi corrupti animi obcaecati est aliquam accusamus expedita voluptate.
+Discover the range of courses we offer at Apex Academy and find the perfect fit for your career goals.<br /> Our programs are designed to provide you with a comprehensive understanding of commerce and equip you with the skills to succeed.
 </p>
     <ButtonContainer>
       <CourseBtn onClick={() => handleButtonClick(0)} className={activeButton === 0 ? "active" : ""}> FYJC </CourseBtn>

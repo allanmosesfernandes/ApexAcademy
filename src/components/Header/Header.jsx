@@ -4,7 +4,7 @@ import  Container  from '../styles/container.stylesheet'
 import { Outlet } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-
+import { ArrowButton } from '../Buttons/buttons.styles';
 
 const Header = () => {
 
@@ -46,7 +46,8 @@ window.addEventListener("scroll", changeColor);
         <LinksRIght>
             <Link to="about">About</Link>
             <Link to="/">Pricing</Link>
-            <Link to="enquries">Enquiries</Link>
+            <Link to="enquries"><ArrowButton>Enroll Now</ArrowButton></Link> 
+            
         </LinksRIght>
         </nav>
     </StyledHeader>
