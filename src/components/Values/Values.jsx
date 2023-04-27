@@ -31,19 +31,19 @@ const Values = () => {
                     </div>
                 </div>
                 <div className="approach_div_right">
-                   <span className="number-small">01 - Strategy</span>
-                   <h4>think big thanks to an in-depth analysis.</h4>
+                   <span className="number-small">01 - Gain a Comprehensive Understanding of Concepts</span>
+                   <h4>Conceptual Learning</h4>
                    <p className="body-copy">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum nesciunt assumenda rerum nulla ullam, sit quia beatae velit molestiae saepe.
+                     At Apex Academy, we understand that true mastery of commerce requires more than just surface-level knowledge. That's why our courses focus on developing your conceptual understanding of commerce concepts, going beyond the basics.
                    </p>
                 </div>
             </Approach__container>
             <Approach__container>
                 <div className="approach_div_right">
-                   <span className="number-small">02 - Strategy</span>
-                   <h4>think big thanks to an in-depth analysis.</h4>
+                   <span className="number-small">02 - Quality Education at an Affordable Price</span>
+                   <h4>Affordable Pricing</h4>
                    <p className="body-copy">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum nesciunt assumenda rerum nulla ullam, sit quia beatae velit molestiae saepe.
+                    At Apex Academy, we believe that everyone should have access to quality education. That's why we offer our courses at an affordable price point, without compromising on the quality of education. Our goal is to help you achieve your career aspirations without breaking the bank.
                    </p>
                 </div>
                 <div className="approach_div_left">
@@ -60,10 +60,10 @@ const Values = () => {
                     </div>
                 </div>
                 <div>
-                   <span className="number-small">03 - Strategy</span>
-                   <h4>think big thanks to an in-depth analysis.</h4>
+                   <span className="number-small">03 - Learn from Industry Experts with Real-World Experience</span>
+                   <h4>Team of Experts.</h4>
                    <p className="body-copy">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum nesciunt assumenda rerum nulla ullam, sit quia beatae velit molestiae saepe.
+                    Our instructors at Apex Academy bring real-world knowledge and insights to the classroom, giving you a competitive edge in your understanding of concepts. Our goal is to provide you with a comprehensive understanding of commerce that goes beyond just memorizing formulas, and equip you with the skills you need to succeed in the subject and beyond.
                    </p>
                 </div>
             </Approach__container>
