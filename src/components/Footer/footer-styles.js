@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { keyframes } from "styled-components";
 
 export const StyledFooter = styled.footer`
-background-color: #333333;
+background-color: #29524A;
 padding: 3rem 0;
 min-height: 200px;
 text-align: center;

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import WhatsApp from "../../assets/images/Footer/whatsapp.svg";
 import Call from "../../assets/images/Footer/phone-circle.svg";
 import Insta from "../../assets/images/Footer/instagram.svg";
-import AF from "../../assets/images/aF.png";
+import AF from "../../assets/images/logo-final.png";
 import Star from "../../assets/images/Footer/star.svg"
 const Footer = () => {
     let currentYear = new Date().getFullYear();

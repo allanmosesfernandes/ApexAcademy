@@ -29,6 +29,7 @@ h4 {
         right: 0;
         -webkit-text-stroke-width: 0;
         -webkit-text-fill-color: white;
+        font-family: "Neue Bold";
     }
 
     @media only screen and (max-width: 600px) {
