@@ -10,8 +10,8 @@ border-bottom: 2px solid #dcdcdc;
 padding: 1rem;
 width: 100%;
 margin: auto;
-  top: 0;
-  left: 0;
+top: 0;
+left: 0;
 position: sticky;
 z-index: 4;
 transition: all 0.5s easein;
@@ -24,17 +24,15 @@ transition: all 0.5s easein;
 
 h2 {
     font-size: ${props => props.theme.fsmedium};
-
     span {
         position: relative;
         color: ${(props) => props.theme.primaryColor};
-
         font-weight: 800;
     }
 
 @media only screen and (max-width: 600px) {
   font-size: ${props => props.theme.fssmall};
-}
+  }
 }
 img {
     width: 100px;
