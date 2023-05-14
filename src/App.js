@@ -13,6 +13,8 @@ import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
 import PageNotFound from "./components/404/PageNotFound";
 import EnquiryForm from "./components/EnquiryForm/EnquiryForm";
+import PricingContainer from "./components/Pricing/PricingContainer";
+
 
 function App() {
   const theme = {
@@ -38,6 +40,7 @@ function App() {
             <Route index path="/" element={<FirstFold />} />
             <Route path="about" element={<About />} />
             <Route path="enquries" element={<EnquiryForm />} />
+            <Route path="pricing" element={<PricingContainer />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
           <Footer />
