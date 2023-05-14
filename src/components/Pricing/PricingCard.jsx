@@ -1,10 +1,14 @@
 import React from 'react'
-import { PricingCardStyles } from './pricingStyles';
+import { PricingCardStyles, PricingButton } from './pricingStyles';
 const PricingCard = (props) => {
-    const {title, price} = props;
+    const {title, price, active, onClick} = props;
+    
+    const handleClick = () => {
+        onClick(title);
+    }
 
     return (
-        <PricingCardStyles>
+        <PricingCardStyles active={active} onClick={handleClick}>
             <h3>{title}</h3>
             <h2>₹{price}</h2>
             <p>What's included</p>
@@ -14,7 +18,7 @@ const PricingCard = (props) => {
                 <li>Practise tests</li>
                 <li>Interactive quizzes</li>
             </ul>
-            <button>Book Now!</button>
+            <PricingButton active={active}>Book Now</PricingButton>
         </PricingCardStyles>
     )
 }
