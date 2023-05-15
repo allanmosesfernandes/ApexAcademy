@@ -1,7 +1,14 @@
 import React from 'react'
 import { PricingCardStyles, PricingButton } from './pricingStyles';
-const PricingCard = (props) => {
+import { useNavigate } from 'react-router-dom';
 
+
+const PricingCard = (props) => {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/enquries');
+  };
     const {title, price, active, onClick, marketPrice} = props;
     
     const handleClick = () =>{
@@ -19,7 +26,7 @@ const PricingCard = (props) => {
                 <li>Practise tests</li>
                 <li>Interactive quizzes</li>
             </ul>
-            <PricingButton active={active}>Book Now</PricingButton>
+            <PricingButton active={active} onClick={handleButtonClick}>Book Now</PricingButton>
         </PricingCardStyles>
     )
 }
