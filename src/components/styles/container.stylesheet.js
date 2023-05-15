@@ -10,6 +10,10 @@ h2 {
     font-family: "Neue Bold";
     color: #fff;
 }
+
+h3{
+  font-size: ${(props) => props.theme.fsmedium};
+}
 @media only screen and (max-width: 600px) {
   h2 {
     font-size: 4rem;

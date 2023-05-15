@@ -1,9 +1,10 @@
 import React from 'react'
 import { PricingCardStyles, PricingButton } from './pricingStyles';
 const PricingCard = (props) => {
+
     const {title, price, active, onClick} = props;
     
-    const handleClick = () => {
+    const handleClick = () =>{
         onClick(title);
     }
 

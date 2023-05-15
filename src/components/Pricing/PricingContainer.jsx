@@ -15,7 +15,7 @@ const PricingContainer = () => {
   return (
     <Container>
         <PricingWrapper>
-            <h3>Different Plans for different needs</h3>
+            <h3 id="pricing-title">Different plans for different needs</h3>
             <PricingGrid>
                 <PricingCard 
                     title="Standard IX" 
@@ -61,7 +61,7 @@ const PricingContainer = () => {
                     title="TYBcom" 
                     price="1234" 
                     onClick = {handleCardClick}
-                    active={activeCard === "TYBcom"}
+                    active={activeCard === "SYBcom"}
                 />
             </PricingGrid>
             

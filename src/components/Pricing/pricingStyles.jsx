@@ -1,9 +1,20 @@
 import styled from "styled-components";
 import { css } from "styled-components";
 export const PricingWrapper = styled.div`
+
+#pricing-title {
+  text-align: center;
+}
 h3,h2 {
-    text-align: center;
+    text-align: left;
     margin: 2rem 0;
+}
+
+p {
+  font-size: ${(props) => props.theme.fsmedium};
+}
+ul {
+    font-size: 1.5rem;
 }
 `
 
@@ -14,7 +25,7 @@ export const PricingCardStyles = styled.div`
   background-color: ${(props) => (props.active ? '#000' : 'transparent')};
   color: ${(props) => (props.active ? '#fff' : '#000')};
   h2 {
-        color: ${(props) => (props.active ? '#FFF' : '#000')};
+        color: ${(props) => (props.active ? '#FFF' : '#000000')};
   }
   h3 {
     border-bottom: 1px solid ${(props) => (props.active ? '#FFF' : '#000')};
@@ -28,20 +39,14 @@ export const PricingCardStyles = styled.div`
   transition: transform 0.2s ease-in;
 
   /* Apply scaling transform when active */
-  ${(props) =>
-    props.active &&
-    css`
-      transform: scale(1.05);
-    `};
-
-`;
+  ${(props) => props.active &&css`transform: scale(1.05);`};`;
 
 
 export const PricingGrid = styled.div`
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 gap: 3rem;
-
+margin: 5rem 0;
 @media only screen and (max-width: 1200px) {
   grid-template-columns: 1fr 1fr;
 }
@@ -50,7 +55,6 @@ gap: 3rem;
   grid-template-columns: 1fr;
 }
 `
-
 
 export const PricingButton = styled.button`
 border-radius: 24px;
