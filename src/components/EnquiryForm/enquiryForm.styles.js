@@ -16,7 +16,7 @@ h2{
 
 p {
   padding: 2rem 0;
-  font-size: ${props => props.theme.fsmedium}; 
+  font-size: ${props => props.theme.fssmall}; 
   @media only screen and (max-width: 600px) {
     font-size: ${props => props.theme.fssmall}; 
   }

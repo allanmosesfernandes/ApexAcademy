@@ -8,6 +8,7 @@ const PricingCard = (props) => {
 
   const handleButtonClick = () => {
     navigate('/enquries');
+    window.scrollTo(0, 0);
   };
     const {title, price, active, onClick, marketPrice} = props;
     

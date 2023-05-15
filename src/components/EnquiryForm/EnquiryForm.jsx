@@ -2,7 +2,6 @@ import React from 'react'
 import Container from '../styles/container.stylesheet'
 import { useState } from 'react'
 import { FormDivWrapper, EnquiresFormStyled, PhoneInputWrapper } from './enquiryForm.styles'
-import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import GoogleMap from '../GoogleMaps/GoogleMap';
 
@@ -45,7 +44,7 @@ const handleSubmit = (event) => {
   return (
     <Container>
         <FormDivWrapper>
-            <div>
+            <div id="form">
             <h2>Enquiries</h2>
             <p>
                 Fill out the form below and we'll get in touch shortly
@@ -67,6 +66,7 @@ const handleSubmit = (event) => {
                     <input  type="email" name="email" placeholder='Email address' />
 
                     <select name="courseSelection">
+                        <option value="" disabled selected>Select your course</option>
                         <option value="FYJC">FYJC</option>
                         <option value="SYJC">SYJC</option>
                         <option value="FYBCOM">FYBCOM</option>
