@@ -39,7 +39,7 @@ function App() {
           <Routes>
             <Route index path="/" element={<FirstFold />} />
             <Route path="about" element={<About />} />
-            <Route path="enquries" element={<EnquiryForm />} />
+            <Route path="contact" element={<EnquiryForm />} />
             <Route path="pricing" element={<PricingContainer />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>

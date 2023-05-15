@@ -6,7 +6,7 @@ import { useState } from 'react';
 import Student from "../../assets/images/woman-student.png";
 import Gift from "../../assets/images/gift.png";
 import { ReferalSteps } from './pricingStyles';
-import { ReferalContent } from './pricingStyles';
+import { ReferalContent,ReferalContribution } from './pricingStyles';
 const PricingContainer = () => {
     const [activeCard, setActiveCard ] = useState("Standard IX");
 
@@ -81,9 +81,11 @@ const PricingContainer = () => {
                 />
             </PricingGrid>
             
-            <h3 id="pricing-title"><img src={Gift} alt="Referral Gift" id="referal-gift" 
-            />Refer a Friend and Save 20% <img src={Gift} alt="Referral Gift" id="referal-gift" 
-            /></h3>
+            <ReferalContribution>
+                <img src={Gift} alt="Referral Gift" id="referal-gift"/>
+                <h3>Refer a Friend and Save 20% </h3>
+                <img src={Gift} alt="Referral Gift" id="referal-gift"/>
+            </ReferalContribution>
             <p className='pricing-bodycopy'>
                 At Apex Academy, we believe in the power of word-of-mouth and the value of our students' recommendations. That's why we're excited to introduce our referral program.<br /> Refer a friend to Apex and both you and your friend will receive a fantastic discount of 20% on tuition fees!
             </p>

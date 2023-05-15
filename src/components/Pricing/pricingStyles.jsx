@@ -50,7 +50,7 @@ export const PricingContribution = styled.div`
 font-size: ${(props) => props.theme.fsxsmall};
 max-width: 800px;
 display: flex;
-margin: auto;
+margin: 2rem auto;
 background-color: #99F6E0;
 text-align: center;
 justify-content: center;
@@ -64,6 +64,17 @@ img {
   width: 30px;
   height: 30px;
   margin-right: 10px;
+}
+`
+
+export const ReferalContribution = styled(PricingContribution)`
+
+@media only screen and (max-width: 800px) {
+  flex-direction: row;
+h3 {
+  font-size: ${(props) => props.theme.fssmall};
+  text-align: center;
+}
 }
 `
 export const PricingCardStyles = styled.div`
