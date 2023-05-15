@@ -1,10 +1,18 @@
 import styled from "styled-components";
 import { css } from "styled-components";
 
-
 export const PricingWrapper = styled.div`
+
+#referal-gift {
+  width: 40px;
+  height: 40px;
+  margin: 0 20px;
+}
 #pricing-title {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @media only screen and (max-width: 600px) {
    font-size: ${(props) => props.theme.fssmall};
   }
@@ -13,6 +21,15 @@ h3,h2 {
     text-align: left;
     margin: 2rem 0;
 }
+
+h4 {
+  font-size: ${(props) => props.theme.fsmedium};
+  margin-bottom: 2rem;
+}
+ol {
+  font-size: ${(props) => props.theme.fssmall};
+}
+
 .pricing-bodycopy {
   font-size: ${(props) => props.theme.fssmall};
   text-align: center;
@@ -109,4 +126,27 @@ text-transform: uppercase;
 font-weight: bold;
 margin: 1.5rem auto;
 padding: 1.5rem;
+`
+
+
+export const ReferalSteps = styled.ul`
+li {
+  font-size: ${(props) => props.theme.fssmall};
+  margin: 1rem 0;
+  font-weight: 100;
+
+}
+@media only screen and (max-width: 600px) {
+  li {font-size: ${(props) => props.theme.fsxsmall};}
+}
+`
+
+export const ReferalContent = styled.p`
+span {
+      border-bottom: 2px solid black;
+}
+@media only screen and (max-width: 600px) {
+  span {
+  font-size: ${(props) => props.theme.fssmall};
+  }
 `
