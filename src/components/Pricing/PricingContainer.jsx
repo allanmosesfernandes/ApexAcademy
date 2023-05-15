@@ -3,7 +3,7 @@ import Container from '../styles/container.stylesheet'
 import { PricingWrapper, PricingGrid, PricingContribution } from './pricingStyles';
 import PricingCard from './PricingCard';
 import { useState } from 'react';
-
+import Student from "../../assets/images/woman-student.png"
 const PricingContainer = () => {
     const [activeCard, setActiveCard ] = useState("Standard IX");
 
@@ -14,8 +14,14 @@ const PricingContainer = () => {
   return (
     <Container>
         <PricingWrapper>
-            <h3 id="pricing-title">Different plans for different needs</h3>
-            <PricingContribution><strong>Empowering Women:</strong>  &nbsp;&nbsp;4% of our revenue supports women education initiatives.</PricingContribution>
+            <h3 id="pricing-title">Affordable Pricing for Quality Education</h3>
+            <p className='pricing-bodycopy'>
+                At Apex academy, we are committed to providing affordable and accessible education to students. Unlike other coaching institues, we prioritize your financial well-being by offering rates that are nearly half of what you would typically pay at a premium institute. We firmly believe that high-quality education should be within reach for all students, regardless of their financial background.
+            </p>
+            <PricingContribution><img src={Student} alt="woman student" /><strong>Empowering Women:</strong>  
+            
+            &nbsp;&nbsp;4% of our revenue supports women education initiatives.
+            </PricingContribution>
             <PricingGrid>
                 <PricingCard 
                     title="Standard IX" 

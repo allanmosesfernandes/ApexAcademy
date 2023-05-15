@@ -5,12 +5,23 @@ import { css } from "styled-components";
 export const PricingWrapper = styled.div`
 #pricing-title {
   text-align: center;
+  @media only screen and (max-width: 600px) {
+   font-size: ${(props) => props.theme.fssmall};
+  }
 }
 h3,h2 {
     text-align: left;
     margin: 2rem 0;
 }
+.pricing-bodycopy {
+  font-size: ${(props) => props.theme.fssmall};
+  text-align: center;
+  margin-bottom: 2rem;
 
+  @media only screen and (max-width: 600px) {
+   font-size: ${(props) => props.theme.fsxsmall};
+  }
+}
 p {
   font-size: ${(props) => props.theme.fsmedium};
 }
@@ -27,11 +38,16 @@ background-color: #99F6E0;
 text-align: center;
 justify-content: center;
 padding: 2rem;
-
+align-items: center;
 @media only screen and (max-width: 800px) {
   flex-direction: column;
 }
 
+img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
 `
 export const PricingCardStyles = styled.div`
   border-radius: 24px;
