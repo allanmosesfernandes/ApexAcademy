@@ -13,43 +13,47 @@ const ExploreCourses = () => {
 const [activeButton, setActiveButton] = useState(0);
     const [courseDetails, setCourseDetails] = useState([
         {
-            courseTitle: "FYJC",
+            courseTitle: "School",
             subjects: [
                 {
-                    name: "Mathematics and Statistics",
+                    name: "Maths",
                     image: Stats
                 },
                 {
-                    name: "Secretarial Practice",
+                    name: "Science",
                     image: Retail
                 },
                 {
-                    name: "Organisation of Commerce",
+                    name: "Social Studies",
                     image: AutoGraphSharp
                 },
                 {
-                    name: "Economics",
+                    name: "English",
                     image: Coins
                 },
                 {
-                    name: "Book-Keeping & Accountancy",
+                    name: "Hindi",
                     image: Ruppee
                 },
+                {
+                    name: "Marathi",
+                    image: Ruppee
+                }
             ]
         },
         {
             courseTitle: "SYJC",
             subjects: [
                 {
-                    name: "Statistics",
+                    name: "Accounts/ Book Keeping",
                     image: Stats
                 },
                 {
-                    name: "S.P",
+                    name: "Maths",
                     image: Retail
                 },
                 {
-                    name: "Organisation of Commerce",
+                    name: "Secreterial Practice",
                     image: Chart
                 },
                 {
@@ -57,7 +61,7 @@ const [activeButton, setActiveButton] = useState(0);
                     image: Coins
                 },
                 {
-                    name: "Book-Keeping and Accountancy",
+                    name: "OCM",
                     image: Ruppee
                 },
             ]
@@ -102,13 +106,12 @@ const handleButtonClick = (index) => {
 Discover the range of courses we offer at Apex Academy and find the perfect fit for your career goals.<br /> Our programs are designed to provide you with a comprehensive understanding of commerce and equip you with the skills to succeed.
 </p>
     <ButtonContainer>
-      <CourseBtn onClick={() => handleButtonClick(0)} className={activeButton === 0 ? "active" : ""}> FYJC </CourseBtn>
-      <CourseBtn onClick={() => handleButtonClick(1)} className={activeButton === 1 ? "active" : ""}>SYJC</CourseBtn>
-      <CourseBtn onClick={() => handleButtonClick(2)} className={activeButton === 2 ? "active" : ""}>FYBCOM</CourseBtn>
-      <CourseBtn onClick={() => handleButtonClick(3)} className={activeButton === 3 ? "active" : ""}>SYBCOM</CourseBtn>
-      <CourseBtn onClick={() => handleButtonClick(4)} className={activeButton === 2 ? "active" : ""}>TYBCOM</CourseBtn>
-      <CourseBtn onClick={() => handleButtonClick(5)} className={activeButton === 2 ? "active" : ""}>FYBCOM</CourseBtn>
-      <CourseBtn onClick={() => handleButtonClick(6)} className={activeButton === 2 ? "active" : ""}>FYBCOM</CourseBtn>
+      <CourseBtn onClick={() => handleButtonClick(0)} className={activeButton === 0 ? "active" : ""}>School Section V to X</CourseBtn>
+      <CourseBtn onClick={() => handleButtonClick(1)} className={activeButton === 1 ? "active" : ""}>FYJC & SYJC (Commerce)</CourseBtn>
+      <CourseBtn onClick={() => handleButtonClick(2)} className={activeButton === 2 ? "active" : ""}>BAF</CourseBtn>
+      <CourseBtn onClick={() => handleButtonClick(3)} className={activeButton === 3 ? "active" : ""}>BMS</CourseBtn>
+      <CourseBtn onClick={() => handleButtonClick(4)} className={activeButton === 2 ? "active" : ""}>B.Com</CourseBtn>
+      <CourseBtn onClick={() => handleButtonClick(5)} className={activeButton === 2 ? "active" : ""}>BBI</CourseBtn>
     </ButtonContainer>
     <DisplayCourse>
 
@@ -116,7 +119,7 @@ Discover the range of courses we offer at Apex Academy and find the perfect fit 
         <CourseCard className={activeButton === 0 ? 'active' : '' }>
         <CourseCardFlexContainer>
             {
-                courseDetails.filter((course) => course.courseTitle === "FYJC")
+                courseDetails.filter((course) => course.courseTitle === "School")
                 .map((course) => course.subjects.map((subject, index) => (
                     <CourseCardDetails key={index}>
                         <img src={subject.image} alt={subject.name} />
