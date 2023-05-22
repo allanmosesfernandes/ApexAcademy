@@ -8,7 +8,7 @@ import {
   TextPiece,
   SentiImage,
 } from './about-styles'
-import Pexel from '../../assets/images/pexel.jpg'
+import Pexel from '../../assets/images/apex-class.jpg'
 import Senti from '../../assets/images/story.jpg'
 const About = () => {
   return (

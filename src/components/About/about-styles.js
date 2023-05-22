@@ -32,7 +32,8 @@ export const AboutImageText = styled.div`
   img {
     width: 90%;
     border-right: 1px solid black;
-    filter: blur(2px);
+    filter: grayscale(1);
+    padding: 2rem;
   }
   p {
     font-size: ${(props) => props.theme.fssmall};
@@ -58,7 +59,10 @@ export const AboutStoryContainer = styled.div`
   display: grid;
   grid-template-columns: 100px 2fr 1fr;
   gap: 1rem;
-
+  .c {
+    filter: grayscale(1);
+    margin: auto;
+  }
   @media only screen and (max-width: 600px) {
     //code goes here
     grid-template-columns: 1fr 1fr;
