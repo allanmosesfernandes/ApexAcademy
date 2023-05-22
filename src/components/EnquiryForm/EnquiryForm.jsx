@@ -44,7 +44,37 @@ const handleSubmit = (event) => {
   return (
     <Container>
       <FormDivWrapper>
-        <div id='form'>
+        <form name='contact' method='POST' data-netlify='true'>
+          <p>
+            <label>
+              Your Name: <input type='text' name='name' />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Email: <input type='email' name='email' />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Role:{' '}
+              <select name='role[]' multiple>
+                <option value='leader'>Leader</option>
+                <option value='follower'>Follower</option>
+              </select>
+            </label>
+          </p>
+          <p>
+            <label>
+              Message: <textarea name='message'></textarea>
+            </label>
+          </p>
+          <p>
+            <button type='submit'>Send</button>
+          </p>
+        </form>
+
+        {/* <div id='form'>
           <h2>Enquiries</h2>
           <p>Fill out the form below and we'll get in touch shortly</p>
 
@@ -98,7 +128,7 @@ const handleSubmit = (event) => {
             </PhoneInputWrapper>
             <button type='submit'>Submit</button>
           </EnquiresFormStyled>
-        </div>
+        </div> */}
         <GoogleMap />
       </FormDivWrapper>
     </Container>

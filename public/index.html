@@ -43,7 +43,30 @@
     <title>Apex Academy</title>
   </head>
   <body>
+    <input type="hidden" name="contact" value="contact" />
 
+    <form name="contact" method="POST" data-netlify="true" hidden>
+      <p>
+        <label>Your Name: <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Your Email: <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label>Your Role: <select name="role[]" multiple>
+            <option value="leader">Leader</option>
+            <option value="follower">Follower</option>
+          </select></label>
+      </p>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+
+<!-- 
         <form  netlify netlify-honeypot="bot-field" hidden name='enquiries' method='POST' data-netlify='true' action='/about' id='enquiries'>
           <input type='hidden' name='form-name' value='enquiries' />
           <input type='text' name='firstName' placeholder='First Name' pattern='^[a-zA-Z\s-]+$'
@@ -66,7 +89,7 @@
             title='Enter a valid mobile number' />
       
           <button type='submit'>Submit</button>
-        </form>
+        </form> -->
 
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
