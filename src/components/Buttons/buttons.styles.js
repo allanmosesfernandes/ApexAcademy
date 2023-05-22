@@ -75,8 +75,8 @@ export const ArrowButton = styled.button`
   transform: translateY(2px);
 }
 @media only screen and (max-width: 600px) {
-font-size: 16px;
-height: 40px;
+font-size: 12px;
+height: 30px;
 }
 `
 export default StyledButton

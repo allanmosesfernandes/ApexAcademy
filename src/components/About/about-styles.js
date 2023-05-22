@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 export const AboutWrapper = styled.section`
+  .blue-emphasis {
+    color: ${(props) => props.theme.primaryColor};
+    font-weight: bold;
+  }
   h2 {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -13,7 +17,8 @@ export const AboutWrapper = styled.section`
   @media only screen and (max-width: 600px) {
     //code goes here
     h2 {
-      font-size: ${(props) => props.theme.fsmedium};
+      font-size: ${(props) => props.theme.fssmall};
+      padding: 2rem 0;
     }
     p {
       font-size: ${(props) => props.theme.fssmall};
@@ -22,10 +27,7 @@ export const AboutWrapper = styled.section`
 `
 
 export const AboutImageText = styled.div`
-  .blue-emphasis {
-    color: ${(props) => props.theme.primaryColor};
-    font-weight: bold;
-  }
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-bottom: 1px solid black;

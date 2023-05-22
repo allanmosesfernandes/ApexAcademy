@@ -15,7 +15,7 @@ const About = () => {
     <Container>
       <AboutWrapper>
         <h2>APEX Learning Academy</h2>
-        <p>Achieving Proficiency and Excellence in Commerce Education.</p>
+        <p><span className="blue-emphasis">A</span>chieving <span className="blue-emphasis">P</span>roficiency and <span className="blue-emphasis">EX</span>cellence in Commerce Education.</p>
         <AboutImageText>
           <img src={Pexel} alt='Vertical Student' />
           <p>
