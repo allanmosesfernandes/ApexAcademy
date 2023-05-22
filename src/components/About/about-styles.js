@@ -48,9 +48,11 @@ export const AboutImageText = styled.div`
 
     img {
       width: 100%;
+      padding: 0;
     }
     p {
-      text-align: center;
+      text-align: left;
+      font-size: ${props => props.theme.fsxsmall}
     }
   }
 `
@@ -65,7 +67,7 @@ export const AboutStoryContainer = styled.div`
   }
   @media only screen and (max-width: 600px) {
     //code goes here
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto;
 
     .a {
@@ -81,6 +83,8 @@ export const AboutStoryContainer = styled.div`
     .c {
       grid-row: 1;
       grid-column: 1 / span 2;
+      aspect-ratio: 1/1;
+      object-fit: contain;
     }
   }
 `
@@ -95,7 +99,7 @@ export const Story = styled.div`
     font-size: ${(props) => props.theme.fslarge};
 
     @media only screen and (max-width: 600px) {
-      font-size: ${(props) => props.theme.fssmall};
+      font-size: ${(props) => props.theme.fsxsmall} ;
       padding: 1rem;
     }
   }
@@ -104,6 +108,10 @@ export const TextPiece = styled.div`
   p {
     font-size: ${(props) => props.theme.fssmall};
     height: 100%;
+    @media only screen and (max-width: 600px) {
+      //code goes here    
+      font-size: ${(props) => props.theme.fsxsmall};
+    }
     .blue-emphasis {
       color: ${(props) => props.theme.primaryColor};
       font-weight: bold;
