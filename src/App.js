@@ -34,9 +34,6 @@ function App() {
 
     <>
       <ThemeProvider theme={theme}>
-        {
-          console.log("dfdfdfd")
-        }
         <GlobalStyleSheet />
           <Header />
           <Routes>
