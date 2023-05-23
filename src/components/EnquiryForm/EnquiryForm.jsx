@@ -51,9 +51,8 @@ const EnquiryForm = () => {
       <EnquiresFormStyled
         name='contact'
         method='POST'
-        data-netlify='true'>
-
-        <input type="hidden" name="contact" value="contact" />
+        data-netlify='true'
+        onSubmit={handleSubmit}>
         <input
           type='text'
           name='firstName'
@@ -97,7 +96,7 @@ const EnquiryForm = () => {
                 onChange={handleFormValueChange}
               />
             </PhoneInputWrapper>
-            <button type='submit' onClick={handleSubmit}>Submit</button>
+            <button type='submit'>Submit</button>
           </EnquiresFormStyled>
 
         {/* <div id='form'>
