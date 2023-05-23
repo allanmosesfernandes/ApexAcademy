@@ -55,6 +55,8 @@ const EnquiryForm = () => {
         method='POST'
         data-netlify='true'
         onSubmit={handleSubmit} >
+        <input type="hidden" name="contact" value="contact" />
+
         <input
           type='text'
           name='firstName'
