@@ -33,19 +33,16 @@ const EnquiryForm = () => {
       const encodedFormData = Object.keys(formFields)
         .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(formFields[key]))
         .join('&');
-      
-      const formData = new FormData();
-      formData.append('form-name', 'contact');
-      formData.append('encodedFormData', encodedFormData);
-      
+    
       fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: formData
+        body: encodedFormData
       })
         .then(() => alert("Success!"))
         .catch(error => alert(error));
     };
+    
     
     
   return (
