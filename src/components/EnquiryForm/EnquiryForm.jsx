@@ -51,7 +51,7 @@ const EnquiryForm = () => {
       <EnquiresFormStyled
         name='contact'
         method='POST'
-        data-netlify='true' ref={formRef}>
+        data-netlify='true'>
 
         <input type="hidden" name="contact" value="contact" />
         <input
