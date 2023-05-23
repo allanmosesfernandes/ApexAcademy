@@ -26,22 +26,22 @@ const EnquiryForm = () => {
         setFormFields({...formFields, [name]:value})
     }
 
-    const handleSubmit = (event) => {
-      event.preventDefault();
-      console.log(formFields);
-    
-      const encodedFormData = Object.keys(formFields)
-        .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(formFields[key]))
-        .join('&');
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encodedFormData,
-      })
-      .then(() => alert("Success!"))
-      .catch(error => alert(error));
-
-    };
+//     const handleSubmit = (event) => {
+//       event.preventDefault();
+//       console.log(formFields);
+//     
+//       const encodedFormData = Object.keys(formFields)
+//         .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(formFields[key]))
+//         .join('&');
+//       fetch('/', {
+//         method: 'POST',
+//         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+//         body: encodedFormData,
+//       })
+//       .then(() => alert("Success!"))
+//       .catch(error => alert(error));
+// 
+//     };
     
   return (
     <Container>
@@ -51,8 +51,7 @@ const EnquiryForm = () => {
       <EnquiresFormStyled
         name='contact'
         method='POST'
-        data-netlify='true'
-        onSubmit={handleSubmit}>
+        data-netlify='true'>
         <input
           type='text'
           name='firstName'
@@ -60,7 +59,6 @@ const EnquiryForm = () => {
           pattern='^[a-zA-Z\s-]+$'
           title='Name cannot contain special characters'
           required
-          onChange={handleFormValueChange}
         />
         <input
           type='text'
@@ -69,11 +67,10 @@ const EnquiryForm = () => {
           pattern='^[a-zA-Z\s-]+$'
           title='Name cannot contain special characters'
           required
-          onChange={handleFormValueChange}
         />
-            <input type='email' name='email' placeholder='Email address' onChange={handleFormValueChange}/>
+        <input type='email' name='email' placeholder='Email address'/>
 
-            <select name='courseSelection' defaultValue='' onChange={handleFormValueChange}>
+            {/* <select name='courseSelection' defaultValue='' onChange={handleFormValueChange}>
               <option value='' disabled>
                 Select your course
               </option>
@@ -95,7 +92,7 @@ const EnquiryForm = () => {
                 title='Enter a valid mobile number'
                 onChange={handleFormValueChange}
               />
-            </PhoneInputWrapper>
+            </PhoneInputWrapper> */}
             <button type='submit'>Submit</button>
           </EnquiresFormStyled>
 
