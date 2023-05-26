@@ -202,7 +202,7 @@ const subjectData = [
             subjects: [
               'Production & Total Quality Management',
               'Corporate Restructuring',
-              'Financial institutions & markets'
+              'Financial institutions & markets',
             ],
           },
         ],
@@ -225,6 +225,153 @@ const subjectData = [
               'Strategic Financial management',
               'International Finance',
               'Indirect Taxes(GST)',
+            ],
+          },
+        ],
+      },
+    ],
+    subjectTitle: 'BBI',
+    years: [
+      {
+        yearTitle: 'FYBBI',
+        semesters: [
+          {
+            semesterTitle: 'Semester 1',
+            subjects: [
+              'Principles of management',
+              'Financial Accounting',
+              'Economics',
+              'Quants & Maths',
+            ],
+          },
+          {
+            semesterTitle: 'Semester 2',
+            subjects: [
+              'Business Law',
+              'Financial Accounting',
+              'Organizational Behavior',
+              'Quants & Maths',
+            ],
+          },
+        ],
+      },
+      {
+        yearTitle: 'SYBBI',
+        semesters: [
+          {
+            semesterTitle: 'Semester 3',
+            subjects: [
+              'Financial management',
+              'Management Accounting',
+              'Direct Tax',
+              'Financial markets',
+            ],
+          },
+          {
+            semesterTitle: 'Semester 4',
+            subjects: [
+              'Financial management',
+              'Cost accounting',
+              'Corporate & Securities Law',
+              'Economics',
+            ],
+          },
+        ],
+      },
+      {
+        yearTitle: 'TYBBI',
+        semesters: [
+          {
+            semesterTitle: 'Semester 5',
+            subjects: [
+              'Strategic Management',
+              'Financial Reporting & Analysis',
+              'Business Ethics & Governance',
+            ],
+          },
+          {
+            semesterTitle: 'Semester 6',
+            subjects: [
+              'Security Analysis & Portfolio management',
+              'Central Banking',
+              'Marketing in Banking & Insurance',
+            ],
+          },
+        ],
+      },
+    ],
+    subjectTitle: 'BAF',
+    years: [
+      {
+        yearTitle: 'FYBAF',
+        semesters: [
+          {
+            semesterTitle: 'Semester 1',
+            subjects: [
+              'Financial Accounting',
+              'Cost Accounting',
+              'Financial Management',
+              'Business Economics',
+              'Business Environment',
+            ],
+          },
+          {
+            semesterTitle: 'Semester 2',
+            subjects: [
+              'Financial Accounting',
+              'Auditing',
+              'Direct taxation',
+              'Business Law',
+              'Maths',
+            ],
+          },
+        ],
+      },
+      {
+        yearTitle: 'SYBAF',
+        semesters: [
+          {
+            semesterTitle: 'Semester 3',
+            subjects: [
+              'Financial Accounting',
+              'Cost Accounting',
+              'Auditing',
+              'Business Law',
+              'Direct Taxation',
+            ],
+          },
+          {
+            semesterTitle: 'Semester 4',
+            subjects: [
+              'Financial management',
+              'Cost accounting',
+              'Corporate & Securities Law',
+              'Economics',
+            ],
+          },
+        ],
+      },
+      {
+        yearTitle: 'TYBAF',
+        semesters: [
+          {
+            semesterTitle: 'Semester 5',
+            subjects: [
+              'Financial Accounting',
+              'Financial Accounting',
+              'Cost Accounting',
+              'Indirect Taxation(GST)',
+              'Management Application',
+            ],
+          },
+          {
+            semesterTitle: 'Semester 6',
+            subjects: [
+              'Financial Accounting',
+              'Cost Accounting',
+              'Financial management',
+              'Indirect Taxation(GST)',
+              'Economics.'
             ],
           },
         ],
