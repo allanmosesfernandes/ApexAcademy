@@ -132,12 +132,7 @@ const subjectData = [
           },
           {
             semesterTitle: 'Semester 4',
-            subjects: [
-              'Economics',
-              'Business Law',
-              'Acc & FM',
-              'Auditing',
-            ],
+            subjects: ['Economics', 'Business Law', 'Acc & FM', 'Auditing'],
           },
         ],
       },
@@ -146,11 +141,21 @@ const subjectData = [
         semesters: [
           {
             semesterTitle: 'Semester 5',
-            subjects: ['Subject 1', 'Subject 2', 'Subject 3', 'Subject 4'],
+            subjects: [
+              'Economics',
+              'Financial Accounting & auditing',
+              'Cost Accounting',
+              'Direct & Indirect Taxation',
+            ],
           },
           {
             semesterTitle: 'Semester 6',
-            subjects: ['Subject 1', 'Subject 2', 'Subject 3', 'Subject 4'],
+            subjects: [
+              'Economics',
+              'Financial Accounting & auditing',
+              'Cost Accounting',
+              'Direct & Indirect Taxation',
+            ],
           },
         ],
       },
