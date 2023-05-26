@@ -1,29 +1,35 @@
 import React from 'react'
 
-const CourseTable = ({ courseData }) => {
+const CourseTable = ({ subjectData }) => {
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>Course</th>
-          <th>Semester</th>
-          <th>Subjects</th>
-        </tr>
-      </thead>
-      <tbody>
-        {courseData.map((course) =>
-          course.semesters.map((semester, index) => (
-            <tr key={index}>
-              {index === 0 && (
-                <td rowSpan={course.semesters.length}>{course.courseTitle}</td>
-              )}
-              <td>{semester.semesterTitle}</td>
-              <td>{semester.subjects.join(', ')}</td>
-            </tr>
-          )),
-        )}
-      </tbody>
-    </table>
+    <div>
+      {subjectData.map((subject) => (
+        <div key={subject.subjectTitle}>
+          <h1>{subject.subjectTitle}</h1>
+          {subject.years.map((year) => (
+            <div key={year.yearTitle}>
+              <h2>{year.yearTitle}</h2>
+              {year.semesters.map((semester) => (
+                <table id='customers' key={semester.semesterTitle}>
+                  <thead>
+                    <tr>
+                      <th>{semester.semesterTitle}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      {semester.subjects.map((subject, index) => (
+                        <td key={index}>{subject}</td>
+                      ))}
+                    </tr>
+                  </tbody>
+                </table>
+              ))}
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
   )
 }
 

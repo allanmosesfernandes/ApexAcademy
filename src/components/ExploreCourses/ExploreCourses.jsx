@@ -1,134 +1,167 @@
 import React, { useState } from 'react'
 import Container from '../styles/container.stylesheet'
-import { ButtonContainer , DisplayCourse, ExploreCoursesSection,CourseBtn,CourseCardsContainer,CourseCard, CourseCardFlexContainer , CourseCardDetails} from './explorecourses.styles'
-import Stats from "../../assets/images/EXPLORE/FunctionMath.svg";
-import AutoGraphSharp from "../../assets/images/EXPLORE/AutoGraphSharp.svg";
-import Coins from "../../assets/images/EXPLORE/coins.svg";
-import Ruppee from "../../assets/images/EXPLORE/MoneyBill.svg";
-import Chart from "../../assets/images/EXPLORE/FunctionMath.svg";
-import Retail from "../../assets/images/EXPLORE/Retail.svg";
-import CourseTable from './CourseTables';
+import {
+  ButtonContainer,
+  DisplayCourse,
+  ExploreCoursesSection,
+  CourseBtn,
+  CourseCardsContainer,
+  CourseCard,
+  CourseCardFlexContainer,
+  CourseCardDetails,
+} from './explorecourses.styles'
+import Stats from '../../assets/images/EXPLORE/FunctionMath.svg'
+import AutoGraphSharp from '../../assets/images/EXPLORE/AutoGraphSharp.svg'
+import Coins from '../../assets/images/EXPLORE/coins.svg'
+import Ruppee from '../../assets/images/EXPLORE/MoneyBill.svg'
+import Chart from '../../assets/images/EXPLORE/FunctionMath.svg'
+import Retail from '../../assets/images/EXPLORE/Retail.svg'
+import CourseTable from './CourseTables'
 
 const ExploreCourses = () => {
-const [activeButton, setActiveButton] = useState(0);
-    const [courseDetails, setCourseDetails] = useState([
+  const [activeButton, setActiveButton] = useState(0)
+  const [courseDetails, setCourseDetails] = useState([
+    {
+      courseTitle: 'School',
+      subjects: [
         {
-            courseTitle: "School",
-            subjects: [
-                {
-                    name: "Maths",
-                    image: Stats
-                },
-                {
-                    name: "Science",
-                    image: Retail
-                },
-                {
-                    name: "Social Studies",
-                    image: AutoGraphSharp
-                },
-                {
-                    name: "English",
-                    image: Coins
-                },
-                {
-                    name: "Hindi",
-                    image: Ruppee
-                },
-                {
-                    name: "Marathi",
-                    image: Ruppee
-                }
-            ]
+          name: 'Maths',
+          image: Stats,
         },
         {
-            courseTitle: "SYJC",
-            subjects: [
-                {
-                    name: "Accounts/ Book Keeping",
-                    image: Stats
-                },
-                {
-                    name: "Maths",
-                    image: Retail
-                },
-                {
-                    name: "Secreterial Practice",
-                    image: Chart
-                },
-                {
-                    name: "Economics",
-                    image: Coins
-                },
-                {
-                    name: "OCM",
-                    image: Ruppee
-                },
-            ]
+          name: 'Science',
+          image: Retail,
         },
         {
-            courseTitle: "FYBCOM",
-            subjects: [
-                {
-                    name: "Mathematics",
-                    image: Stats
-                },
-                {
-                    name: "S.P",
-                    image: Retail
-                },
-                {
-                    name: "Organisation of Commerce",
-                    image: Chart
-                },
-                {
-                    name: "Economics",
-                    image: Coins
-                },
-                {
-                    name: "Book-Keeping and Accountancy",
-                    image: Ruppee
-                },
-            ]
+          name: 'Social Studies',
+          image: AutoGraphSharp,
         },
-
-    ]);
-const courseData = [
+        {
+          name: 'English',
+          image: Coins,
+        },
+        {
+          name: 'Hindi',
+          image: Ruppee,
+        },
+        {
+          name: 'Marathi',
+          image: Ruppee,
+        },
+      ],
+    },
+    {
+      courseTitle: 'SYJC',
+      subjects: [
+        {
+          name: 'Accounts/ Book Keeping',
+          image: Stats,
+        },
+        {
+          name: 'Maths',
+          image: Retail,
+        },
+        {
+          name: 'Secreterial Practice',
+          image: Chart,
+        },
+        {
+          name: 'Economics',
+          image: Coins,
+        },
+        {
+          name: 'OCM',
+          image: Ruppee,
+        },
+      ],
+    },
+    {
+      courseTitle: 'FYBCOM',
+      subjects: [
+        {
+          name: 'Mathematics',
+          image: Stats,
+        },
+        {
+          name: 'S.P',
+          image: Retail,
+        },
+        {
+          name: 'Organisation of Commerce',
+          image: Chart,
+        },
+        {
+          name: 'Economics',
+          image: Coins,
+        },
+        {
+          name: 'Book-Keeping and Accountancy',
+          image: Ruppee,
+        },
+      ],
+    },
+  ])
+const subjectData = [
   {
-    courseTitle: 'BCOM',
-    semesters: [
+    subjectTitle: 'BCom',
+    years: [
       {
-        semesterTitle: 'Sem1',
-        subjects: ['Economics', 'Accounts', 'Maths', 'Commerce'],
+        yearTitle: 'FYBCom',
+        semesters: [
+          {
+            semesterTitle: 'Semester 1',
+            subjects: ['Economics', 'Accounts & FM', 'Maths', 'Commerce'],
+          },
+          {
+            semesterTitle: 'Semester 2',
+            subjects: ['Economics', 'Accounts & FM', 'Maths', 'Commerce'],
+          },
+        ],
       },
       {
-        semesterTitle: 'Sem2',
-        subjects: ['Subject1', 'Subject2', 'Subject3', 'Subject4'],
+        yearTitle: 'SYBCom',
+        semesters: [
+          {
+            semesterTitle: 'Semester 3',
+            subjects: [
+              'Economics',
+              'Business Law',
+              'Acc & FM',
+              'Management Accounting',
+            ],
+          },
+          {
+            semesterTitle: 'Semester 4',
+            subjects: [
+              'Economics',
+              'Business Law',
+              'Acc & FM',
+              'Auditing',
+            ],
+          },
+        ],
       },
-      // Include data for remaining semesters
+      {
+        yearTitle: 'TYBCom',
+        semesters: [
+          {
+            semesterTitle: 'Semester 5',
+            subjects: ['Subject 1', 'Subject 2', 'Subject 3', 'Subject 4'],
+          },
+          {
+            semesterTitle: 'Semester 6',
+            subjects: ['Subject 1', 'Subject 2', 'Subject 3', 'Subject 4'],
+          },
+        ],
+      },
     ],
   },
-  {
-    courseTitle: 'SYBCOM',
-    semesters: [
-      {
-        semesterTitle: 'Sem1',
-        subjects: ['Subject1', 'Subject2', 'Subject3', 'Subject4'],
-      },
-      {
-        semesterTitle: 'Sem2',
-        subjects: ['Subject1', 'Subject2', 'Subject3', 'Subject4'],
-      },
-      // Include data for remaining semesters
-    ],
-  },
-  // Include data for remaining courses
 ]
 
-   
-const handleButtonClick = (index) => {
-  setActiveButton(index);
-};
+
+  const handleButtonClick = (index) => {
+    setActiveButton(index)
+  }
   return (
     <Container>
       <ExploreCoursesSection>
@@ -178,8 +211,7 @@ const handleButtonClick = (index) => {
           </CourseBtn>
         </ButtonContainer>
         <DisplayCourse>
-          <CourseTable courseData={courseData} />
-
+            <CourseTable subjectData={subjectData} />
           {/* <CourseCardsContainer>
         <CourseCard className={activeButton === 0 ? 'active' : '' }>
         <CourseCardFlexContainer>
