@@ -7,7 +7,7 @@ import Coins from "../../assets/images/EXPLORE/coins.svg";
 import Ruppee from "../../assets/images/EXPLORE/MoneyBill.svg";
 import Chart from "../../assets/images/EXPLORE/FunctionMath.svg";
 import Retail from "../../assets/images/EXPLORE/Retail.svg";
-
+import CourseTable from './CourseTables';
 
 const ExploreCourses = () => {
 const [activeButton, setActiveButton] = useState(0);
@@ -93,29 +93,94 @@ const [activeButton, setActiveButton] = useState(0);
         },
 
     ]);
+const courseData = [
+  {
+    courseTitle: 'BCOM',
+    semesters: [
+      {
+        semesterTitle: 'Sem1',
+        subjects: ['Economics', 'Accounts', 'Maths', 'Commerce'],
+      },
+      {
+        semesterTitle: 'Sem2',
+        subjects: ['Subject1', 'Subject2', 'Subject3', 'Subject4'],
+      },
+      // Include data for remaining semesters
+    ],
+  },
+  {
+    courseTitle: 'SYBCOM',
+    semesters: [
+      {
+        semesterTitle: 'Sem1',
+        subjects: ['Subject1', 'Subject2', 'Subject3', 'Subject4'],
+      },
+      {
+        semesterTitle: 'Sem2',
+        subjects: ['Subject1', 'Subject2', 'Subject3', 'Subject4'],
+      },
+      // Include data for remaining semesters
+    ],
+  },
+  // Include data for remaining courses
+]
 
    
 const handleButtonClick = (index) => {
   setActiveButton(index);
 };
   return (
-<Container>
-<ExploreCoursesSection>
-<h2>Explore our courses</h2>
-<p>
-Discover the range of courses we offer at Apex Academy and find the perfect fit for your career goals.<br /> Our programs are designed to provide you with a comprehensive understanding of commerce and equip you with the skills to succeed.
-</p>
-    <ButtonContainer>
-      <CourseBtn onClick={() => handleButtonClick(0)} className={activeButton === 0 ? "active" : ""}>School Section V to X</CourseBtn>
-      <CourseBtn onClick={() => handleButtonClick(1)} className={activeButton === 1 ? "active" : ""}>FYJC & SYJC (Commerce)</CourseBtn>
-      <CourseBtn onClick={() => handleButtonClick(2)} className={activeButton === 2 ? "active" : ""}>BAF</CourseBtn>
-      <CourseBtn onClick={() => handleButtonClick(3)} className={activeButton === 3 ? "active" : ""}>BMS</CourseBtn>
-      <CourseBtn onClick={() => handleButtonClick(4)} className={activeButton === 2 ? "active" : ""}>B.Com</CourseBtn>
-      <CourseBtn onClick={() => handleButtonClick(5)} className={activeButton === 2 ? "active" : ""}>BBI</CourseBtn>
-    </ButtonContainer>
-    <DisplayCourse>
+    <Container>
+      <ExploreCoursesSection>
+        <h2>Explore our courses</h2>
+        <p>
+          Discover the range of courses we offer at Apex Academy and find the
+          perfect fit for your career goals.
+          <br /> Our programs are designed to provide you with a comprehensive
+          understanding of commerce and equip you with the skills to succeed.
+        </p>
+        <ButtonContainer>
+          <CourseBtn
+            onClick={() => handleButtonClick(0)}
+            className={activeButton === 0 ? 'active' : ''}
+          >
+            School Section V to X
+          </CourseBtn>
+          <CourseBtn
+            onClick={() => handleButtonClick(1)}
+            className={activeButton === 1 ? 'active' : ''}
+          >
+            FYJC & SYJC (Commerce)
+          </CourseBtn>
+          <CourseBtn
+            onClick={() => handleButtonClick(2)}
+            className={activeButton === 2 ? 'active' : ''}
+          >
+            BAF
+          </CourseBtn>
+          <CourseBtn
+            onClick={() => handleButtonClick(3)}
+            className={activeButton === 3 ? 'active' : ''}
+          >
+            BMS
+          </CourseBtn>
+          <CourseBtn
+            onClick={() => handleButtonClick(4)}
+            className={activeButton === 2 ? 'active' : ''}
+          >
+            B.Com
+          </CourseBtn>
+          <CourseBtn
+            onClick={() => handleButtonClick(5)}
+            className={activeButton === 2 ? 'active' : ''}
+          >
+            BBI
+          </CourseBtn>
+        </ButtonContainer>
+        <DisplayCourse>
+          <CourseTable courseData={courseData} />
 
-      <CourseCardsContainer>
+          {/* <CourseCardsContainer>
         <CourseCard className={activeButton === 0 ? 'active' : '' }>
         <CourseCardFlexContainer>
             {
@@ -164,12 +229,10 @@ Discover the range of courses we offer at Apex Academy and find the perfect fit 
             }
         </CourseCardFlexContainer>
         </CourseCard>
-      </CourseCardsContainer>
-
-    </DisplayCourse>
-    </ExploreCoursesSection>
-    
-  </Container>
+      </CourseCardsContainer> */}
+        </DisplayCourse>
+      </ExploreCoursesSection>
+    </Container>
   )
 }
 
