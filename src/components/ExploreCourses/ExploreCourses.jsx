@@ -160,6 +160,76 @@ const subjectData = [
         ],
       },
     ],
+    subjectTitle: 'BMS',
+    years: [
+      {
+        yearTitle: 'FYBMS',
+        semesters: [
+          {
+            semesterTitle: 'Semester 1',
+            subjects: [
+              'Business Law',
+              'Business Statistics',
+              'Financial Accounts',
+              'Economics',
+            ],
+          },
+          {
+            semesterTitle: 'Semester 2',
+            subjects: [
+              'Principles of Marketing',
+              'Business Mathematics',
+              'Principles of management',
+              'Industrial Law',
+            ],
+          },
+        ],
+      },
+      {
+        yearTitle: 'SYBMS',
+        semesters: [
+          {
+            semesterTitle: 'Semester 3',
+            subjects: [
+              'Accounting for managerial decision',
+              'Corporate Finance',
+              'Equity & Debt Market',
+              'Strategic Management',
+            ],
+          },
+          {
+            semesterTitle: 'Semester 4',
+            subjects: [
+              'Production & Total Quality Management',
+              'Corporate Restructuring',
+              'Financial institutions & markets'
+            ],
+          },
+        ],
+      },
+      {
+        yearTitle: 'TYBMS',
+        semesters: [
+          {
+            semesterTitle: 'Semester 5',
+            subjects: [
+              'Investment Analysis & Portfolio',
+              'Risk management',
+              'Wealth management',
+              'Direct Taxes',
+            ],
+          },
+          {
+            semesterTitle: 'Semester 6',
+            subjects: [
+              'Strategic Financial management',
+              'International Finance',
+              'Indirect Taxes(GST)',
+            ],
+          },
+        ],
+      },
+    ],
   },
 ]
 
