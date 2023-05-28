@@ -385,6 +385,48 @@ const subjectData = [
       },
     ],
   },
+  {
+    subjectTitle: 'FYJC & SYJC Commerce',
+    years: [
+      {
+        yearTitle: 'Std XI - Std XII',
+        semesters: [
+          {
+            semesterTitle: '',
+            subjects: [
+              'Accounts/ Book Keeping',
+              'Maths',
+              'Secreterial Practice',
+              'Economics',
+              'OCM',
+              'English & Hindi (FREE)',
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    subjectTitle: 'School Section',
+    years: [
+      {
+        yearTitle: 'Std V to Std X',
+        semesters: [
+          {
+            semesterTitle: '',
+            subjects: [
+              'Maths',
+              'Science',
+              'Social Studies',
+              'English',
+              'Hindi',
+              'Marathi',
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ]
 
 
@@ -393,7 +435,7 @@ const subjectData = [
   }
   return (
 
-        <Container>
+    <Container>
       <ExploreCoursesSection>
         <h2>Explore our courses</h2>
         <p>

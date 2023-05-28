@@ -92,8 +92,17 @@ export const PricingCardStyles = styled.div`
       top: -10px;
       text-decoration: line-through;
     }
+    &:after {
+      content: '*annual package.';
+      position: absolute;
+      font-size: 1.5rem;
+      bottom: -10px;
+      left: 0;
+    }
   }
-
+  h4 {
+    text-align: center;
+  }
   h3 {
     border-bottom: 1px solid ${(props) => (props.active ? '#FFF' : '#000')};
     padding-bottom: 1rem;

@@ -8,7 +8,7 @@ import Gift from "../../assets/images/gift.png";
 import { ReferalSteps } from './pricingStyles';
 import { ReferalContent,ReferalContribution } from './pricingStyles';
 const PricingContainer = () => {
-    const [activeCard, setActiveCard ] = useState("Standard IX");
+    const [activeCard, setActiveCard ] = useState("Standard V");
 
     const handleCardClick = (title) => {
         setActiveCard(title);
@@ -27,14 +27,15 @@ const PricingContainer = () => {
             </PricingContribution>
             <PricingGrid>
                 <PricingCard 
-                    title="Standard IX" 
-                    price="13,000"
-                    marketPrice="24,000" 
-                    active={activeCard === "Standard IX"}
+                    title="Standard V" 
+                    price="6,000"
+                    marketPrice="10,000" 
+                    monthly="600"
+                    active={activeCard === "Standard V"}
                     onClick = {handleCardClick}
                 />
                 <PricingCard 
-                    title="Standard X" 
+                    title="Standard VI" 
                     price="18,000"
                     marketPrice="30,000"  
                     onClick = {handleCardClick}
