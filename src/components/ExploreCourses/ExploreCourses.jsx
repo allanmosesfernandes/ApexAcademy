@@ -392,7 +392,8 @@ const subjectData = [
     setActiveButton(index)
   }
   return (
-    <Container>
+
+        <Container>
       <ExploreCoursesSection>
         <h2>Explore our courses</h2>
         <p>
@@ -402,58 +403,32 @@ const subjectData = [
           understanding of commerce and equip you with the skills to succeed.
         </p>
         <ButtonContainer>
-          <CourseBtn
-            onClick={() => handleButtonClick(2)}
-            className={activeButton === 2 ? 'active' : ''}
-          >
-            BAF
-          </CourseBtn>
-          <CourseBtn
-            onClick={() => handleButtonClick(3)}
-            className={activeButton === 3 ? 'active' : ''}
-          >
-            BMS
-          </CourseBtn>
-          <CourseBtn
-            onClick={() => handleButtonClick(4)}
-            className={activeButton === 4 ? 'active' : ''}
-          >
-            B.Com
-          </CourseBtn>
-          <CourseBtn
-            onClick={() => handleButtonClick(5)}
-            className={activeButton === 5 ? 'active' : ''}
-          >
-            BBI
-          </CourseBtn>
-          <CourseBtn
-            onClick={() => handleButtonClick(0)}
-            className={activeButton === 0 ? 'active' : ''}
-          >
-            School Section V to X
-          </CourseBtn>
-          <CourseBtn
-            onClick={() => handleButtonClick(1)}
-            className={activeButton === 1 ? 'active' : ''}
-          >
-            FYJC & SYJC (Commerce)
-          </CourseBtn>
+          {subjectData.map((subject, index) => (
+            <CourseBtn
+              key={index}
+              onClick={() => handleButtonClick(index)}
+              className={activeButton === index ? 'active' : ''}
+            >
+              {subject.subjectTitle}
+            </CourseBtn>
+          ))}
         </ButtonContainer>
         <DisplayCourse>
           <CourseCardsContainer>
             <CourseCardFlexContainer>
-              <CourseCard className={activeButton === 2 ? 'active' : ''}>
-                <CourseTable subjectData={subjectData} subject='BAF' />
-              </CourseCard>
-              <CourseCard className={activeButton === 3 ? 'active' : ''}>
-                <CourseTable subjectData={subjectData} subject='BMS' />
-              </CourseCard>
-              <CourseCard className={activeButton === 4 ? 'active' : ''}>
-                <CourseTable subjectData={subjectData} subject='BCom' />
-              </CourseCard>
-              <CourseCard className={activeButton === 5 ? 'active' : ''}>
-                <CourseTable subjectData={subjectData} subject='BBI' />
-              </CourseCard>
+              {subjectData.map((subject, index) => (
+                <CourseCard
+                  key={index}
+                  className={activeButton === index ? 'active' : ''}
+                >
+                  {activeButton === index && (
+                    <CourseTable
+                      subjectData={subjectData}
+                      subject={subject.subjectTitle}
+                    />
+                  )}
+                </CourseCard>
+              ))}
             </CourseCardFlexContainer>
           </CourseCardsContainer>
         </DisplayCourse>
