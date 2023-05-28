@@ -110,11 +110,11 @@ const subjectData = [
         yearTitle: 'FYBCom',
         semesters: [
           {
-            semesterTitle: 'Semester 1',
+            semesterTitle: 'Semester I',
             subjects: ['Economics', 'Accounts & FM', 'Maths', 'Commerce'],
           },
           {
-            semesterTitle: 'Semester 2',
+            semesterTitle: 'Semester II',
             subjects: ['Economics', 'Accounts & FM', 'Maths', 'Commerce'],
           },
         ],
@@ -123,7 +123,7 @@ const subjectData = [
         yearTitle: 'SYBCom',
         semesters: [
           {
-            semesterTitle: 'Semester 3',
+            semesterTitle: 'Semester III',
             subjects: [
               'Economics',
               'Business Law',
@@ -132,7 +132,7 @@ const subjectData = [
             ],
           },
           {
-            semesterTitle: 'Semester 4',
+            semesterTitle: 'Semester IV',
             subjects: ['Economics', 'Business Law', 'Acc & FM', 'Auditing'],
           },
         ],
@@ -141,7 +141,7 @@ const subjectData = [
         yearTitle: 'TYBCom',
         semesters: [
           {
-            semesterTitle: 'Semester 5',
+            semesterTitle: 'Semester V',
             subjects: [
               'Economics',
               'Financial Accounting & auditing',
@@ -150,7 +150,7 @@ const subjectData = [
             ],
           },
           {
-            semesterTitle: 'Semester 6',
+            semesterTitle: 'Semester VI',
             subjects: [
               'Economics',
               'Financial Accounting & auditing',
@@ -169,7 +169,7 @@ const subjectData = [
         yearTitle: 'FYBMS',
         semesters: [
           {
-            semesterTitle: 'Semester 1',
+            semesterTitle: 'Semester I',
             subjects: [
               'Business Law',
               'Business Statistics',
@@ -178,7 +178,7 @@ const subjectData = [
             ],
           },
           {
-            semesterTitle: 'Semester 2',
+            semesterTitle: 'Semester II',
             subjects: [
               'Principles of Marketing',
               'Business Mathematics',
@@ -192,7 +192,7 @@ const subjectData = [
         yearTitle: 'SYBMS',
         semesters: [
           {
-            semesterTitle: 'Semester 3',
+            semesterTitle: 'Semester III',
             subjects: [
               'Accounting for managerial decision',
               'Corporate Finance',
@@ -201,7 +201,7 @@ const subjectData = [
             ],
           },
           {
-            semesterTitle: 'Semester 4',
+            semesterTitle: 'Semester IV',
             subjects: [
               'Production & Total Quality Management',
               'Corporate Restructuring',
@@ -214,7 +214,7 @@ const subjectData = [
         yearTitle: 'TYBMS',
         semesters: [
           {
-            semesterTitle: 'Semester 5',
+            semesterTitle: 'Semester V',
             subjects: [
               'Investment Analysis & Portfolio',
               'Risk management',
@@ -223,7 +223,7 @@ const subjectData = [
             ],
           },
           {
-            semesterTitle: 'Semester 6',
+            semesterTitle: 'Semester VI',
             subjects: [
               'Strategic Financial management',
               'International Finance',
@@ -241,7 +241,7 @@ const subjectData = [
         yearTitle: 'FYBBI',
         semesters: [
           {
-            semesterTitle: 'Semester 1',
+            semesterTitle: 'Semester I',
             subjects: [
               'Principles of management',
               'Financial Accounting',
@@ -250,7 +250,7 @@ const subjectData = [
             ],
           },
           {
-            semesterTitle: 'Semester 2',
+            semesterTitle: 'Semester II',
             subjects: [
               'Business Law',
               'Financial Accounting',
@@ -264,7 +264,7 @@ const subjectData = [
         yearTitle: 'SYBBI',
         semesters: [
           {
-            semesterTitle: 'Semester 3',
+            semesterTitle: 'Semester III',
             subjects: [
               'Financial management',
               'Management Accounting',
@@ -273,7 +273,7 @@ const subjectData = [
             ],
           },
           {
-            semesterTitle: 'Semester 4',
+            semesterTitle: 'Semester IV',
             subjects: [
               'Financial management',
               'Cost accounting',
@@ -287,7 +287,7 @@ const subjectData = [
         yearTitle: 'TYBBI',
         semesters: [
           {
-            semesterTitle: 'Semester 5',
+            semesterTitle: 'Semester V',
             subjects: [
               'Strategic Management',
               'Financial Reporting & Analysis',
@@ -295,7 +295,7 @@ const subjectData = [
             ],
           },
           {
-            semesterTitle: 'Semester 6',
+            semesterTitle: 'Semester VI',
             subjects: [
               'Security Analysis & Portfolio management',
               'Central Banking',
@@ -313,7 +313,7 @@ const subjectData = [
         yearTitle: 'FYBAF',
         semesters: [
           {
-            semesterTitle: 'Semester 1',
+            semesterTitle: 'Semester I',
             subjects: [
               'Financial Accounting',
               'Cost Accounting',
@@ -323,7 +323,7 @@ const subjectData = [
             ],
           },
           {
-            semesterTitle: 'Semester 2',
+            semesterTitle: 'Semester II',
             subjects: [
               'Financial Accounting',
               'Auditing',
@@ -338,7 +338,7 @@ const subjectData = [
         yearTitle: 'SYBAF',
         semesters: [
           {
-            semesterTitle: 'Semester 3',
+            semesterTitle: 'Semester III',
             subjects: [
               'Financial Accounting',
               'Cost Accounting',
@@ -348,7 +348,7 @@ const subjectData = [
             ],
           },
           {
-            semesterTitle: 'Semester 4',
+            semesterTitle: 'Semester IV',
             subjects: [
               'Financial management',
               'Cost accounting',
@@ -362,7 +362,7 @@ const subjectData = [
         yearTitle: 'TYBAF',
         semesters: [
           {
-            semesterTitle: 'Semester 5',
+            semesterTitle: 'Semester V',
             subjects: [
               'Financial Accounting',
               'Financial Accounting',
@@ -372,7 +372,7 @@ const subjectData = [
             ],
           },
           {
-            semesterTitle: 'Semester 6',
+            semesterTitle: 'Semester VI',
             subjects: [
               'Financial Accounting',
               'Cost Accounting',

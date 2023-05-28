@@ -80,6 +80,11 @@ transition: all .5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
     opacity: 1;
 
 }
+
+@media only screen and (max-width: 800px) {
+  //code goes here
+  position: relative;
+}
 `
 
 export const CourseCardFlexContainer = styled.div `
@@ -146,7 +151,10 @@ export const FilteredTable = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   border: 3px solid;
   padding: 2rem;
-
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    grid-template-columns: 1fr;
+  }
   h4 {
     font-size: ${(props) => props.theme.fsxsmall};
   }
