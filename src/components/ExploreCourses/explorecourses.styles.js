@@ -154,9 +154,14 @@ export const FilteredTable = styled.div`
   @media only screen and (max-width: 600px) {
     //code goes here
     grid-template-columns: 1fr;
+    h4 {
+      border-bottom: 2px solid black;
+    }
   }
+
   h4 {
     font-size: ${(props) => props.theme.fsxsmall};
+    color: ${(props) => props.theme.themeGreen};
   }
   ul > li {
     font-size: ${(props) => props.theme.fsxsmall};

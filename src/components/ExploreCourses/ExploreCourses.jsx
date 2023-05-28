@@ -104,7 +104,7 @@ const ExploreCourses = () => {
 
 const subjectData = [
   {
-    subjectTitle: 'BCom',
+    subjectTitle: 'B.Com.',
     years: [
       {
         yearTitle: 'FYBCom',
