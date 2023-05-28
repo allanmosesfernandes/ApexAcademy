@@ -49,27 +49,29 @@ const EnquiryForm = () => {
       <FormDivWrapper>
         <h2>Enquiries</h2>
         <p>Fill out the form below and we'll get in touch shortly</p>
-        <form name='contact' method='post'>
+        <EnquiresFormStyled name='contact' method='post'>
           <input type='hidden' name='form-name' value='contact' />
-          <p>
-            <label>
-              Your Name: <input type='text' name='name' />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Email: <input type='email' name='email' />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message: <textarea name='message'></textarea>
-            </label>
-          </p>
-          <p>
-            <button type='submit'>Send</button>
-          </p>
-        </form>
+
+          <input
+            type='text'
+            name='firstName'
+            placeholder='First Name'
+            pattern='^[a-zA-Z\s-]+$'
+            title='Name cannot contain special characters'
+            required
+          />
+          <input
+            type='text'
+            name='lastName'
+            placeholder='Last Name'
+            pattern='^[a-zA-Z\s-]+$'
+            title='Name cannot contain special characters'
+            required
+          />
+          <input type='email' name='email' placeholder='Email address' />
+
+          <button type='submit'>Send</button>
+        </EnquiresFormStyled>
         <GoogleMap />
       </FormDivWrapper>
     </Container>
