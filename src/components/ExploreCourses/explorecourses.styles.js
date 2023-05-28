@@ -134,7 +134,8 @@ export const CourseCardDetails = styled.div `
 
 
 export const SubjectTitle = styled.h3`
-  font-size: ${(props) => props.theme.secondaryColor};
+  font-size: ${(props) => props.theme.fsmedium};
+  color: ${(props) => props.theme.primaryColor};
 `
 export const FilteredTable = styled.div`
 display: grid;
