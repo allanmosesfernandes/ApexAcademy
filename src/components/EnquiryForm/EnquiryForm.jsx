@@ -69,7 +69,28 @@ const EnquiryForm = () => {
             required
           />
           <input type='email' name='email' placeholder='Email address' />
+          <select name='courseSelection'>
+            <option value='' disabled selected>
+              Select your course
+            </option>
+            <option value='FYJC'>FYJC</option>
+            <option value='SYJC'>SYJC</option>
+            <option value='FYBCOM'>FYBCOM</option>
+            <option value='SYBCOM'>SYBCOM</option>
+            <option value='TYBCOM'>TYBCOM</option>
+            <option value='BMS'>BMS</option>
+          </select>
 
+          <PhoneInputWrapper>
+            <input
+              type='number'
+              placeholder='Mobile Number'
+              name='contactNumber'
+              required
+              pattern='^[789]\d{9}$'
+              title='Enter a valid mobile number'
+            />
+          </PhoneInputWrapper>
           <button type='submit'>Send</button>
         </EnquiresFormStyled>
         <GoogleMap />
