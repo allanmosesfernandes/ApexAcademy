@@ -137,15 +137,12 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  //code goes here
-  .slick-next {
-    right: -10px;
-    opacity: 0;
+
+
+.slick-prev:before, .slick-next:before {
+    display: none;
 }
-  .slick-previous {
-    left: -10px;
-    opacity: 0;
-}
+
 }
 `
 

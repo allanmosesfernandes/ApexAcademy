@@ -30,6 +30,15 @@ var settings = {
           slidesToScroll: 1
         }
       }
+    ],
+        responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
     ]
   };
   return (
