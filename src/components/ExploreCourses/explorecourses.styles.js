@@ -61,7 +61,7 @@ p {
 
 export const CourseCardsContainer = styled.div `
 position: relative;
-min-height: 300px;
+min-height: 400px;
 
 @media only screen and (max-width: 600px) {
   min-height: 400px;
@@ -137,9 +137,20 @@ export const SubjectTitle = styled.h3`
   font-size: ${(props) => props.theme.fsmedium};
   color: ${(props) => props.theme.primaryColor};
 `
+export const YearTitle = styled.h4`
+  font-size: ${(props) => props.theme.fssmall};
+  color: ${(props) => props.theme.primaryColor};
+`
 export const FilteredTable = styled.div`
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 3px solid;
+  padding: 2rem;
 
-
+  h4 {
+    font-size: ${(props) => props.theme.fsxsmall};
+  }
+  ul > li {
+    font-size: ${(props) => props.theme.fsxsmall};
+  }
 `

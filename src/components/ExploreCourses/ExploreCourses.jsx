@@ -403,18 +403,6 @@ const subjectData = [
         </p>
         <ButtonContainer>
           <CourseBtn
-            onClick={() => handleButtonClick(0)}
-            className={activeButton === 0 ? 'active' : ''}
-          >
-            School Section V to X
-          </CourseBtn>
-          <CourseBtn
-            onClick={() => handleButtonClick(1)}
-            className={activeButton === 1 ? 'active' : ''}
-          >
-            FYJC & SYJC (Commerce)
-          </CourseBtn>
-          <CourseBtn
             onClick={() => handleButtonClick(2)}
             className={activeButton === 2 ? 'active' : ''}
           >
@@ -437,6 +425,18 @@ const subjectData = [
             className={activeButton === 5 ? 'active' : ''}
           >
             BBI
+          </CourseBtn>
+          <CourseBtn
+            onClick={() => handleButtonClick(0)}
+            className={activeButton === 0 ? 'active' : ''}
+          >
+            School Section V to X
+          </CourseBtn>
+          <CourseBtn
+            onClick={() => handleButtonClick(1)}
+            className={activeButton === 1 ? 'active' : ''}
+          >
+            FYJC & SYJC (Commerce)
           </CourseBtn>
         </ButtonContainer>
         <DisplayCourse>

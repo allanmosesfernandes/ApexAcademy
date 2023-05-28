@@ -1,5 +1,5 @@
 import React from 'react'
-import { FilteredTable, SubjectTitle } from './explorecourses.styles'
+import { FilteredTable, SubjectTitle, YearTitle } from './explorecourses.styles'
 const CourseTable = ({ subjectData, subject }) => {
   const filteredData = subjectData.filter(
     (data) => data.subjectTitle === subject,
@@ -13,7 +13,7 @@ const CourseTable = ({ subjectData, subject }) => {
           <FilteredTable>
             {filteredSubject.years.map((year) => (
               <div key={year.yearTitle}>
-                <h4>{year.yearTitle}</h4>
+                <YearTitle>{year.yearTitle}</YearTitle>
                 <div>
                   {year.semesters.map((semester) => (
                     <div key={semester.semesterTitle}>
