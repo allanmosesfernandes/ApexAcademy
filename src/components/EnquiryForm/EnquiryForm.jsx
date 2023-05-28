@@ -7,41 +7,40 @@ import GoogleMap from '../GoogleMaps/GoogleMap';
 
 const EnquiryForm = () => {
     const navigate = useNavigate();
-    const formRef = useRef(null);
 
-    const defaultFormFields = {
-        firstName: "",
-        lastName: "",
-        email: "",
-        contactNumber: "",
-        courseSelection: "",
-    }
+    // const defaultFormFields = {
+    //     firstName: "",
+    //     lastName: "",
+    //     email: "",
+    //     contactNumber: "",
+    //     courseSelection: "",
+    // }
 
-    const [ formFields, setFormFields ] = useState(defaultFormFields);
-    const { firstName, lastName, email, contactNumber, courseSelection } = formFields;
-    const courses = ['FYJC', 'SYJC', 'FYBCOM', 'SYBCOM', 'TYBCOM', 'BMS']; // Replace with your course options
+    // const [ formFields, setFormFields ] = useState(defaultFormFields);
+    // const { firstName, lastName, email, contactNumber, courseSelection } = formFields;
+    // const courses = ['FYJC', 'SYJC', 'FYBCOM', 'SYBCOM', 'TYBCOM', 'BMS']; 
 
-    const handleFormValueChange = (event) => {
-        const { name, value } = event.target;
-        setFormFields({...formFields, [name]:value})
-    }
+    // const handleFormValueChange = (event) => {
+    //     const { name, value } = event.target;
+    //     setFormFields({...formFields, [name]:value})
+    // }
 
-    const handleSubmit = (event) => {
-      event.preventDefault();
-      console.log(formFields);
+    // const handleSubmit = (event) => {
+    //   event.preventDefault();
+    //   console.log(formFields);
     
-      const encodedFormData = Object.keys(formFields)
-        .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(formFields[key]))
-        .join('&');
+    //   const encodedFormData = Object.keys(formFields)
+    //     .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(formFields[key]))
+    //     .join('&');
     
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encodedFormData
-      })
-        .then(() => alert("Success!"))
-        .catch(error => alert(error));
-    };
+    //   fetch('/', {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    //     body: encodedFormData
+    //   })
+    //     .then(() => alert("Success!"))
+    //     .catch(error => alert(error));
+    // };
     
     
     
@@ -53,8 +52,7 @@ const EnquiryForm = () => {
       <EnquiresFormStyled
         name='contact'
         method='POST'
-        data-netlify='true'
-        onSubmit={handleSubmit} >
+        data-netlify='true'>
         <input type="hidden" name="contact" value="contact" />
 
         <input
@@ -64,7 +62,6 @@ const EnquiryForm = () => {
           pattern='^[a-zA-Z\s-]+$'
           title='Name cannot contain special characters'
           required
-          onChange={handleFormValueChange}
         />
         <input
           type='text'
@@ -72,10 +69,8 @@ const EnquiryForm = () => {
           placeholder='Last Name'
           pattern='^[a-zA-Z\s-]+$'
           title='Name cannot contain special characters'
-          required
-          onChange={handleFormValueChange}
-        />
-        <input type='email' name='email' placeholder='Email address' onChange={handleFormValueChange} />
+          required        />
+        <input type='email' name='email' placeholder='Email address'/>
         <button type='submit'>Submit</button>
         </EnquiresFormStyled>
         <GoogleMap />
