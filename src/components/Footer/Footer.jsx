@@ -33,6 +33,7 @@ const Footer = () => {
                 <Link to="tel:+918591829604">
                     <img src={Call} alt="Contact"/>
                 </Link>
+
             </StyledFooterLinksBordered>
             <CreatedBy>
                 <p> Created with ❤️ by  </p>
