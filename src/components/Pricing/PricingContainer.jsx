@@ -264,6 +264,14 @@ const PricingContainer = () => {
           <li>
             Together, we can build a strong community of motivated learners and
             support each other in achieving academic success.
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
           </li>
         </ReferalSteps>
       </PricingWrapper>

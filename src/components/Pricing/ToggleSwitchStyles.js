@@ -14,6 +14,7 @@ export const StyledToggleSwitch = styled.div`
   @media only screen and (max-width: 800px) {
     //code goes here
     width: 90%;
+    font-size: ${(props) => props.theme.fsxsmall};
   }
   .save20 {
     background-color: #ffd778;
@@ -21,6 +22,10 @@ export const StyledToggleSwitch = styled.div`
     text-transform: uppercase;
     font-size: ${(props) => props.theme.fsxsmall};
     border-radius: 10px;
+    @media only screen and (max-width: 600px) {
+      //code goes here
+      font-size: 1rem;
+    }
   }
   .switch {
     position: relative;
