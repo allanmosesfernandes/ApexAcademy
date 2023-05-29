@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { css } from 'styled-components'
 
 export const PricingWrapper = styled.div`
+
   #referal-gift {
     width: 40px;
     height: 40px;
@@ -91,13 +92,6 @@ export const PricingCardStyles = styled.div`
       font-size: 2rem;
       top: -10px;
       text-decoration: line-through;
-    }
-    &:after {
-      content: '*annual package.';
-      position: absolute;
-      font-size: 1.5rem;
-      bottom: -10px;
-      left: 0;
     }
   }
   h4 {

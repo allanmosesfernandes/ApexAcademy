@@ -7,6 +7,7 @@ import Student from "../../assets/images/woman-student.png";
 import Gift from "../../assets/images/gift.png";
 import { ReferalSteps } from './pricingStyles';
 import { ReferalContent,ReferalContribution } from './pricingStyles';
+import { StyledToggleSwitch } from './ToggleSwitchStyles';
 const PricingContainer = () => {
     const [activeCard, setActiveCard ] = useState("Standard V");
 
@@ -33,14 +34,19 @@ const PricingContainer = () => {
           <strong>Empowering Women:</strong>
           &nbsp;&nbsp;4% of our revenue supports women education initiatives.
         </PricingContribution>
-        <span>
-          <input
-            type='checkbox'
-            id='toggleSwitch'
-            onChange={toggleSwitchHandler}
-          />
-          <label for='toggleSwitch'>Toggle</label>
-        </span>
+
+        <StyledToggleSwitch>
+          <span>Monthly</span>
+          <label className='switch'>
+            <input
+              type='checkbox'
+              id='toggleSwitch'
+              onChange={toggleSwitchHandler}
+            />
+            <span className='slider round'></span>
+          </label>
+          <span>Yearly <span className='save20'>&nbsp;Save 20%</span></span>
+        </StyledToggleSwitch>
         <PricingGrid>
           <PricingCard
             title='Standard V'

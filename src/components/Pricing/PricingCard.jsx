@@ -23,7 +23,6 @@ const PricingCard = (props) => {
         onClick(title);
     }
     const displayPrice = showMonthlyPrice ? monthly : price;
-
     return (
       <>
         <PricingCardStyles
@@ -34,7 +33,7 @@ const PricingCard = (props) => {
           <h3>{title}</h3>
           <h2>₹{displayPrice}</h2>
 
-          <p>What's included</p>
+          <p>Subjects included</p>
           <ul>
             <li>Self paced learning modules</li>
             <li>One-to-one sessions</li>
