@@ -79,6 +79,7 @@ export const ReferalContribution = styled(PricingContribution)`
 `
 export const PricingCardStyles = styled.div`
   border-radius: 24px;
+  position: relative;
   border: 1px solid ${(props) => (props.active ? '#fff' : '#000')};
   padding: 2rem;
   background-color: ${(props) => (props.active ? '#000' : 'transparent')};
@@ -129,7 +130,13 @@ export const PricingGrid = styled.div`
     grid-template-columns: 1fr;
   }
 `
-
+export const PricingText = styled.span`
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-weight: bold;
+  font-size: ${(props) => props.theme.fsxsmall};
+`
 export const PricingButton = styled.button`
   border-radius: 24px;
   background-color: ${(props) => (props.active ? '#FFD778' : '#000')};

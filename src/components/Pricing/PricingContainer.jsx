@@ -17,6 +17,22 @@ const PricingContainer = () => {
     const [monthlyPrice, setMonthlyPrice] = useState(true);
     const toggleSwitchHandler = () => setMonthlyPrice(!monthlyPrice);
     const subjectsIncluded = ['Maths', 'Science', 'Social Studies', 'English', 'Hindi', 'Marathi'];
+    const FYsubjects = [
+      'Accounts',
+      'Maths',
+      'Financial Mgmt',
+      'Law',
+      'Audit',
+      'Costing',
+    ]
+    const subjectsIncludedJC = [
+      'Secreterial Practice',
+      'Accounts/ Book Keeping',
+      'Economics',
+      'OCM',
+      'Maths',
+      'English & Hindi Free',
+    ]
   return (
     <Container>
       <PricingWrapper>
@@ -110,7 +126,51 @@ const PricingContainer = () => {
             onClick={handleCardClick}
             subjects={subjectsIncluded}
           />
+          <PricingCard
+            title='FYJC'
+            price='18,000'
+            showMonthlyPrice={monthlyPrice}
+            marketPrice='20,000'
+            monthly='2000'
+            active={activeCard === 'FYJC'}
+            onClick={handleCardClick}
+            subjects={subjectsIncludedJC.slice(0, 5)}
+          />
 
+          <PricingCard
+            title='SYJC SP'
+            price='24,000'
+            showMonthlyPrice={monthlyPrice}
+            marketPrice='20,000'
+            monthly='2000'
+            active={activeCard === 'SYJC SP'}
+            onClick={handleCardClick}
+            subjects={subjectsIncludedJC.filter(
+              (subject) => subject !== 'Maths',
+            )}
+          />
+          <PricingCard
+            title='SYJC Maths'
+            price='24,000'
+            showMonthlyPrice={monthlyPrice}
+            marketPrice='28,000'
+            monthly='2500'
+            active={activeCard === 'SYJC Maths'}
+            onClick={handleCardClick}
+            subjects={subjectsIncludedJC.filter(
+              (subject) => subject !== 'Secreterial Practice',
+            )}
+          />
+          <PricingCard
+            title='FY Degree'
+            price='25,000'
+            showMonthlyPrice={monthlyPrice}
+            marketPrice='28,000'
+            monthly='3000'
+            active={activeCard === 'FY Degree'}
+            onClick={handleCardClick}
+            subjects={FYsubjects}
+          />
         </PricingGrid>
 
         <ReferalContribution>

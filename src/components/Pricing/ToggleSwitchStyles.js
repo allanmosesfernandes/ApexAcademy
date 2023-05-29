@@ -18,6 +18,7 @@ export const StyledToggleSwitch = styled.div`
   .save20 {
     background-color: #ffd778;
     padding: 0.5rem;
+    text-transform: uppercase;
     font-size: ${(props) => props.theme.fsxsmall};
     border-radius: 10px;
   }

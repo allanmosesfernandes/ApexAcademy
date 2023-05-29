@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { PricingCardStyles, PricingButton } from './pricingStyles';
+import { PricingCardStyles, PricingButton, PricingText } from './pricingStyles';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -24,6 +24,10 @@ const PricingCard = (props) => {
         onClick(title);
     }
     const displayPrice = showMonthlyPrice ? monthly : price;
+    const priceText = showMonthlyPrice ? 'Per Month*' : 'Per Year *'
+    const helperText = showMonthlyPrice ? title.includes('Degree') ? 'Per Semester Per Subject': '': ''
+
+
     return (
       <>
         <PricingCardStyles
@@ -32,14 +36,16 @@ const PricingCard = (props) => {
           marketPrice={marketPrice}
         >
           <h3>{title}</h3>
+          <PricingText>{priceText}</PricingText>
           <h2>₹{displayPrice}</h2>
+          <span>{helperText}</span>
 
           <p>Subjects included</p>
-            <ul>
-                {
-                    subjects.map((sub,index) => {return <li key={index}> {sub} </li>})
-                }
-            </ul>
+          <ul>
+            {subjects.map((sub, index) => {
+              return <li key={index}> {sub} </li>
+            })}
+          </ul>
 
           <PricingButton active={active} onClick={handleButtonClick}>
             Book Now
