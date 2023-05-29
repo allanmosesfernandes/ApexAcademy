@@ -6,43 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import GoogleMap from '../GoogleMaps/GoogleMap';
 
 const EnquiryForm = () => {
-    const navigate = useNavigate();
-
-    // const defaultFormFields = {
-    //     firstName: "",
-    //     lastName: "",
-    //     email: "",
-    //     contactNumber: "",
-    //     courseSelection: "",
-    // }
-
-    // const [ formFields, setFormFields ] = useState(defaultFormFields);
-    // const { firstName, lastName, email, contactNumber, courseSelection } = formFields;
-    // const courses = ['FYJC', 'SYJC', 'FYBCOM', 'SYBCOM', 'TYBCOM', 'BMS']; 
-
-    // const handleFormValueChange = (event) => {
-    //     const { name, value } = event.target;
-    //     setFormFields({...formFields, [name]:value})
-    // }
-
-    // const handleSubmit = (event) => {
-    //   event.preventDefault();
-    //   console.log(formFields);
-    
-    //   const encodedFormData = Object.keys(formFields)
-    //     .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(formFields[key]))
-    //     .join('&');
-    
-    //   fetch('/', {
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    //     body: encodedFormData
-    //   })
-    //     .then(() => alert("Success!"))
-    //     .catch(error => alert(error));
-    // };
-    
-    
+  const navigate = useNavigate();
     
   return (
     <Container>
@@ -69,8 +33,8 @@ const EnquiryForm = () => {
             required
           />
           <input type='email' name='email' placeholder='Email address' />
-          <select name='courseSelection'>
-            <option value='' disabled selected>
+          <select name='courseSelection' defaultValue=''>
+            <option value='' disabled>
               Select your course
             </option>
             <option value='FYJC'>FYJC</option>

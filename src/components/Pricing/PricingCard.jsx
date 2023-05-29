@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router-dom';
 const PricingCard = (props) => {
     const navigate = useNavigate();
     const handleButtonClick = () => {
-    
     navigate('/contact');
     window.scrollTo(0, 0);
     };
