@@ -25,6 +25,22 @@ const PricingContainer = () => {
       'Audit',
       'Costing',
     ]
+    const SYsubjects = [
+      'Accounts',
+      'Law',
+      'Costing',
+      'Law',
+      'Tax',
+      'FM',
+      'Audit',
+    ]
+    const TYsubjects = [
+      'Accounts',
+      'Tax',
+      'Costing',
+      'FM',
+      'Economics',
+    ]
     const subjectsIncludedJC = [
       'Secreterial Practice',
       'Accounts/ Book Keeping',
@@ -165,9 +181,29 @@ const PricingContainer = () => {
             title='FY Degree'
             price='25,000'
             showMonthlyPrice={monthlyPrice}
-            marketPrice='28,000'
+            marketPrice='30,000'
             monthly='3000'
             active={activeCard === 'FY Degree'}
+            onClick={handleCardClick}
+            subjects={FYsubjects}
+          />
+          <PricingCard
+            title='SY Degree'
+            price='30,000'
+            showMonthlyPrice={monthlyPrice}
+            marketPrice='35,000'
+            monthly='3500'
+            active={activeCard === 'SY Degree'}
+            onClick={handleCardClick}
+            subjects={FYsubjects}
+          />
+          <PricingCard
+            title='TY Degree'
+            price='35,000'
+            showMonthlyPrice={monthlyPrice}
+            marketPrice='45,000'
+            monthly='4000'
+            active={activeCard === 'TY Degree'}
             onClick={handleCardClick}
             subjects={FYsubjects}
           />
