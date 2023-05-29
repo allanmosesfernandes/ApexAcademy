@@ -11,9 +11,13 @@ export const StyledToggleSwitch = styled.div`
   border: 1px solid;
   padding: 1rem;
   font-size: ${(props) => props.theme.fssmall};
-
+  @media only screen and (max-width: 800px) {
+    //code goes here
+    width: 90%;
+  }
   .save20 {
     background-color: #ffd778;
+    padding: 0.5rem;
     font-size: ${(props) => props.theme.fsxsmall};
     border-radius: 10px;
   }

@@ -14,9 +14,9 @@ const PricingContainer = () => {
     const handleCardClick = (title) => {
         setActiveCard(title);
     }
-    const [monthlyPrice, setMonthlyPrice] = useState(true)
-    const toggleSwitchHandler = () => setMonthlyPrice(!monthlyPrice)
-
+    const [monthlyPrice, setMonthlyPrice] = useState(true);
+    const toggleSwitchHandler = () => setMonthlyPrice(!monthlyPrice);
+    const subjectsIncluded = ['Maths', 'Science', 'Social Studies', 'English', 'Hindi', 'Marathi'];
   return (
     <Container>
       <PricingWrapper>
@@ -45,7 +45,9 @@ const PricingContainer = () => {
             />
             <span className='slider round'></span>
           </label>
-          <span>Yearly <span className='save20'>&nbsp;Save 20%</span></span>
+          <span>
+            Yearly <span className='save20'>&nbsp;Save 20%</span>
+          </span>
         </StyledToggleSwitch>
         <PricingGrid>
           <PricingCard
@@ -56,53 +58,59 @@ const PricingContainer = () => {
             monthly='600'
             active={activeCard === 'Standard V'}
             onClick={handleCardClick}
+            subjects={subjectsIncluded}
           />
-          {/* <PricingCard
+          <PricingCard
             title='Standard VI'
-            price='18,000'
-            marketPrice='30,000'
+            price='8,000'
+            showMonthlyPrice={monthlyPrice}
+            marketPrice='10,000'
+            monthly='750'
+            active={activeCard === 'Standard VI'}
             onClick={handleCardClick}
-            active={activeCard === 'Standard X'}
+            subjects={subjectsIncluded}
           />
           <PricingCard
-            title='FYJC'
-            price='15,000'
-            marketPrice='40,000'
+            title='Standard VII'
+            price='10,000'
+            showMonthlyPrice={monthlyPrice}
+            marketPrice='12,000'
+            monthly='900'
+            active={activeCard === 'Standard VII'}
             onClick={handleCardClick}
-            active={activeCard === 'FYJC'}
+            subjects={subjectsIncluded}
           />
-
           <PricingCard
-            title='SYJC'
+            title='Standard VIII'
             price='12,000'
-            marketPrice='40,000'
+            showMonthlyPrice={monthlyPrice}
+            marketPrice='20,000'
+            monthly='1200'
+            active={activeCard === 'Standard VIII'}
             onClick={handleCardClick}
-            active={activeCard === 'SYJC'}
+            subjects={subjectsIncluded}
           />
-
           <PricingCard
-            title='FYBcom'
-            price='16,000'
-            marketPrice='35,000'
+            title='Standard IX'
+            price='14,000'
+            showMonthlyPrice={monthlyPrice}
+            marketPrice='20,000'
+            monthly='1500'
+            active={activeCard === 'Standard IX'}
             onClick={handleCardClick}
-            active={activeCard === 'FYBcom'}
+            subjects={subjectsIncluded}
           />
-
           <PricingCard
-            title='SYBcom'
-            price='1234'
-            marketPrice='30,000'
-            onClick={handleCardClick}
-            active={activeCard === 'SYBcom'}
-          />
-
-          <PricingCard
-            title='TYBcom'
+            title='Standard X'
             price='18,000'
-            marketPrice='28,000'
+            showMonthlyPrice={monthlyPrice}
+            marketPrice='20,000'
+            monthly='2000'
+            active={activeCard === 'Standard X'}
             onClick={handleCardClick}
-            active={activeCard === 'SYBcom'}
-          /> */}
+            subjects={subjectsIncluded}
+          />
+
         </PricingGrid>
 
         <ReferalContribution>

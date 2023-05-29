@@ -5,10 +5,10 @@ import { useNavigate } from 'react-router-dom';
 
 const PricingCard = (props) => {
 
-  const handleButtonClick = () => {
+    const handleButtonClick = () => {
     navigate('/contact');
     window.scrollTo(0, 0);
-  };
+    };
     const {
       title,
       price,
@@ -17,6 +17,7 @@ const PricingCard = (props) => {
       marketPrice,
       monthly,
       showMonthlyPrice,
+      subjects
     } = props
     
     const handleClick = () =>{
@@ -34,12 +35,12 @@ const PricingCard = (props) => {
           <h2>₹{displayPrice}</h2>
 
           <p>Subjects included</p>
-          <ul>
-            <li>Self paced learning modules</li>
-            <li>One-to-one sessions</li>
-            <li>Practise tests</li>
-            <li>Interactive quizzes</li>
-          </ul>
+            <ul>
+                {
+                    subjects.map((sub,index) => {return <li key={index}> {sub} </li>})
+                }
+            </ul>
+
           <PricingButton active={active} onClick={handleButtonClick}>
             Book Now
           </PricingButton>
