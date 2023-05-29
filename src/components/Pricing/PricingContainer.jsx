@@ -13,7 +13,8 @@ const PricingContainer = () => {
     const handleCardClick = (title) => {
         setActiveCard(title);
     }
-    const [toggle, setToggle] = useState('monthly')
+    const [monthlyPrice, setMonthlyPrice] = useState(true)
+    const toggleSwitchHandler = () => setMonthlyPrice(!monthlyPrice)
 
   return (
     <Container>
@@ -33,19 +34,24 @@ const PricingContainer = () => {
           &nbsp;&nbsp;4% of our revenue supports women education initiatives.
         </PricingContribution>
         <span>
-          <input type='checkbox' id='toggleSwitch' />
+          <input
+            type='checkbox'
+            id='toggleSwitch'
+            onChange={toggleSwitchHandler}
+          />
           <label for='toggleSwitch'>Toggle</label>
         </span>
         <PricingGrid>
           <PricingCard
             title='Standard V'
             price='6,000'
+            showMonthlyPrice={monthlyPrice}
             marketPrice='10,000'
             monthly='600'
             active={activeCard === 'Standard V'}
             onClick={handleCardClick}
           />
-          <PricingCard
+          {/* <PricingCard
             title='Standard VI'
             price='18,000'
             marketPrice='30,000'
@@ -90,7 +96,7 @@ const PricingContainer = () => {
             marketPrice='28,000'
             onClick={handleCardClick}
             active={activeCard === 'SYBcom'}
-          />
+          /> */}
         </PricingGrid>
 
         <ReferalContribution>
