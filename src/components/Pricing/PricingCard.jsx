@@ -25,7 +25,11 @@ const PricingCard = (props) => {
     }
     const displayPrice = showMonthlyPrice ? monthly : price;
     const priceText = showMonthlyPrice ? 'Per Month*' : 'Per Year *'
-    const helperText = showMonthlyPrice ? title.includes('Degree') ? 'Per Semester Per Subject': '': ''
+    const helperText = showMonthlyPrice
+      ? title.includes('Degree')
+        ? 'Per Semester Per Subject'
+        : 'Per Month'
+      : 'Per Year'
 
 
     return (
@@ -36,10 +40,8 @@ const PricingCard = (props) => {
           marketPrice={marketPrice}
         >
           <h3>{title}</h3>
-          <PricingText>{priceText}</PricingText>
+          <PricingText>{helperText} *</PricingText>
           <h2>₹{displayPrice}</h2>
-          <span>{helperText}</span>
-
           <p>Subjects included</p>
           <ul>
             {subjects.map((sub, index) => {

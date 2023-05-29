@@ -134,7 +134,6 @@ export const PricingText = styled.span`
   position: absolute;
   right: 20px;
   top: 20px;
-  font-weight: bold;
   font-size: ${(props) => props.theme.fsxsmall};
 `
 export const PricingButton = styled.button`
