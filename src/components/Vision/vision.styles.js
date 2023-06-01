@@ -38,7 +38,7 @@ export const VisionBlock = styled.div`
     }
 
     @media only screen and (max-width: 600px) {
-      font-size: 5rem;
+      font-size: 4rem;
       &:after {
         font-size: 1.3rem;
         bottom: -70px;
