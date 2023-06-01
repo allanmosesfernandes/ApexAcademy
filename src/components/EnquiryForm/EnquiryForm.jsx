@@ -37,12 +37,14 @@ const EnquiryForm = () => {
             <option value='' disabled>
               Select your course
             </option>
+            <option value='School'>School Section</option>
+            <option value='SSC'>SSC</option>
             <option value='FYJC'>FYJC</option>
             <option value='SYJC'>SYJC</option>
-            <option value='FYBCOM'>FYBCOM</option>
-            <option value='SYBCOM'>SYBCOM</option>
-            <option value='TYBCOM'>TYBCOM</option>
+            <option value='BCOM'>BCOM</option>
+            <option value='BAF'>BAF</option>
             <option value='BMS'>BMS</option>
+            <option value='BBI'>BBI</option>
           </select>
 
           <PhoneInputWrapper>
