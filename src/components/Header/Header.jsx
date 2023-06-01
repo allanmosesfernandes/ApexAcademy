@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { ArrowButton } from '../Buttons/buttons.styles';
-
+import Banner from '../banner/Banner';
 const Header = () => {
 
   const scrollToTop = () => {
@@ -37,25 +37,29 @@ const Header = () => {
 window.addEventListener("scroll", changeColor);
   return (
     <>
-    <Container>
-    <StyledHeader>
-        <nav className={navbarChange ? "header-bg" : ""}>
-        <h2 onClick={scrollToTop}>
-            <Link to="/"><span>Apex Academy</span> </Link>
-        </h2>
-        <LinksRIght>
-            <Link to="about">About</Link>
-            {/* <Link to="pricing">Pricing</Link> */}
-            <Link to="contact"><ArrowButton>Enroll Now</ArrowButton></Link> 
-            
-        </LinksRIght>
-        </nav>
-    </StyledHeader>
-    </Container>
-    <Outlet />
+      <Banner
+        title={`Admissions for the academic year 2023 - 2024 are now open🎉`}
+      />
+      <Container>
+        <StyledHeader>
+          <nav className={navbarChange ? 'header-bg' : ''}>
+            <h2 onClick={scrollToTop}>
+              <Link to='/'>
+                <span>Apex Academy</span>{' '}
+              </Link>
+            </h2>
+            <LinksRIght>
+              <Link to='about'>About</Link>
+              {/* <Link to="pricing">Pricing</Link> */}
+              <Link to='contact'>
+                <ArrowButton>Enroll Now</ArrowButton>
+              </Link>
+            </LinksRIght>
+          </nav>
+        </StyledHeader>
+      </Container>
+      <Outlet />
     </>
-
-
   )
 }
 
