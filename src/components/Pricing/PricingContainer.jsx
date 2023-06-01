@@ -25,6 +25,7 @@ const PricingContainer = () => {
       'Audit',
       'Costing',
     ]
+    const AccountsOnly = ['Accounts', 'Costing']
     const SYsubjects = [
       'Accounts',
       'Law',
@@ -143,7 +144,7 @@ const PricingContainer = () => {
             subjects={subjectsIncluded}
           />
           <PricingCard
-            title='FYJC'
+            title='FYJC SP'
             price='18,000'
             showMonthlyPrice={monthlyPrice}
             marketPrice='20,000'
@@ -155,9 +156,9 @@ const PricingContainer = () => {
 
           <PricingCard
             title='SYJC SP'
-            price='24,000'
+            price='22,000'
             showMonthlyPrice={monthlyPrice}
-            marketPrice='20,000'
+            marketPrice='30,000'
             monthly='2000'
             active={activeCard === 'SYJC SP'}
             onClick={handleCardClick}
@@ -182,7 +183,7 @@ const PricingContainer = () => {
             price='25,000'
             showMonthlyPrice={monthlyPrice}
             marketPrice='30,000'
-            monthly='3000'
+            monthly='2500'
             active={activeCard === 'FY Degree'}
             onClick={handleCardClick}
             subjects={FYsubjects}
@@ -192,7 +193,7 @@ const PricingContainer = () => {
             price='30,000'
             showMonthlyPrice={monthlyPrice}
             marketPrice='35,000'
-            monthly='3500'
+            monthly='3000'
             active={activeCard === 'SY Degree'}
             onClick={handleCardClick}
             subjects={FYsubjects}
@@ -206,6 +207,16 @@ const PricingContainer = () => {
             active={activeCard === 'TY Degree'}
             onClick={handleCardClick}
             subjects={FYsubjects}
+          />
+          <PricingCard
+            title='Accounts & Costing FY'
+            price='10,000'
+            showMonthlyPrice={monthlyPrice}
+            marketPrice='15,000'
+            monthly='1000'
+            active={activeCard === 'Accounts & Costing FY'}
+            onClick={handleCardClick}
+            subjects={AccountsOnly}
           />
         </PricingGrid>
 

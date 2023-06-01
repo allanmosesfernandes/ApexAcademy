@@ -40,7 +40,9 @@ const PricingCard = (props) => {
           marketPrice={marketPrice}
         >
           <h3>{title}</h3>
-          <PricingText>{helperText} *</PricingText>
+          <PricingText>
+            <strong>{helperText}</strong> *
+          </PricingText>
           <h2>₹{displayPrice}</h2>
           <p>Subjects included</p>
           <ul>

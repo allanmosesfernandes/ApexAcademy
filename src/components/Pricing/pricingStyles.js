@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { css } from 'styled-components'
 
 export const PricingWrapper = styled.div`
-
   #referal-gift {
     width: 40px;
     height: 40px;
@@ -135,6 +134,10 @@ export const PricingText = styled.span`
   right: 20px;
   top: 20px;
   font-size: ${(props) => props.theme.fsxsmall};
+
+  strong {
+    font-size: 1.5rem;
+  }
 `
 export const PricingButton = styled.button`
   border-radius: 24px;
