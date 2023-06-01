@@ -13,38 +13,44 @@ import Contact from '../Contact/Contact';
 import Vision from '../Vision/Vision';
 import Values from '../Values/Values';
 import { ArrowButton } from '../Buttons/buttons.styles'
+import Toppers from '../FeaturedToppers/Toppers'
 const FirstFold = () => {
   return (
     <>
-    <Container>
+      <Container>
         <FirstFoldContainer>
           <FirstFoldLeftDiv>
-          <h2>Launch your academic <br /></h2>
-          <div>
-            <YellowCircleImage>success  <RocketImg src={Rocket} /></YellowCircleImage>
-          </div>
-          <div>
-            <BodyCopy>
-              Join Apex Academy for the best commerce education at an affordable cost. Our experienced instructors and innovative learning approach will equip you with the skills and knowledge to succeed in your career.
-            </BodyCopy>
-            {/* <Buttons></Buttons> */}
-            <ArrowButton>Unlock Your Potential</ArrowButton>
-          </div>
+            <h2>
+              Launch your academic <br />
+            </h2>
+            <div>
+              <YellowCircleImage>
+                success <RocketImg src={Rocket} />
+              </YellowCircleImage>
+            </div>
+            <div>
+              <BodyCopy>
+                Join Apex Academy for the best commerce education at an
+                affordable cost. Our experienced instructors and innovative
+                learning approach will equip you with the skills and knowledge
+                to succeed in your career.
+              </BodyCopy>
+              {/* <Buttons></Buttons> */}
+              <ArrowButton>Unlock Your Potential</ArrowButton>
+            </div>
           </FirstFoldLeftDiv>
           <FirstFoldRight>
-            <Lottie animationData={groovy} loop={true} className="lottie1"/>
+            <Lottie animationData={groovy} loop={true} className='lottie1' />
           </FirstFoldRight>
-
         </FirstFoldContainer>
-   
-    </Container>
+        <Toppers />
+      </Container>
       <ExploreCourses />
       <Values />
       <Testimonials />
       <Vision />
       <Contact />
     </>
-
   )
 }
 

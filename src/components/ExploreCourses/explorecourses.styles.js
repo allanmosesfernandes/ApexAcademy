@@ -1,22 +1,22 @@
 import styled from "styled-components";
 
-export const ExploreCoursesSection = styled.section `
-margin: 4rem 0 0 0;
-h2 {
-  color: ${(props) => props.theme.primaryColor};
-  font-family: "Neue ExtraBold";
-}
+export const ExploreCoursesSection = styled.section`
+  margin: 4rem 0 0 0;
+  h2 {
+    color: ${(props) => props.theme.primaryColor};
+    font-family: 'Neue ExtraBold';
+  }
 
-p {
-  font-size: ${(props) => props.theme.fssmall};
-  width: 75%;
-}
-@media only screen and (max-width: 600px) {
   p {
-  font-size: ${(props) => props.theme.fsxsmall};
-  width: 100%;
-}
-}
+    font-size: ${(props) => props.theme.fssmall};
+    width: 75%;
+  }
+  @media only screen and (max-width: 600px) {
+    p {
+      font-size: ${(props) => props.theme.fsxsmall};
+      width: 100%;
+    }
+  }
 `
 export const ButtonContainer = styled.div `
 display: flex;
