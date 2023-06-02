@@ -24,7 +24,11 @@ const Footer = () => {
     <StyledFooter>
       <Container>
         <FooterLine>
-          <h3>Apex Academy</h3>
+          <h3>
+            <Link to='/' onClick={scrollToTop}>
+              Apex Academy
+            </Link>
+          </h3>
           <StyledFooterLinks>
             <Link to='/' onClick={scrollToTop}>
               Home

@@ -1,28 +1,27 @@
 import styled from "styled-components";
 
 export const ContactSection = styled.section`
-display: grid;
-grid-template-columns: 1.5fr 2fr;
-gap: 2rem;
-margin: 5rem 0 3rem 0;
-h2 {
-    color:  ${(props) => props.theme.primaryColor};
-        font-family: "Neue ExtraBold";
-
-}
-p {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 2rem;
+  margin: 5rem 0 3rem 0;
+  h2 {
+    color: ${(props) => props.theme.primaryColor};
+    font-family: 'Neue ExtraBold';
+  }
+  p {
     font-size: ${(props) => props.theme.fssmall};
     color: #000;
     margin: 2rem 0;
-}
-
-@media only screen and (max-width: 600px) {
-  grid-template-columns: 1fr;
-
-  h2 {
-    font-size: 
   }
-}
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+
+    h2 {
+      font-size: ;
+    }
+  }
 `
 
 export const ContactLeft  = styled.div`

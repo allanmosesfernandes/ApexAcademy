@@ -7,7 +7,7 @@ align-items: center;
 justify-content: space-between;
 height: 10vh;
 border-bottom: 2px solid #dcdcdc;
-padding: 1rem;
+padding: 2rem;
 width: 100%;
 margin: auto;
 top: 0;
