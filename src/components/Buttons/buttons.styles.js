@@ -60,6 +60,7 @@ export const ArrowButton = styled.button`
   white-space: nowrap;
   will-change: box-shadow,transform;
   font-size: 20px;
+  z-index: 99;
   // text-transform: uppercase;
   font-family: "Neue ExtraBold";
 &:focus {
