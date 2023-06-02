@@ -20,54 +20,71 @@ const Values = () => {
 
   return (
     <>
-    <Marquee />
-        <Container>
+      <Marquee />
+      <Container>
         <ValuesContainer>
-            <h2>This is how we approach learning together</h2>
-            <Approach__container>
-                <div className="approach_div_left">
-                    <div className="approach__img">
-                        <img src={Reason1} alt="Reason one"/>
-                    </div>
-                </div>
-                <div className="approach_div_right">
-                   <span className="number-small">01 - Gain a Comprehensive Understanding of Concepts</span>
-                   <h4>Conceptual Learning</h4>
-                   <p className="body-copy">
-                     At Apex Academy, we understand that true mastery of commerce requires more than just surface-level knowledge. That's why our courses focus on developing your conceptual understanding of commerce concepts, going beyond the basics.
-                   </p>
-                </div>
-            </Approach__container>
-            <Approach__container>
-                <div className="approach_div_right">
-                   <span className="number-small">02 - Quality Education at an Affordable Price</span>
-                   <h4>Affordable Pricing</h4>
-                   <p className="body-copy">
-                    At Apex Academy, we believe that everyone should have access to quality education. That's why we offer our courses at an affordable price point, without compromising on the quality of education. Our goal is to help you achieve your career aspirations without breaking the bank.
-                   </p>
-                </div>
-                <div className="approach_div_left">
-                    <div className="approach__img">
-                        <img src={Reason2} alt="Reason one"/>
-                    </div>
-                </div>
-
-            </Approach__container>
-            <Approach__container className='reverse'>
-                <div className="approach_div_left">
-                    <div className="approach__img">
-                        <img src={Reason3} alt="Reason one"/>
-                    </div>
-                </div>
-                <div>
-                   <span className="number-small">03 - Learn from Industry Experts with Real-World Experience</span>
-                   <h4>Team of Experts.</h4>
-                   <p className="body-copy">
-                    Our instructors at Apex Academy bring real-world knowledge and insights to the classroom, giving you a competitive edge in your understanding of concepts. Our goal is to provide you with a comprehensive understanding of commerce that goes beyond just memorizing formulas, and equip you with the skills you need to succeed in the subject and beyond.
-                   </p>
-                </div>
-            </Approach__container>
-        {/* <ValueCard >
+          <h2>This is how we approach learning together</h2>
+          <Approach__container>
+            <div className='approach_div_left'>
+              <div className='approach__img'>
+                <img src={Reason1} alt='Reason one' />
+              </div>
+            </div>
+            <div className='approach_div_right'>
+              {/* <span className='number-small'>
+                01 - Gain a Comprehensive Understanding of Concepts
+              </span> */}
+              <h4>01-Conceptual Learning</h4>
+              <p className='body-copy'>
+                At Apex Academy, we understand that true mastery of commerce
+                requires more than just surface-level knowledge. That's why our
+                courses focus on developing your conceptual understanding of
+                commerce concepts, going beyond the basics.
+              </p>
+            </div>
+          </Approach__container>
+          <Approach__container>
+            <div className='approach_div_right'>
+              {/* <span className='number-small'>
+                02 - Quality Education at an Affordable Price
+              </span> */}
+              <h4>02-Affordable Pricing</h4>
+              <p className='body-copy'>
+                At Apex Academy, we believe that everyone should have access to
+                quality education. That's why we offer our courses at an
+                affordable price point, without compromising on the quality of
+                education. Our goal is to help you achieve your career
+                aspirations without breaking the bank.
+              </p>
+            </div>
+            <div className='approach_div_left'>
+              <div className='approach__img'>
+                <img src={Reason2} alt='Reason one' />
+              </div>
+            </div>
+          </Approach__container>
+          <Approach__container className='reverse'>
+            <div className='approach_div_left'>
+              <div className='approach__img'>
+                <img src={Reason3} alt='Reason one' />
+              </div>
+            </div>
+            <div>
+              {/* <span className='number-small'>
+                03 - Learn from Industry Experts with Real-World Experience
+              </span> */}
+              <h4>03-Team of Experts.</h4>
+              <p className='body-copy'>
+                Our instructors at Apex Academy bring real-world knowledge and
+                insights to the classroom, giving you a competitive edge in your
+                understanding of concepts. Our goal is to provide you with a
+                comprehensive understanding of commerce that goes beyond just
+                memorizing formulas, and equip you with the skills you need to
+                succeed in the subject and beyond.
+              </p>
+            </div>
+          </Approach__container>
+          {/* <ValueCard >
             <div className="values-inital">
                 <img src={ Collab } alt="collaboration" />
                 <h2>COLLABORATIVE</h2>
@@ -100,13 +117,9 @@ const Values = () => {
             </span>
             <PurpleToggle src={PurplePlus} alt="Icon to toggle state on mobile" onClick={ToggleIcon} />
         </ValueCard> */}
-
-
         </ValuesContainer>
-    </Container>
-
+      </Container>
     </>
-
   )
 }
 
