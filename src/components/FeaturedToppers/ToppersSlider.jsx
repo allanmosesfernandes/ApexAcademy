@@ -101,13 +101,14 @@ const settings = {
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 3,
+  autoplay: true,
+
   responsive: [
     {
       breakpoint: 767,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        auto: true,
       },
     },
   ],
@@ -117,7 +118,6 @@ const settings = {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-
       },
     },
   ],
@@ -142,8 +142,8 @@ const settings = {
                 </div>
               </div>
               <div className='third'>
-                <p>CGPA</p>
                 <h3>{score}</h3>
+                <p>{scoreTitle}</p>
                 <h4>{name}</h4>
               </div>
             </ToppersCard>

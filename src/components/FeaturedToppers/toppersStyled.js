@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ToppersContainer = styled.div`
   display: flex;
@@ -36,11 +36,32 @@ p {
 }
 `
 
-
 export const ToppersCard = styled.div`
   border: 3px solid ${(props) => props.theme.primaryColor};
   padding: 2rem;
   width: 90% !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  .third {
+    h3,
+    h4,
+    p {
+      text-align: center;
+    }
+
+    h3 {
+      font-size: ${(props) => props.theme.fslarge};
+      @media only screen and (max-width: 600px) {
+        //code goes here
+        font-size: ${(props) => props.theme.fsmedium};
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
   .second {
     display: flex;
     flex-direction: row;
@@ -71,7 +92,7 @@ export const ToppersCard = styled.div`
 `
 
 export const ToppersCardContainer = styled.div`
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 `
