@@ -1,7 +1,7 @@
 import React from 'react'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import Slider from 'react-slick'
 import { StyledSlider, SliderDiv } from './slider.styles';
 import { ReviewContent } from '../Testimonials/testimonials.styles';
 import  Review1 from "../../assets/images/testimonials/review-one.svg";
@@ -17,30 +17,30 @@ import  Review9 from "../../assets/images/testimonials/review-nine.svg";
 
 const SliderReviews = () => {
 var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-        responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ],
-        responsive: [
-      {
-        breakpoint: 1025,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  };
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+  responsive: [
+    {
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+}
   return (
     <Slider {...settings}>
       <SliderDiv>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled, { css } from 'styled-components'
-import { AiFillCloseCircle } from "react-icons/ai"
+import { AiFillCloseCircle } from 'react-icons/ai'
 const StyledBanner = styled.div`
   display: flex;
   justify-content: center;

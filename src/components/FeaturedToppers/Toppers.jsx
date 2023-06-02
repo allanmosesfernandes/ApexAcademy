@@ -1,6 +1,6 @@
 import React from 'react'
 import { ToppersContainer } from './toppersStyled'
-
+import ToppersSlider from './ToppersSlider'
 const Toppers = () => {
   return (
     <ToppersContainer>
@@ -12,6 +12,7 @@ const Toppers = () => {
         exceptional individuals who showcase the unwavering efforts of our
         academy.
       </p>
+      <ToppersSlider />
     </ToppersContainer>
   )
 }

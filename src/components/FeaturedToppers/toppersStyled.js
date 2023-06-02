@@ -35,3 +35,43 @@ p {
   width: 100%;
 }
 `
+
+
+export const ToppersCard = styled.div`
+  border: 3px solid ${(props) => props.theme.primaryColor};
+  padding: 2rem;
+  width: 90% !important;
+  .second {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+
+    .cap,
+    .college {
+      font-size: 3rem;
+    }
+    div {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+  }
+  img {
+    width: 150px;
+    height: 205px;
+    object-fit: cover;
+    margin: auto;
+  }
+
+  p {
+    width: 100%;
+    text-align: left;
+  }
+`
+
+export const ToppersCardContainer = styled.div`
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 2rem;
+`
