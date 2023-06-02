@@ -42,6 +42,10 @@ export const ToppersCard = styled.div`
   width: 90% !important;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    width: 100%;
+  }
   .third {
     h3,
     h4,
