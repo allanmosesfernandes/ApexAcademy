@@ -44,7 +44,7 @@ const Footer = () => {
         </FooterLine>
 
         <StyledFooterLinksBordered>
-          <Link to='https://wa.me/919619303386'>
+          <Link to='https://wa.link/msu4y1'>
             <img src={WhatsApp} alt='Whatsapp Logo' />
           </Link>
           <Link to='https://www.instagram.com/its_ganeshm_12/'>

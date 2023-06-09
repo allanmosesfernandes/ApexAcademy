@@ -27,10 +27,8 @@ const Contact = () => {
               </Link>
 
               <p>
-                Mumbai
-                <br />
-                A1 coelho society, opposite Hare Krishna Supermarket, <br />Mumbai,
-                Maharashtra 400049, India
+                A1 coelho society, opposite Hare Krishna Supermarket, <br />
+                Mumbai, Maharashtra 400049, <br />India.
               </p>
             </div>
           </div>
@@ -41,34 +39,38 @@ const Contact = () => {
 
             <div className='contact__contents'>
               <h3>Phone</h3>
-              <p>+91 8591829604</p>
-              <p>+91 9619352835</p>
+              <Link to='tel:+918591829604'>8591829604</Link><br />
+              <Link to='tel:+919619352835'>9619352835</Link>
             </div>
           </div>
           <div className='contact__block'>
-            <Link to='https://wa.me/919619303386'>
+            <Link to='https://wa.link/msu4y1'>
               <img src={Whatsapp} alt='Whatsapp Logo' />
             </Link>
 
             <div className='contact__contents'>
               <h3>Query</h3>
               <p>
-                Send us a message on Whatsapp <br /> and our team will get in
-                touch with you!
+                Send us a message on
+                <Link to='https://wa.link/msu4y1'> Whatsapp </Link>
+                <br /> and our team will get in touch with you!
               </p>
             </div>
           </div>
           <div className='contact__block'>
-            <Link to='https://www.instagram.com/its_ganeshm_12/'>
+            <Link to='https://www.instagram.com/apexlearningacademy/'>
               <img src={Instagram} alt='Instagram Logo' />
             </Link>
             <div className='contact__contents'>
               <h3>
-                <Link to='https://www.instagram.com/its_ganeshm_12/'>
                   Socials
-                </Link>
               </h3>
-              <p>Follow us on Instagram!</p>
+              <p>
+                Follow us on{' '}
+                <Link to='https://www.instagram.com/apexlearningacademy/'>
+                  Instagram!
+                </Link>
+              </p>
             </div>
           </div>
         </ContactRight>
