@@ -37,6 +37,13 @@ export const StyledHeader = styled.header`
       height: 100px;
     }
   }
+
+@media only screen and (max-width: 600px) {
+  //code goes here
+  nav {
+    padding: 1rem;
+  }
+}
 `
 export const LinksRIght = styled.div `
 margin-left: auto;

@@ -27,7 +27,6 @@ export const AboutWrapper = styled.section`
 `
 
 export const AboutImageText = styled.div`
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-bottom: 1px solid black;
@@ -36,6 +35,9 @@ export const AboutImageText = styled.div`
     border-right: 1px solid black;
     filter: grayscale(1);
     padding: 2rem;
+  }
+  .blue-emphasis {
+    text-decoration: underline;
   }
   p {
     font-size: ${(props) => props.theme.fssmall};
@@ -54,7 +56,7 @@ export const AboutImageText = styled.div`
     }
     p {
       text-align: left;
-      font-size: ${props => props.theme.fsxsmall}
+      font-size: ${(props) => props.theme.fsxsmall};
     }
   }
 `
@@ -63,6 +65,9 @@ export const AboutStoryContainer = styled.div`
   display: grid;
   grid-template-columns: 100px 2fr 1fr;
   gap: 1rem;
+    .blue-emphasis {
+    text-decoration: underline;
+  }
   .c {
     filter: grayscale(1);
     margin: auto;

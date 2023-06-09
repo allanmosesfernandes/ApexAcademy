@@ -15,20 +15,27 @@ img {
 `
 
 export const StyledFooterLinks = styled.div`
-display: flex;
-gap: 3rem;
-color: white;
-justify-content: center;
-margin: 2rem 0;
+  display: flex;
+  gap: 3rem;
+  color: white;
+  justify-content: center;
+  margin: 2rem 0;
 
-a {
-    font-size: ${props => props.theme.fssmall};
-}
+  a {
+    font-size: ${(props) => props.theme.fssmall};
+  }
 
-img {
+  img {
     width: 50px;
     height: 50px;
-}
+  }
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
 `
 
 export const StyledFooterLinksBordered = styled(StyledFooterLinks)`
@@ -58,17 +65,21 @@ export const CreatedBy = styled.div`
 `
 
 export const FooterLine = styled.div`
-color: white;
-display: flex;
-align-items: center;
-justify-content: space-between;
-font-size: 1.5rem;
-h3 {
-    font-size: ${props => props.theme.fsmedium}
-}
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
 
-@media only screen and (max-width: 600px) {
-  //code goes here
-  flex-direction: column;
-}
+  h3 {
+    font-size: ${(props) => props.theme.fsmedium};
+  }
+
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    flex-direction: column;
+    a {
+      font-size: ${(props) => props.theme.fsxsmall};
+    }
+  }
 `
