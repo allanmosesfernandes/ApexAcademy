@@ -44,7 +44,7 @@ const Header = () => {
         <nav className={navbarChange ? 'header-bg' : ''}>
           <h2 onClick={scrollToTop}>
             <Link to='/'>
-              <span>Apex Academy</span>
+              <span>Apex Learning Academy</span>
             </Link>
           </h2>
           <LinksRIght>

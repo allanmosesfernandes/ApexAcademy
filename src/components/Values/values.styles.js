@@ -113,56 +113,63 @@ transition: all 0.3s ease;
   display: block;
 }
 
-
 `
 
 export const Approach__container = styled.div`
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 2rem;
-margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
 
-img {
-  width: 80%;
-  margin: auto;
-}
-span {
+  img {
+    width: 80%;
+    margin: auto;
+  }
+  span {
     font-size: ${(props) => props.theme.fsxsmall};
     color: ${(props) => props.theme.themeGreen};
-    font-family: "Neue ExtraBold";
-
-}
-
-h4 {
-    font-size: ${(props) => props.theme.fslarge};
-        font-family: "Neue Bold";
-
-}
-
-p{
-    font-size: ${(props) => props.theme.fssmall};
-
-}
-@media only screen and (max-width: 600px) {
-  //code goes here
-  grid-template-columns: 1fr;
+    font-family: 'Neue ExtraBold';
+  }
 
   h4 {
-        font-size: ${(props) => props.theme.fsmedium};
+    font-size: ${(props) => props.theme.fslarge};
+    font-family: 'Neue Bold';
+    color: ${(props) => props.theme.themeGreen};
   }
+
   p {
-        font-size: ${(props) => props.theme.fssmall};
-
+    font-size: ${(props) => props.theme.fssmall};
   }
-}
-
-&.reverse {
   @media only screen and (max-width: 600px) {
-  //code goes here
-  display:flex;
-  flex-direction: column-reverse
-}
-}
+    //code goes here
+    grid-template-columns: 1fr;
+    .approach_div_right {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    h4 {
+      font-size: ${(props) => props.theme.fssmall};
+      border-bottom: 2px solid ${(props) => props.theme.themeGreen};
+      width: 90%;
+    }
+    p {
+      font-size: ${(props) => props.theme.fsxsmall};
+      margin: 1rem 0;
+    }
+    img {
+      width: 70%;
+    }
+  }
+
+  &.reverse {
+    @media only screen and (max-width: 600px) {
+      //code goes here
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
 `
 
 export const Approach_Div_Right = styled.div`
