@@ -62,7 +62,8 @@ const Footer = () => {
             </Link>
           </p>
           <p>
-            {currentYear} © Apex Learning Academy <br />
+            Apex Learning Academy © {currentYear}
+            <br />
             All rights reserved.
           </p>
         </CreatedBy>
