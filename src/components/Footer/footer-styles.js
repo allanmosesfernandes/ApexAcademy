@@ -22,12 +22,12 @@ justify-content: center;
 margin: 2rem 0;
 
 a {
-    font-size: ${props => props.theme.fsxsmall};
+    font-size: ${props => props.theme.fssmall};
 }
 
 img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
 }
 `
 
