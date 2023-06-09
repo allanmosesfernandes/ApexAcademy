@@ -26,7 +26,7 @@ const Footer = () => {
         <FooterLine>
           <h3>
             <Link to='/' onClick={scrollToTop}>
-              Apex Academy
+              Apex Learning Academy
             </Link>
           </h3>
           <StyledFooterLinks>
@@ -62,7 +62,7 @@ const Footer = () => {
             </Link>
           </p>
           <p>
-            {currentYear} © Apex Academy <br />
+            {currentYear} © Apex Learning Academy <br />
             All rights reserved.
           </p>
         </CreatedBy>

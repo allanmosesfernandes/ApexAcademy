@@ -102,7 +102,7 @@ var settings = {
       <SliderDiv>
         <ReviewContent>
         <p>
-          It's an ideal place for nurturing our knowledge about accounting & finance - but it's not the only thing, their exceptional faculty makes the experience more than better. Conceptual teaching is the key factor of this academy. Conclusively, Apex Academy is one of the best classes you can enroll into!🌻
+          It's an ideal place for nurturing our knowledge about accounting & finance - but it's not the only thing, their exceptional faculty makes the experience more than better. Conceptual teaching is the key factor of this academy. Conclusively, Apex Learning Academy is one of the best classes you can enroll into!🌻
         </p>
         <span>⭐⭐⭐⭐⭐</span>
         <img src={Review6}></img>

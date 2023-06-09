@@ -439,7 +439,7 @@ const subjectData = [
       <ExploreCoursesSection>
         <h2>Explore our courses</h2>
         <p>
-          Discover the range of courses we offer at Apex Academy and find the
+          Discover the range of courses we offer at Apex Learning Academy and find the
           perfect fit for your career goals.
           <br /> Our programs are designed to provide you with a comprehensive
           understanding of commerce and equip you with the skills to succeed.

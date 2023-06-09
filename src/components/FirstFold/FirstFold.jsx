@@ -44,7 +44,7 @@ const FirstFold = () => {
             </div>
             <div>
               <BodyCopy>
-                Join Apex Academy for the best commerce education at an
+                Join Apex Learning Academy for the best commerce education at an
                 affordable cost. Our experienced instructors and innovative
                 learning approach will equip you with the skills and knowledge
                 to succeed in your career.

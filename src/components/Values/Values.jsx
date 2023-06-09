@@ -36,7 +36,7 @@ const Values = () => {
               </span> */}
               <h4>01-Conceptual Learning</h4>
               <p className='body-copy'>
-                At Apex Academy, we understand that true mastery of commerce
+                At Apex Learning Academy, we understand that true mastery of commerce
                 requires more than just surface-level knowledge. That's why our
                 courses focus on developing your conceptual understanding of
                 commerce concepts, going beyond the basics.
@@ -50,7 +50,7 @@ const Values = () => {
               </span> */}
               <h4>02-Affordable Pricing</h4>
               <p className='body-copy'>
-                At Apex Academy, we believe that everyone should have access to
+                At Apex Learning Academy, we believe that everyone should have access to
                 quality education. That's why we offer our courses at an
                 affordable price point, without compromising on the quality of
                 education. Our goal is to help you achieve your career
@@ -75,7 +75,7 @@ const Values = () => {
               </span> */}
               <h4>03-Team of Experts.</h4>
               <p className='body-copy'>
-                Our instructors at Apex Academy bring real-world knowledge and
+                Our instructors at Apex Learning Academy bring real-world knowledge and
                 insights to the classroom, giving you a competitive edge in your
                 understanding of concepts. Our goal is to provide you with a
                 comprehensive understanding of commerce that goes beyond just

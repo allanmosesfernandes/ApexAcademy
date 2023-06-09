@@ -55,7 +55,7 @@ const PricingContainer = () => {
       <PricingWrapper>
         <h3 id='pricing-title'>Affordable Pricing for Quality Education</h3>
         <p className='pricing-bodycopy'>
-          At Apex academy, we are committed to providing affordable and
+          At Apex Learning Academy, we are committed to providing affordable and
           accessible education to students. Unlike other coaching institues, we
           prioritize your financial well-being by offering rates that are nearly
           half of what you would typically pay at a premium institute. We firmly
@@ -226,7 +226,7 @@ const PricingContainer = () => {
           <img src={Gift} alt='Referral Gift' id='referal-gift' />
         </ReferalContribution>
         <p className='pricing-bodycopy'>
-          At Apex Academy, we believe in the power of word-of-mouth and the
+          At Apex Learning Academy, we believe in the power of word-of-mouth and the
           value of our students' recommendations. That's why we're excited to
           introduce our referral program.
           <br /> Refer a friend to Apex and both you and your friend will
@@ -239,7 +239,7 @@ const PricingContainer = () => {
 
         <ReferalSteps>
           <li>
-            Spread the word about Apex Academy to your friends, classmates, or
+            Spread the word about Apex Learning Academy to your friends, classmates, or
             family members who could benefit from our exceptional coaching.
           </li>
           <li>
