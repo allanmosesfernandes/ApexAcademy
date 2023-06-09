@@ -23,7 +23,6 @@ margin: 2rem 0;
 
 a {
     font-size: ${props => props.theme.fsxsmall};
-
 }
 
 img {
@@ -47,14 +46,15 @@ export const Initials = styled.img`
 `;
 
 export const CreatedBy = styled.div`
-color: #fff;
-display: flex;
-align-items: center;
-flex-direction: column;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
 
-img {
+  img {
     width: 100px;
-}
+  }
 `
 
 export const FooterLine = styled.div`
@@ -62,7 +62,7 @@ color: white;
 display: flex;
 align-items: center;
 justify-content: space-between;
-
+font-size: 1.5rem;
 h3 {
     font-size: ${props => props.theme.fsmedium}
 }

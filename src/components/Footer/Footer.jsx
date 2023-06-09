@@ -47,7 +47,7 @@ const Footer = () => {
           <Link to='https://wa.link/msu4y1'>
             <img src={WhatsApp} alt='Whatsapp Logo' />
           </Link>
-          <Link to='https://www.instagram.com/its_ganeshm_12/'>
+          <Link to='https://www.instagram.com/apexlearningacademy/'>
             <img src={Insta} alt='Instagram Logo' />
           </Link>
           <Link to='tel:+918591829604'>

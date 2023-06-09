@@ -28,7 +28,8 @@ const Contact = () => {
 
               <p>
                 A1 coelho society, opposite Hare Krishna Supermarket, <br />
-                Mumbai, Maharashtra 400049, <br />India.
+                Mumbai, Maharashtra 400049, <br />
+                India.
               </p>
             </div>
           </div>
@@ -39,7 +40,8 @@ const Contact = () => {
 
             <div className='contact__contents'>
               <h3>Phone</h3>
-              <Link to='tel:+918591829604'>8591829604</Link><br />
+              <Link to='tel:+918591829604'>8591829604</Link>
+              <br />
               <Link to='tel:+919619352835'>9619352835</Link>
             </div>
           </div>
@@ -62,9 +64,7 @@ const Contact = () => {
               <img src={Instagram} alt='Instagram Logo' />
             </Link>
             <div className='contact__contents'>
-              <h3>
-                  Socials
-              </h3>
+              <h3>Socials</h3>
               <p>
                 Follow us on{' '}
                 <Link to='https://www.instagram.com/apexlearningacademy/'>
