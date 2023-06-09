@@ -38,7 +38,7 @@ export const MarqueeText = styled.h1`
   margin: 20px 0;
   font-size: 8rem;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
   text-transform: none;
   font-family: "Neue Bold";

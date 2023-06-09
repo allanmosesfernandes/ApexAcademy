@@ -17,7 +17,7 @@ export const VisionBlock = styled.div`
     border-top: 3px solid white;
     position: relative;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
 
     &:after {
