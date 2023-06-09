@@ -29,8 +29,8 @@ const Contact = () => {
               <p>
                 Mumbai
                 <br />
-                Room #5, Coelho Chawl Juhu <br />
-                Santacruz West 400049
+                A1 coelho society, opposite Hare Krishna Supermarket, <br />Mumbai,
+                Maharashtra 400049, India
               </p>
             </div>
           </div>
