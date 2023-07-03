@@ -60,7 +60,7 @@ export const ToppersCard = styled.div`
         font-size: ${(props) => props.theme.fsmedium};
       }
     }
-
+    
     p {
       margin: 0;
     }
@@ -69,8 +69,9 @@ export const ToppersCard = styled.div`
   .second {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 1rem;
+    justify-content: center;
 
     .cap,
     .college {
@@ -84,8 +85,10 @@ export const ToppersCard = styled.div`
   }
   img {
     width: 150px;
-    height: 205px;
+    height: 150px;
+    border-radius: 50%;
     object-fit: cover;
+    object-position: center center;
     margin: auto;
   }
 
