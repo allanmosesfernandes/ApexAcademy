@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import NeueBold from "../../assets/fonts/NM-Regular.otf";
 import NeueExtraBold from "../../assets/fonts/NM-Ultra.otf";
+import Pattern from "../../assets/images/WhyApex/bg-tablet-pattern.svg";
 
 const GlobalStyleSheet = createGlobalStyle`
   @font-face {
@@ -26,6 +27,18 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-image: url(${Pattern});
+  background-repeat: no-repeat;
+  background-position: 95% -5%;
+  z-index: -1;
+  background-size: 500px;
+
+  @media screen and (max-width: 768px) {
+    background-size: 300px;
+    background-position: top right;
+  }
+}
 /* Remove default margin */
 body,
 h1,
