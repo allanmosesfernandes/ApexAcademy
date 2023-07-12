@@ -18,7 +18,7 @@ const CourseTable = ({ subjectData, subject }) => {
                   {year.semesters.map((semester) => (
                     <div key={semester.semesterTitle}>
                       <h4>{semester.semesterTitle}</h4>
-                      <ul>
+                      <ul className='subjects__list'>
                         {semester.subjects.map((subject, index) => (
                           <li key={index}>{subject}</li>
                         ))}

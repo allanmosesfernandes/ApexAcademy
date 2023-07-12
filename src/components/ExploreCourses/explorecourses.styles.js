@@ -43,25 +43,32 @@ transition: all 0.3s ease;
     background-color: rgb(59 124 111);
 }
 `
-export const DisplayCourse = styled.div `
-display: grid;
-grid-template-columns: 1fr;
-gap: 1rem;
-margin: 2rem 0;
+export const DisplayCourse = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 2rem 0;
 
-h3 {
-    font-size: ${(props) => props.theme.fslarge}
-}
+  h3 {
+    font-size: ${(props) => props.theme.fslarge};
+  }
 
-p {
-    font-size: ${(props) => props.theme.fsmedium}
-}
+  p {
+    font-size: ${(props) => props.theme.fsmedium};
+  }
+
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    h3 {
+      font-size: ${(props) => props.theme.fsmedium};
+    }
+  }
 `
 
 
 export const CourseCardsContainer = styled.div `
 position: relative;
-min-height: 400px;
+min-height: 450px;
 
 @media only screen and (max-width: 600px) {
   min-height: 400px;
@@ -93,7 +100,7 @@ export const CourseCardFlexContainer = styled.div `
   justify-content: flex-start;
 `;
 
-export const CourseCardDetails = styled.div `
+export const CourseCardDetails = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,7 +113,7 @@ export const CourseCardDetails = styled.div `
   color: #000;
   background-color: ${(props) => props.theme.secondaryColor};
 
- &:hover {
+  &:hover {
     .CourseCardDetails {
       transform: scale(1.02);
     }
@@ -124,8 +131,8 @@ export const CourseCardDetails = styled.div `
     padding: 1.5rem;
     justify-content: space-evenly;
     img {
-    width: 30px;
-    height: 30px;
+      width: 30px;
+      height: 30px;
     }
   }
 
@@ -134,7 +141,7 @@ export const CourseCardDetails = styled.div `
     font-size: 1.5rem;
     margin: 0;
   }
-`;
+`
 
 
 
@@ -151,6 +158,9 @@ export const FilteredTable = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   border: 3px solid;
   padding: 2rem;
+  ul.subjects__list > li {
+    font-size: 1.5rem !important;
+  }
   @media only screen and (max-width: 600px) {
     //code goes here
     grid-template-columns: 1fr;
@@ -160,7 +170,7 @@ export const FilteredTable = styled.div`
   }
 
   h4 {
-    font-size: ${(props) => props.theme.fsxsmall};
+    font-size: ${(props) => props.theme.fssmall};
     color: ${(props) => props.theme.themeGreen};
   }
   ul > li {
