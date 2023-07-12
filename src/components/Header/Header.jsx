@@ -48,6 +48,7 @@ const Header = () => {
             </Link>
           </h2>
           <LinksRIght>
+            <Link to='/'>Home</Link>
             <Link to='about'>About</Link>
             {/* <Link to="pricing">Pricing</Link> */}
             <Link to='contact'>

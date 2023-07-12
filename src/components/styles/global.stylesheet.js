@@ -30,7 +30,7 @@ html {
 body {
   background-image: url(${Pattern});
   background-repeat: no-repeat;
-  background-position: 95% -5%;
+  background-position: center right;
   z-index: -1;
   background-size: 500px;
 

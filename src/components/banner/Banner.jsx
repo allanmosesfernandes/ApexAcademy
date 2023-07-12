@@ -10,6 +10,9 @@ const StyledBanner = styled.div`
   font-size: ${(props) => props.theme.fssmall};
   padding: 1rem;
   transition: transform 0.5s ease-in-out;
+  p {
+    font-weight: 500;
+  }
   ${(props) =>
     !props.show &&
     css`

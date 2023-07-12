@@ -2,6 +2,7 @@ import styled, { keyframes } from "styled-components";
 import Chalk from "../../assets/images/chalkboard.jpg"
 import { Keyframes } from "styled-components";
 import CircleSVG from "../../assets/images/circle.svg"
+import Pattern from '../../assets/images/WhyApex/bg-tablet-pattern.svg'
 
 export const FirstFoldContainer = styled.section`
 display: grid;
@@ -71,19 +72,22 @@ export const YellowCircleImage = styled.h2`
 `
 
 export const FirstFoldRight = styled.div`
-
-    display: flex;
-    margin: 2rem auto;
-    align-items: flex-start;
-    height: 100%;
-@media only screen and (max-width: 600px) {
-  //code goes here
-  .lottie1 {
-    margin: -5rem 0;
-    max-width: 300px;
-}
-}
-
+  background-image: url(${Pattern});
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 500px;
+  display: flex;
+  margin: 2rem auto;
+  align-items: flex-start;
+  height: 100%;
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    background: none;
+    .lottie1 {
+      margin: -5rem 0;
+      max-width: 300px;
+    }
+  }
 ` 
 
 export const BodyCopy = styled.p`
