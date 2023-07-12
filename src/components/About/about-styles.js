@@ -69,7 +69,7 @@ export const AboutStoryContainer = styled.div`
     text-decoration: underline;
   }
   .c {
-    filter: grayscale(1);
+    filter: grayscale(0);
     margin: auto;
   }
   @media only screen and (max-width: 600px) {
