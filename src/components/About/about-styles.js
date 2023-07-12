@@ -10,7 +10,7 @@ export const AboutWrapper = styled.section`
     color: black;
   }
   p {
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
     padding: 2rem 0;
     font-size: ${(props) => props.theme.fsmedium};
   }
@@ -28,28 +28,47 @@ export const AboutWrapper = styled.section`
 
 export const AboutImageText = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-bottom: 1px solid black;
+  grid-template-columns: 40% 1fr;
+  border-top: 1px solid black;
+  p {
+    font-size: ${(props) => props.theme.fssmall};
+  }
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
   img {
-    width: 90%;
-    border-right: 1px solid black;
+    max-width: 100%;
     filter: grayscale(1);
     padding: 2rem;
   }
-  .blue-emphasis {
-    text-decoration: underline;
+  .slick-dots {
+    bottom: 0;
   }
-  p {
-    font-size: ${(props) => props.theme.fssmall};
-    align-items: center;
-    border-bottom: 0;
-    margin: auto;
-  }
-
   @media only screen and (max-width: 600px) {
     //code goes here
-    grid-template-columns: 1fr;
+    .slick-dots {
+      bottom: -20px;
+    }
+    .slick-prev,
+    .slick-next {
+      display: none !important;
+    }
 
+    .blue-emphasis {
+      text-decoration: underline;
+    }
+    p {
+      font-size: ${(props) => props.theme.fssmall};
+      align-items: center;
+      border-bottom: 0;
+      margin: auto;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
     img {
       width: 100%;
       padding: 0;
@@ -64,8 +83,9 @@ export const AboutImageText = styled.div`
 export const AboutStoryContainer = styled.div`
   display: grid;
   grid-template-columns: 100px 2fr 1fr;
+  border-top: 1px solid black;
   gap: 1rem;
-    .blue-emphasis {
+  .blue-emphasis {
     text-decoration: underline;
   }
   .c {
@@ -106,7 +126,7 @@ export const Story = styled.div`
     font-size: ${(props) => props.theme.fslarge};
 
     @media only screen and (max-width: 600px) {
-      font-size: ${(props) => props.theme.fsxsmall} ;
+      font-size: ${(props) => props.theme.fsxsmall};
       padding: 1rem;
     }
   }
@@ -116,7 +136,7 @@ export const TextPiece = styled.div`
     font-size: ${(props) => props.theme.fssmall};
     height: 100%;
     @media only screen and (max-width: 600px) {
-      //code goes here    
+      //code goes here
       font-size: ${(props) => props.theme.fsxsmall};
     }
     .blue-emphasis {

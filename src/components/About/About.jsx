@@ -1,5 +1,6 @@
 import React from 'react'
 import Container from '../styles/container.stylesheet'
+
 import {
   AboutWrapper,
   AboutImageText,
@@ -10,6 +11,7 @@ import {
 } from './about-styles'
 import Pexel from '../../assets/images/apex-class.jpg'
 import Senti from '../../assets/images/story.jpg'
+import AboutSlider from './AboutSlider'
 const About = () => {
   return (
     <Container>
@@ -17,7 +19,8 @@ const About = () => {
         <h2>APEX Learning Academy</h2>
         <p><span className="blue-emphasis">A</span>chieving <span className="blue-emphasis">P</span>roficiency and <span className="blue-emphasis">EX</span>cellence in Commerce Education.</p>
         <AboutImageText>
-          <img src={Pexel} alt='Vertical Student' />
+          {/* <img src={Pexel} alt='Vertical Student' /> */}
+          <AboutSlider />
           <p>
             Welcome to{' '}
             <span className='blue-emphasis'>Apex Learning Academy</span>, where
