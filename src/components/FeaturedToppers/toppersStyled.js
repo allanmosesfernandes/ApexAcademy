@@ -102,6 +102,8 @@ export const ToppersCard = styled.div`
     object-fit: cover;
     object-position: center center;
     margin: auto;
+    position: relative;
+    background-image: url();
   }
 
   p {

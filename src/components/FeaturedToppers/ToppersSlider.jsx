@@ -116,7 +116,7 @@ const settings = {
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 3,
-  autoplay: true,
+  autoplay: false,
 
   responsive: [
     {
@@ -146,7 +146,10 @@ const settings = {
             const imagePath = imageMap[imageID]
             return (
               <ToppersCard key={index}>
-                <img src={imagePath} alt='topper image' />
+                <div className='wreather'>
+                  <img src={imagePath} alt='topper image' />
+                  <div className="wreather-bg"></div>
+                </div>
                 <div className='second'>
                   <p>{name}</p>
                 </div>
