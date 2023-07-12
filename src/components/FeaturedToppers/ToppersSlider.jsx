@@ -148,17 +148,11 @@ const settings = {
               <ToppersCard key={index}>
                 <img src={imagePath} alt='topper image' />
                 <div className='second'>
-                  {/* Give inline style to below div for margin 1rem 0 */}
-                    <p>{classes}</p>
-                  {/* <div>
-                    <College className='college' />
-                    {college}
-                  </div> */}
+                  <p>{name}</p>
                 </div>
                 <div className='third'>
                   <h3>{score}</h3>
-                  <p>{name}</p>
-                  <h4>{scoreTitle}</h4>
+                  <p>{classes}</p>
                 </div>
               </ToppersCard>
             )

@@ -33,6 +33,7 @@ p {
   p {
   font-size: ${(props) => props.theme.fsxsmall};
   width: 100%;
+  
 }
 }
 `
@@ -41,12 +42,13 @@ export const ToppersCard = styled.div`
   /* border: 3px solid ${(props) => props.theme.primaryColor}; */
   padding: 2rem;
   width: 90% !important;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 9px;
+  box-shadow: rgba(100, 100, 111, 0.2) 2px 2px 2px 2px;
   height: 90%;
   margin: 2rem auto;
   @media only screen and (max-width: 600px) {
     //code goes here
-    width: 100%;
+    width: 100% !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 2px 0px;
   }
   .third {
     h3,
@@ -54,7 +56,10 @@ export const ToppersCard = styled.div`
     p {
       text-align: center;
     }
-
+    p {
+      color: ${(props) => props.theme.primaryColor};
+      font-weight: 500;
+    }
     h3 {
       font-size: ${(props) => props.theme.fslarge};
       @media only screen and (max-width: 600px) {
@@ -78,6 +83,7 @@ export const ToppersCard = styled.div`
     p {
       text-align: center;
       margin-bottom: 0;
+      font-size: ${(props) => props.theme.fssmall};
     }
     .cap,
     .college {
