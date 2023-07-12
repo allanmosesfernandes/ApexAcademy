@@ -34,14 +34,16 @@ p {
   font-size: ${(props) => props.theme.fsxsmall};
   width: 100%;
 }
+}
 `
 
 export const ToppersCard = styled.div`
-  border: 3px solid ${(props) => props.theme.primaryColor};
+  /* border: 3px solid ${(props) => props.theme.primaryColor}; */
   padding: 2rem;
   width: 90% !important;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 9px;
+  height: 90%;
+  margin: 2rem auto;
   @media only screen and (max-width: 600px) {
     //code goes here
     width: 100%;
@@ -60,7 +62,7 @@ export const ToppersCard = styled.div`
         font-size: ${(props) => props.theme.fsmedium};
       }
     }
-    
+
     p {
       margin: 0;
     }
@@ -71,11 +73,15 @@ export const ToppersCard = styled.div`
     flex-direction: row;
     /* justify-content: space-between; */
     gap: 1rem;
+    align-items: center;
     justify-content: center;
-
+    p {
+      text-align: center;
+      margin-bottom: 0;
+    }
     .cap,
     .college {
-      font-size: 3rem;
+      font-size: 4rem;
     }
     div {
       display: flex;

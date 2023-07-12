@@ -139,31 +139,31 @@ const settings = {
 }
   return (
     <>
-      <Slider {...settings}>
-    {ToppersArray.map((top, index) => {
-          const { name, classes, college, scoreTitle, score, imageID } = top
-          const imagePath = imageMap[imageID]
-
-          return (
-            <ToppersCard key={index}>
-              <img src={imagePath} alt='topper image' />
-              <div className='second'>
-                <div>
-                  <CapIcon className='cap' /> {classes}
+    <Slider {...settings}>
+      {
+        ToppersArray.map((top, index) => {
+            const { name, classes, college, scoreTitle, score, imageID } = top
+            const imagePath = imageMap[imageID]
+            return (
+              <ToppersCard key={index}>
+                <img src={imagePath} alt='topper image' />
+                <div className='second'>
+                  {/* Give inline style to below div for margin 1rem 0 */}
+                    <p>{classes}</p>
+                  {/* <div>
+                    <College className='college' />
+                    {college}
+                  </div> */}
                 </div>
-                {/* <div>
-                  <College className='college' />
-                  {college}
-                </div> */}
-              </div>
-              <div className='third'>
-                <h3>{score}</h3>
-                <p>{scoreTitle}</p>
-                <h4>{name}</h4>
-              </div>
-            </ToppersCard>
-          )
-        })} 
+                <div className='third'>
+                  <h3>{score}</h3>
+                  <p>{name}</p>
+                  <h4>{scoreTitle}</h4>
+                </div>
+              </ToppersCard>
+            )
+          })
+        } 
       </Slider>
     </>
   )
