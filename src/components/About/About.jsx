@@ -92,6 +92,7 @@ const About = () => {
           </TextPiece>
           <SentiImage className='c' src={Senti} alt='Senti' />
         </AboutStoryContainer>
+
       </AboutWrapper>
     </Container>
   )
