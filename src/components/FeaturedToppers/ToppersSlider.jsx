@@ -3,15 +3,16 @@ import { ToppersCard, ToppersCardContainer } from './toppersStyled'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick'
-import topperImage1 from '../../assets/images/Toppers/top/Abhijit Sasmal.png'
-import topperImage2 from '../../assets/images/Toppers/topper-2.png'
-import topperImage3 from '../../assets/images/Toppers/top/Suraj Samanta.JPG'
+import topperImage1 from '../../assets/images/Toppers/Abhijit.jpg'
+import topperImage2 from '../../assets/images/Toppers/Suraj.jpg'
+import topperImage3 from '../../assets/images/Toppers/Esha.jpg'
 import topperImage4 from '../../assets/images/Toppers/top/Esha.JPG'
 import topperImage5 from '../../assets/images/Toppers/top/Abhijeet Jadhav.JPG'
 import topperImage6 from '../../assets/images/Toppers/top/Simran Gomes.jpg'
 import topperImage7 from '../../assets/images/Toppers/top/Pranay More.JPG'
 import topperImage8 from '../../assets/images/Toppers/top/Chris.JPG'
 import topperImage9 from '../../assets/images/Toppers/top/Jonathan Creado.jpg'
+import topperImage11 from '../../assets/images/Toppers/Aditi.jpg'
 // import topperImage10 from '../../assets/images/Toppers/top/Pranay More.JPG'
 
 import { HiOutlineAcademicCap as CapIcon } from 'react-icons/hi'
@@ -25,21 +26,21 @@ const ToppersArray = [
     score: '90%',
     imageID: 1,
   },
-  // {
-  //   name: 'Aditi Adulkar',
-  //   classes: 'SYJC',
-  //   // college: 'L.S Raheja College',
-  //   // scoreTitle: 'CGPA',
-  //   score: '89%',
-  //   imageID: 2,
-  // },
+  {
+    name: 'Aditi Adulkar',
+    classes: 'SYJC',
+    // college: 'L.S Raheja College',
+    // scoreTitle: 'CGPA',
+    score: '89%',
+    imageID: 11,
+  },
   {
     name: 'Suraj Samanta',
     classes: 'SYJC',
     // college: 'MMK College',
     // scoreTitle: 'CGPA',
     score: '88%',
-    imageID: 3,
+    imageID: 2,
   },
   {
     name: 'Esha Mohite',
@@ -47,7 +48,7 @@ const ToppersArray = [
     // college: 'MMK College',
     // scoreTitle: 'CGPA',
     score: '92%',
-    imageID: 4,
+    imageID: 3,
   },
   {
     name: 'Abhijeet Jadhav',
@@ -108,7 +109,8 @@ const ToppersArray = [
     6: topperImage6,
     7: topperImage7,
     8: topperImage8,
-    9: topperImage9
+    9: topperImage9,
+    11: topperImage11,
   }
 const settings = {
   dots: true,
