@@ -83,7 +83,8 @@ export const ToppersCard = styled.div`
     p {
       text-align: center;
       margin-bottom: 0;
-      font-size: ${(props) => props.theme.fssmall};
+      font-size: ${(props) => props.theme.fsmedium};
+      font-weight: 500;
     }
     .cap,
     .college {
@@ -96,8 +97,8 @@ export const ToppersCard = styled.div`
     }
   }
   img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center center;
