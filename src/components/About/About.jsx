@@ -10,14 +10,19 @@ import {
   SentiImage,
 } from './about-styles'
 import Pexel from '../../assets/images/apex-class.jpg'
-import Senti from '../../assets/images/story.jpg'
+import Senti from '../../assets/images/about/ganesh.jpg'
 import AboutSlider from './AboutSlider'
 const About = () => {
   return (
     <Container>
       <AboutWrapper>
         <h2>APEX Learning Academy</h2>
-        <p><span className="blue-emphasis">A</span>chieving <span className="blue-emphasis">P</span>roficiency and <span className="blue-emphasis">EX</span>cellence in Commerce Education.</p>
+        <p>
+          <span className='blue-emphasis'>A</span>chieving{' '}
+          <span className='blue-emphasis'>P</span>roficiency and{' '}
+          <span className='blue-emphasis'>EX</span>cellence in Commerce
+          Education.
+        </p>
         <AboutImageText>
           {/* <img src={Pexel} alt='Vertical Student' /> */}
           <AboutSlider />
@@ -25,7 +30,7 @@ const About = () => {
             Welcome to{' '}
             <span className='blue-emphasis'>Apex Learning Academy</span>, where
             we believe in the power of education to transform lives. Founded by{' '}
-            <span className='blue-empha'>Ganesh Shambhunath Maji</span>, our
+            <span className='blue-emphasis'>Ganesh Shambhunath Maji</span>, our
             academy is dedicated to helping students achieve remarkable
             milestones in their academic results. With a teaching journey that
             began in 2017, we have successfully guided hundreds of students
@@ -34,8 +39,8 @@ const About = () => {
             innovative and interactive teaching style, focusing on{' '}
             <span className='blue-emphasis'>conceptual understanding </span>{' '}
             rather than rote learning. Our aim is to provide quality education
-            to every student, regardless of their background, at the most
-            affordable and nominal fees.
+            to every student, regardless of their financial background, at the most
+            <span className='blue-emphasis'> affordable and nominal fees.</span>
           </p>
         </AboutImageText>
         <AboutStoryContainer>
@@ -64,10 +69,12 @@ const About = () => {
               Institute of Chartered Accountants of India, where I cleared the
               CA entrance exam on my{' '}
               <span className='blue-emphasis'>first attempt</span> and even
-              obtained exemptions in three subjects in my IPCC exam. Currently,
-              I am a <span className='blue-emphasis'>CA finalist</span> with
-              just one group remaining. Moreover, I have also studied at the CFA
-              Institute (USA). <br></br>
+              obtained exemptions in three subjects in my{' '}
+              <span className='blue-emphasis'>IPCC exam.</span> Currently, I am
+              a <span className='blue-emphasis'>CA finalist</span> with just one
+              group remaining. Moreover, I have also studied at the
+              <span className='blue-emphasis'>CFA Institute (USA).</span>{' '}
+              <br></br>
               <br></br>
               My journey in the corporate sector included working with a
               renowned multinational corporation,{' '}
@@ -75,13 +82,16 @@ const About = () => {
               since 2019. This experience has provided me with valuable insights
               into the industry practices and has shaped my teaching
               methodology. At Apex Learning Academy, I strive to bridge the gap
-              between theory and practice by incorporating real-world examples
-              and the best practices observed in the finance field.<br></br>
+              <span className='blue-emphasis'>
+                between theory and practice
+              </span>{' '}
+              by incorporating real-world examples and the best practices
+              observed in the finance field.<br></br>
               <br></br>
               Throughout my academic life, I consistently ranked among the{' '}
               <span className='blue-emphasis'>top three merit students</span>.
               In my HSC exams in 2014, I achieved an impressive score of
-              <span className='blue-emphasis'> 98</span> marks in Accounts. I
+              <span className='blue-emphasis'> 98 marks</span> in Accounts. I
               want to share my experiences, knowledge, and expertise with the
               youth, empowering them to achieve their academic and financial
               goals.<br></br>
@@ -95,7 +105,6 @@ const About = () => {
           </TextPiece>
           <SentiImage className='c' src={Senti} alt='Senti' />
         </AboutStoryContainer>
-
       </AboutWrapper>
     </Container>
   )
