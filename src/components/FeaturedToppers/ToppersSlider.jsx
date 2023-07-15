@@ -16,6 +16,7 @@ import topperImage11 from '../../assets/images/Toppers/Aditi.jpg'
 import topperImage12 from '../../assets/images/Toppers/Sushmita.jpg'
 import topperImage13 from '../../assets/images/Toppers/tyron.jpeg'
 import topperImage14 from '../../assets/images/Toppers/suraj.jpeg'
+import topperImage15 from '../../assets/images/Toppers/anjali.jpeg'
 // import topperImage10 from '../../assets/images/Toppers/top/Pranay More.JPG'
 
 import { HiOutlineAcademicCap as CapIcon } from 'react-icons/hi'
@@ -94,6 +95,14 @@ const ToppersArray = [
     imageID: 9,
   },
   {
+    name: 'Anjali Maity',
+    classes: 'FYBFM',
+    // college: 'MMK College',
+    // scoreTitle: 'CGPA',
+    score: '87%',
+    imageID: 15,
+  },
+  {
     name: 'Juan Mendes',
     classes: 'FYJC',
     // college: 'MMK College',
@@ -133,6 +142,7 @@ const ToppersArray = [
     12: topperImage12,
     13: topperImage13,
     14: topperImage14,
+    15: topperImage15,
   }
 const settings = {
   dots: true,

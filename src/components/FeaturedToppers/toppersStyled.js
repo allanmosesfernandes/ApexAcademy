@@ -101,7 +101,7 @@ export const ToppersCard = styled.div`
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center center;
+    object-position: top center;
     margin: auto;
     position: relative;
     background-image: url();

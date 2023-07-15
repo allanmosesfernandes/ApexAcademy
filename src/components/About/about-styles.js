@@ -39,7 +39,6 @@ export const AboutImageText = styled.div`
   }
   img {
     max-width: 100%;
-    filter: grayscale(1);
     padding: 2rem;
   }
   .slick-dots {
