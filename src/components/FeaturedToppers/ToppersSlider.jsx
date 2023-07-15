@@ -7,12 +7,15 @@ import topperImage1 from '../../assets/images/Toppers/Abhijit.jpg'
 import topperImage2 from '../../assets/images/Toppers/Suraj.jpg'
 import topperImage3 from '../../assets/images/Toppers/Esha.jpg'
 import topperImage4 from '../../assets/images/Toppers/top/Esha.JPG'
-import topperImage5 from '../../assets/images/Toppers/top/Abhijeet Jadhav.JPG'
-import topperImage6 from '../../assets/images/Toppers/top/Simran Gomes.jpg'
-import topperImage7 from '../../assets/images/Toppers/top/Pranay More.JPG'
-import topperImage8 from '../../assets/images/Toppers/top/Chris.JPG'
-import topperImage9 from '../../assets/images/Toppers/top/Jonathan Creado.jpg'
+import topperImage5 from '../../assets/images/Toppers/juan.jpeg'
+import topperImage6 from '../../assets/images/Toppers/simran.jpg'
+import topperImage7 from '../../assets/images/Toppers/pranay.jpg'
+import topperImage8 from '../../assets/images/Toppers/chris.jpg'
+import topperImage9 from '../../assets/images/Toppers/jonathan.jpg'
 import topperImage11 from '../../assets/images/Toppers/Aditi.jpg'
+import topperImage12 from '../../assets/images/Toppers/Sushmita.jpg'
+import topperImage13 from '../../assets/images/Toppers/tyron.jpeg'
+import topperImage14 from '../../assets/images/Toppers/suraj.jpeg'
 // import topperImage10 from '../../assets/images/Toppers/top/Pranay More.JPG'
 
 import { HiOutlineAcademicCap as CapIcon } from 'react-icons/hi'
@@ -22,13 +25,13 @@ const ToppersSlider = () => {
 const ToppersArray = [
   {
     name: 'Abhijit Sasmal',
-    classes: 'SYJC',
+    classes: 'HSC',
     score: '90%',
     imageID: 1,
   },
   {
     name: 'Aditi Adulkar',
-    classes: 'SYJC',
+    classes: 'FYBAF',
     // college: 'L.S Raheja College',
     // scoreTitle: 'CGPA',
     score: '89%',
@@ -36,7 +39,7 @@ const ToppersArray = [
   },
   {
     name: 'Suraj Samanta',
-    classes: 'SYJC',
+    classes: 'FYBAF',
     // college: 'MMK College',
     // scoreTitle: 'CGPA',
     score: '88%',
@@ -51,32 +54,32 @@ const ToppersArray = [
     imageID: 3,
   },
   {
-    name: 'Abhijeet Jadhav',
-    classes: 'FYBAF',
+    name: 'Sushmita Maji',
+    classes: 'TYBAF',
     // college: 'MMK College',
     // scoreTitle: 'CGPA',
-    score: '87%',
-    imageID: 5,
+    score: '91%',
+    imageID: 12,
   },
   {
     name: 'Simran Gomes',
     classes: 'TYBAF',
     // college: 'MMK College',
     // scoreTitle: 'CGPA',
-    score: '91%',
+    score: '81%',
     imageID: 6,
   },
   {
     name: 'Pranay More',
-    classes: 'SYBAF',
+    classes: 'TYBAF',
     // college: 'MMK College',
     // scoreTitle: 'CGPA',
-    score: '88%',
+    score: '85%',
     imageID: 7,
   },
   {
     name: 'Chris Fernandes',
-    classes: 'SYBAF',
+    classes: 'TYBAF',
     // college: 'L.S Raheja College',
     // scoreTitle: 'CGPA',
     score: '86%',
@@ -84,20 +87,36 @@ const ToppersArray = [
   },
   {
     name: 'Jonathan Creado',
-    classes: 'SYBAF',
+    classes: 'TYBAF',
     // college: 'MMK College',
     // scoreTitle: 'CGPA',
     score: '83%',
     imageID: 9,
   },
-  // {
-  //   name: 'Juan Mendes',
-  //   classes: 'FYJC',
-  //   // college: 'MMK College',
-  //   // scoreTitle: 'CGPA',
-  //   score: '81%',
-  //   imageID: 5,
-  // },
+  {
+    name: 'Juan Mendes',
+    classes: 'FYJC',
+    // college: 'MMK College',
+    // scoreTitle: 'CGPA',
+    score: '81%',
+    imageID: 5,
+  },
+  {
+    name: 'Tyron Fernandes',
+    classes: 'FYJC',
+    // college: 'MMK College',
+    // scoreTitle: 'CGPA',
+    score: '75%',
+    imageID: 13,
+  },
+  {
+    name: 'Suraj Agare',
+    classes: 'FYJC',
+    // college: 'MMK College',
+    // scoreTitle: 'CGPA',
+    score: '75%',
+    imageID: 14,
+  },
 ]
 
   const imageMap = {
@@ -111,6 +130,9 @@ const ToppersArray = [
     8: topperImage8,
     9: topperImage9,
     11: topperImage11,
+    12: topperImage12,
+    13: topperImage13,
+    14: topperImage14,
   }
 const settings = {
   dots: true,
