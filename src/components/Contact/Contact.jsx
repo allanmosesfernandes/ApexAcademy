@@ -27,7 +27,7 @@ const Contact = () => {
               </Link>
 
               <p>
-                A1 coelho society, opposite Hare Krishna Supermarket, <br />
+                A1 coelho society, opposite Hare Krishna Supermarket,<br />Juhu Tara Road, Santacruz West <br />
                 Mumbai, Maharashtra 400049, <br />
                 India.
               </p>

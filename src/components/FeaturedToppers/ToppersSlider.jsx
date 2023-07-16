@@ -48,7 +48,7 @@ const ToppersArray = [
   },
   {
     name: 'Aditi Adulkar',
-    classes: 'FYBAF',
+    classes: 'HSC',
     // college: 'L.S Raheja College',
     // scoreTitle: 'CGPA',
     score: '89%',
@@ -56,7 +56,7 @@ const ToppersArray = [
   },
   {
     name: 'Suraj Samanta',
-    classes: 'FYBAF',
+    classes: 'HSC',
     // college: 'MMK College',
     // scoreTitle: 'CGPA',
     score: '88%',

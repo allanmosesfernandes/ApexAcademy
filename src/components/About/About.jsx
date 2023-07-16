@@ -10,7 +10,7 @@ import {
   SentiImage,
 } from './about-styles'
 import Pexel from '../../assets/images/apex-class.jpg'
-import Senti from '../../assets/images/about/ganesh.jpg'
+import Senti from '../../assets/images/story.jpg'
 import AboutSlider from './AboutSlider'
 const About = () => {
   return (
